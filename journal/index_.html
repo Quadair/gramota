@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gramota.ru</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@300;400;700&family=Spectral:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="../css/slick.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div>
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap mt-4">
+                        <a href="/" class="me-4 d-block d-none d-lg-block d-xl-block d-xxl-block">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="/">
+                            <svg class="gramota-logo icon" width="244" height="52">
+                                <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                            </svg>
+                        </a>
+
+                        <ul class="nav ms-auto fs-6 d-md-none d-sm-none d-none d-lg-flex">
+                            <li>
+                                <a href="#" class="gramota-roboto-400 nav-link text-dark">
+                                    Журнал
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-roboto-400 nav-link text-dark">
+                                    Справочное бюро
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-roboto-400 nav-link text-dark">
+                                    Проверь себя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-roboto-400 nav-link text-dark">
+                                    Моя Грамота
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#" class="mt-1 ms-auto ms-sm-auto ms-md-auto ms-lg-0">
+                            <svg class="icon" width="22" height="22">
+                                <use xlink:href="../images/sprite.svg#profile" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="mt-1 ms-2">
+                            <svg class="icon" width="22" height="22">
+                                <use xlink:href="../images/sprite.svg#search" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="/" class="mt-1 ms-3 d-lg-none d-xl-none">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid" style="background: #39735D;">
+        <div class="py-5 mb-3">
+            <div class="container-fluid">
+                <div class="container-xxl">
+                    <form action="" class="gramota-search">
+                        <ul
+                            class="gramota-top-search-tabs nav nav-tabs border-0 d-flex pe-0 d-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
+                            <li class="nav-item me-4 ms-0">
+                                <a class="gramota-roboto-300 nav-link p-0" data-toggle="tab" href="#">Словари русского
+                                    языка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="gramota-roboto-300 nav-link active p-0" data-toggle="tab" href="#">Справочная
+                                    служба</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="gramota-roboto-300 nav-link p-0" data-toggle="tab" href="#">Ключевые словари
+                                    русского
+                                    языка</a>
+                            </li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-md-10 col-sm-8 col-8 px-0 position-relative">
+                                <input type="search"
+                                    class="gramota-roboto-400 form-control-lg border-0 rounded-0 py-3 pe-5 w-100 h-100"
+                                    placeholder="Введите слово или словосочетание" aria-label="Search">
+                                <a class="position-absolute d-none d-md-block d-lg-block d-xl-block d-xxl-none"
+                                    style="top: 50%; right: 1rem; transform: translatey(-50%);">
+                                    <svg class="icon" width="32" height="26">
+                                        <use xlink:href="../images/sprite.svg#settings" fill="black"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col-md-2 col-sm-4 col-4 px-0">
+                                <button type="submit"
+                                    class="gramota-roboto-400 btn btn-lg border-0 text-dark fw-weight-bold rounded-0 w-100 h-100"
+                                    style="background: #FFE350;">Проверить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="py-5 mb-3">
+            <div class="container-xxl">
+                <div class="gramota-card-promo card rounded-0 px-4">
+                    <img src="../images/img001.png" class="card-img" style="width: 30%; max-width: 400px;" alt="...">
+                    <div class="card-body d-flex flex-column justify-content-center">
+                        <h2 class="card-title">Создавайте свой словарь на Грамоте</h2>
+                        <div class="mt-3">
+                            <a href="#" class="gramota-roboto-300 btn btn-primary fw-bold rounded-0 py-2 px-4">
+                                <svg class="icon" width="24" height="24" class="me-5">
+                                    <use xlink:href="../images/sprite.svg#my" fill="black"></use>
+                                </svg>
+                                Моя
+                                Грамота</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-sm-3">
+        <div class="container-xxl">
+            <h1 class="gramota-jost mb-5">Журнал</h1>
+            <ul class="gramota-nav-tabs nav nav-tabs d-flex">
+                <li class="nav-item me-4">
+                    <a class="gramota-roboto-700 nav-link p-0 pb-2 fs-5 text-dark active" data-toggle="tab"
+                        href="#">Главное</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="gramota-roboto-400 nav-link p-0 fs-5 text-dark" data-toggle="tab" href="#">Новости</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="gramota-roboto-400 nav-link p-0 fs-5 text-dark" data-toggle="tab" href="#">Лекции</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="gramota-roboto-400 nav-link p-0 fs-5 text-dark" data-toggle="tab" href="#">Эксперты</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="gramota-roboto-400 nav-link p-0 fs-5 text-dark" data-toggle="tab" href="#">События</a>
+                </li>
+                <li class="nav-item me-4">
+                    <a class="gramota-roboto-400 nav-link p-0 fs-5 text-dark" data-toggle="tab" href="#">События</a>
+                </li>
+            </ul>
+            <div class="row border-bottom pb-5 mb-5">
+                <div class="gramota-left-col col-xs-12 col-sm-6 pe-sm-4 mt-4 border-end">
+                    <div class="card border-0 border-bottom pb-4 mb-3">
+                        <a href="#"><img src="../images/img002.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0">
+                            <h2 class="card-title"><a href="#"
+                                    class="text-dark fw-bold text-decoration-none">Цифровизация изменила речь и
+                                    мышление</a></h2>
+                            <p class="card-text mb-5 fs-5">Как теперь изменится система образования. Посмотрим, к
+                                чему
+                                это приведет.</p>
+                            <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a href="#"
+                                class="card-link  text-muted text-decoration-none m-0">Еженедельные
+                                обзоры</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom pb-4 mb-3">
+                        <div class="card-body ps-0 pe-0">
+                            <h2 class="card-title"><a href="#"
+                                    class="text-dark fw-bold text-decoration-none">Кибернетика на службе лингвистики</a>
+                            </h2>
+                            <p class="card-text mb-4 fs-5">Как нейросети влияют на развитие языка</p>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img003.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div><a href="#" class="gramota-roboto-700 text-dark text-decoration-none">Михаил
+                                            Кронгауз</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Блоги</a> · <a
+                                            href="#"
+                                            class="card-link text-muted text-decoration-none m-0">Лингвистика</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom pb-4 mb-3">
+                        <div class="card-body ps-0 pe-0">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Язык и
+                                    культура: есть ли точки соприкосновения</a></h2>
+                            <p class="card-text mb-4 fs-5">Как говорит новое поколение и чему нас учит</p>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img003.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#"
+                                            class="gramota-roboto-700 fw-bold text-dark text-decoration-none">Михаил
+                                            Кронгауз</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Блоги</a> · <a
+                                            href="#"
+                                            class="card-link text-muted text-decoration-none m-0">Лингвистика</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom pb-4 mt-5 mb-3">
+                        <a href="#"><img src="../images/img004.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Контакт с
+                                    незнакомым жизненно необходим человеку</a></h2>
+                            <p class="card-text mb-5 fs-5">Что такое полевая лингвистика и зачем изучать малые языки</p>
+                            <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a href="#"
+                                class="card-link text-muted text-decoration-none m-0">Еженедельные обзоры</a>
+                        </div>
+                    </div>
+                    <div class="card border-0 border-bottom pb-4 mt-5 mb-3">
+                        <a href="#"><img src="../images/img005.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Как
+                                    поменялось наше произношение за 20 лет</a></h2>
+                            <p class="card-text mb-4 fs-5">Лекция Максима Кронгауза</p>
+                            <div class="d-flex">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img006.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                                        <a href="#"
+                                            class="card-link text-muted text-decoration-none m-0">подкаст</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none">
+                                            <svg class="icon" width="14" height="14">
+                                                <use xlink:href="../images/sprite.svg#time"></use>
+                                            </svg> 29 минут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-0 pb-4 mt-5">
+                        <a href="#"><img src="../images/img007.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Контакт с
+                                    незнакомым жизненно необходим
+                                    человеку</a></h2>
+                            <p class="card-text mb-5 fs-5">Что такое полевая лингвистика и зачем изучать малые языки</p>
+                            <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a href="#"
+                                class="card-link text-muted text-decoration-none m-0">Еженедельные обзоры</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 ps-sm-4 mt-3">
+                    <div class="card mb-3 border-0 border-bottom pt-2 pb-4">
+                        <div class="row g-0 d-flex">
+                            <div class="col-md-4 d-none d-lg-block">
+                                <a href="#"><img src="../images/img008.png" class="w-100" alt="..."></a>
+                            </div>
+                            <div class="col-lg-8 col-xs-8 d-flex">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">
+                                        <a href="#" class="text-dark fw-bold text-decoration-none">Новый тренажер
+                                            Грамоты.<br> Диктант для 7 класса</a>
+                                    </h5>
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Репетитор
+                                            Грамоты</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 border-bottom pt-2 pb-4">
+                        <div class="row g-0 d-flex">
+                            <div class="col-md-4 d-none d-lg-block">
+                                <a href="#"><img src="../images/img009.png" class="w-100" alt="..."></a>
+                            </div>
+                            <div class="col-lg-8 col-xs-8 d-flex">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">
+                                        <a href="#" class="text-dark fw-bold text-decoration-none">Как справиться<br> с
+                                            дистанционным обучением</a>
+                                    </h5>
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Партнерский
+                                            материал</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 border-bottom pt-2 pb-4">
+                        <div class="row g-0 d-flex">
+                            <div class="col-md-4 d-none d-lg-block">
+                                <a href="#"><img src="../images/img010.png" class="w-100" alt="..."></a>
+                            </div>
+                            <div class="col-lg-8 col-xs-8 d-flex">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">
+                                        <a href="#" class="text-dark fw-bold text-decoration-none">Диктант для 9
+                                            класса</a>
+                                    </h5>
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">проверь
+                                            себя</a> ·
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">диктант</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 pt-2 pb-4">
+                        <div class="row g-0 d-flex">
+                            <div class="col-md-4 d-none d-lg-block">
+                                <a href="#"><img src="../images/img011.png" class="w-100" alt="..."></a>
+                            </div>
+                            <div class="col-lg-8 col-xs-8 d-flex">
+                                <div class="card-body d-flex flex-column justify-content-center">
+                                    <h5 class="card-title">
+                                        <a href="#" class="text-dark fw-bold text-decoration-none">Новый словарь
+                                            пунктуации</a>
+                                    </h5>
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Справочное
+                                            бюро</a> ·
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Словари</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gramota-youtube p-sm-3 p-md-4 p-lg-5">
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/pj9cNnT7PJs?controls=0"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="gramota-checking-list p-5 mt-5"
+                        style="border-width: 0.75rem; border-color: #cde0d5; border-style: solid;">
+                        <h2 class="gramota-jost text text-lowercase text-center mb-5">Что проверяют<br> на Грамоте<br>
+                            <svg width="60" height="8" viewBox="0 0 60 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8" />
+                            </svg>
+                        </h2>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <ol class="list-counter-circle">
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-up" fill="#39735D"></use>
+                                        </svg>
+                                        Аксимома
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-down" fill="#F8A23E"></use>
+                                        </svg>Честный
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-up" fill="#39735D"></use>
+                                        </svg>Диалог
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-down" fill="#F8A23E"></use>
+                                        </svg>Переговоры
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-up" fill="#39735D"></use>
+                                        </svg>Харизматичный
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="col-6 d-none d-lg-block">
+                                <ol class=" list-counter-circle">
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-up" fill="#39735D"></use>
+                                        </svg>
+                                        Аксимома
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-down" fill="#F8A23E"></use>
+                                        </svg>Честный
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-up" fill="#39735D"></use>
+                                        </svg>Диалог
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-down" fill="#F8A23E"></use>
+                                        </svg>Переговоры
+                                    </li>
+                                    <li class="gramota-roboto-400 ps-5 mb-3">
+                                        <svg class="icon" width="14" height="14">
+                                            <use xlink:href="../images/sprite.svg#arrow-up" fill="#39735D"></use>
+                                        </svg>Харизматичный
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gramota-word p-4 mt-5" style="background-color: #EFF3F2;">
+                        <h2 class="gramota-jost text-lowercase text-center mb-4">Слово дня
+                        </h2>
+                        <h3 class="gramota-spectral-800 fs-1 font-weight-bold text-center mb-3">Фасилитáтор<br>
+                            <svg width="60" height="8" viewBox="0 0 60 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8" />
+                            </svg>
+                        </h3>
+                        <p class="text-center fs-4">Человек, обеспечивающий успешную групповую коммуникацию. Обеспечивая
+                            соблюдение правил
+                            встречи, её процедуры и регламента, фасилитатор позволяет её участникам сконцентрироваться
+                            на целях и содержании встречи.</p>
+                    </div>
+                    <div class="gramota-questions px-3 py-5 mt-5"
+                        style="border-width: 0.75rem; border-color: #cde0d5; border-style: solid;">
+                        <svg class="icon" width="48" height="40" class="text-center mb-4"
+                            style="display: block; margin:0 auto; ">
+                            <use xlink:href="../images/sprite.svg#snail"></use>
+                        </svg>
+                        <h2 class="gramota-jost text-lowercase text-center mt-3 mb-4">Актуальные вопросы<br>
+                            <svg width="60" height="8" viewBox="0 0 60 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8" />
+                            </svg>
+                        </h2>
+                        <h3 class="gramota-spectral-800 fs-1 font-weight-bold text-center ps-3 pe-3 mb-5">Как
+                            правильно:<br> на Украине или в
+                            Украине?
+                        </h3>
+                        <div class="text-center">
+                            <a href="#" class="btn border-dark rounded-0 py-2 px-4">
+                                <span class="gramota-roboto-300 me-2">Читать ответ</span>
+                                <svg class="icon" width="16" height="14">
+                                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gramota-ad border-bottom pb-5 mb-5 ">
+                <br>
+                <div class="d-flex">
+                    <a href="#" class="d-none d-sm-block pe-5">
+                        <img src="../images/img012.png" class="card-img" alt="...">
+                    </a>
+                    <a href="#" class="d-none d-sm-block pe-5">
+                        <img src="../images/img013.png" class="card-img" alt="...">
+                    </a>
+                    <a href="#" class="d-sm-none d-md-block d-md-none d-lg-block pe-5">
+                        <img src="../images/img014.png" class="card-img" alt="...">
+                    </a>
+                    <a href="#" class="d-sm-none d-md-block pe-5">
+                        <img src="../images/img015.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <br>
+            </div>
+            <h2 class="gramota-jost text-center mb-5">грамота тв · подкасты · лекции<br>
+                <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
+                </svg>
+            </h2>
+            <div class="p-5"
+                style="background-color: #FAF1BA; background-image: url('/images/img016.png'); background-position: right bottom; background-repeat: no-repeat; background-size: 40% auto;">
+                <br><br>
+                <h2 class="text-center fs-1 mb-3">
+                    <span class="gramota-roboto-700 fw-weight-bold">
+                        Заимствованная лексика<br> в русском языке
+                    </span>
+                </h2>
+                <p class="text-center fs-5">Лекция Максима Кронгауза</p>
+                <div class="d-flex justify-content-center mt-5">
+                    <div class="me-3">
+                        <a href="#" class="rounded-circle border border-dark border-2"
+                            style="display: block; width: 3.25rem">
+                            <img src="../images/img006.png" class="rounded-circle border border-white border-2 w-100"
+                                alt="...">
+                        </a>
+                    </div>
+                    <div class="d-flex flex-column justify-content-center">
+                        <div>
+                            <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                            <a href="#" class="card-link text-muted text-decoration-none m-0">подкаст</a><br>
+                            <a href="#" class="card-link text-muted text-decoration-none">
+                                <svg class="icon" width="14" height="14">
+                                    <use xlink:href="../images/sprite.svg#time"></use>
+                                </svg> 29 минут</a>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            <div class="gramota-lections row mt-5">
+                <div class="col-xs-12 col-md-6 col-lg-4 ps-md-5 ps-sm-2 mt-5 border-end">
+                    <div class="card border-0 d-flex h-100">
+                        <div class="card-body p-0 d-flex flex-column h-100">
+                            <h3 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Чем больше
+                                    русских языков, тем лучше русскому языку</a></h3>
+                            <p class="card-text mb-5 fs-5">Лекция Максима Кронгауза</p>
+                            <div class="d-flex mt-auto">
+                                <div class=" me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img006.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">курс «русский
+                                            язык»</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none">
+                                            <svg class="icon" width="14" height="14">
+                                                <use xlink:href="../images/sprite.svg#time"></use>
+                                            </svg> 29 минут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 ps-md-5 ps-sm-2 mt-5 border-end">
+                    <div class="card border-0 d-flex h-100">
+                        <div class="card-body p-0 d-flex flex-column h-100">
+                            <h3 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Русский
+                                    язык
+                                    в современном мире</a>
+                            </h3>
+                            <p class="card-text mb-5 fs-5">Подкаст с Владимиром Пахомовым</p>
+                            <div class="d-flex mt-auto">
+                                <div class=" me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img006.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                                        <a href="#"
+                                            class="card-link card-link text-muted text-decoration-none m-0">подкаст</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none">
+                                            <svg class="icon" width="14" height="14">
+                                                <use xlink:href="../images/sprite.svg#time"></use>
+                                            </svg> 29 минут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-6 col-lg-4 ps-md-5 ps-sm-2 mt-5 d-md-none d-lg-block">
+                    <div class="card border-0 d-flex h-100">
+                        <div class="card-body p-0 d-flex flex-column h-100">
+                            <h3 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Язык и
+                                    культура:
+                                    есть ли точки соприкосновения</a></h3>
+                            <p class="card-text mb-5 fs-5">Лекция Алексея Шмелёва</p>
+                            <div class="d-flex mt-auto">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img006.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                                        <a href="#"
+                                            class="card-link text-muted text-decoration-none m-0">подкаст</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none">
+                                            <svg class="icon" width="14" height="14">
+                                                <use xlink:href="../images/sprite.svg#time"></use>
+                                            </svg> 29 минут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gramota-experts mb-4" style="background-color: #EFEEE3;">
+        <h2 class="gramota-jost text-center text-lowercase mb-5">Эксперты Грамоты<br>
+            <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
+            </svg>
+        </h2>
+        <div class="slider mt-5 p-5" style="padding-top: 12rem !important; padding-bottom: 8rem !important;">
+            <div class="border-end ps-5 pe-5">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <a href="#" style="width: 7.125rem; display: block; margin: 0 auto;">
+                            <img src="../images/img003.png" class="rounded-circle w-100" alt="...">
+                        </a>
+                    </div>
+                    <p class="card-text text-center" style="font-weight: bold;"><a href="#"
+                            class="gramota-roboto-700 text-dark fw-bold text-decoration-none">Максим Кронгауз</a>
+                    </p>
+                    <h3 class="card-title text-center mb-4"><a href="#"
+                            class="text-dark fw-bold text-decoration-none">Чем
+                            больше русских языков, тем лучше русскому языку</a></h3>
+                    <div class="text-center">
+                        <a href="#" class="card-link text-muted text-decoration-none m-0">эксперты</a> · <a href="#"
+                            class="card-link text-muted text-decoration-none m-0">лекции</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <a href="#" style="width: 7.125rem; display: block; margin: 0 auto;">
+                            <img src="../images/img018.png" class="rounded-circle w-100" alt="...">
+                        </a>
+                    </div>
+                    <p class="card-text text-center" style="font-weight: bold;"><a href="#"
+                            class="gramota-roboto-700 text-dark fw-bold text-decoration-none">Владимир Плунгян</a>
+                    </p>
+                    <h3 class="card-title text-center mb-4"><a href="#"
+                            class="text-dark fw-bold text-decoration-none">Русский язык в современном мире</a></h3>
+                    <div class="text-center">
+                        <a href="#" class="card-link text-muted text-decoration-none m-0">эксперты</a> · <a href="#"
+                            class="card-link text-muted text-decoration-none m-0">Лингвистика</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <a href="#" style="width: 7.125rem; display: block; margin: 0 auto;">
+                            <img src="../images/img019.png" class="rounded-circle w-100" alt="...">
+                        </a>
+                    </div>
+                    <p class="card-text text-center" style="font-weight: bold;"><a href="#"
+                            class="gramota-roboto-700 text-dark fw-bold text-decoration-none">Алексей Шмелёв</a></p>
+                    <h3 class="card-title text-center mb-4"><a href="#"
+                            class="text-dark fw-bold text-decoration-none">Язык и культура: есть ли точки
+                            соприкосновения</a></h3>
+                    <div class="text-center">
+                        <a href="#" class="card-link text-muted text-decoration-none m-0">эксперты</a> · <a href="#"
+                            class="card-link text-muted text-decoration-none m-0">Образование</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <div class="card-body">
+                    <div class="text-center mb-4">
+                        <a href="#" style="width: 7.125rem; display: block; margin: 0 auto;">
+                            <img src="../images/img019.png" class="rounded-circle w-100" alt="...">
+                        </a>
+                    </div>
+                    <p class="card-text text-center" style="font-weight: bold;"><a href="#"
+                            class="gramota-roboto-700 text-dark fw-bold text-decoration-none">Алексей Шмелёв</a></p>
+                    <h3 class="card-title text-center mb-4"><a href="#"
+                            class="text-dark fw-bold text-decoration-none">Язык и культура: есть ли точки
+                            соприкосновения</a></h3>
+                    <div class="text-center">
+                        <a href="#" class="card-link text-muted text-decoration-none m-0">эксперты</a> · <a href="#"
+                            class="card-link text-muted text-decoration-none m-0">Образование</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gramota-all-experts-button text-center border-top pt-3">
+            <a href="#" class="btn border-0 rounded-0 py-2 px-4">
+                <span class="me-2">Все эксперты </span>
+                <svg class="icon" width="16" height="14">
+                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                </svg></a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.gramota-experts .slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <div class="container-fluid p-sm-3">
+        <div class="container-xxl">
+            <div class="row  pb-3 mb-4">
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 pb-4 mt-5">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img020.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Контакт с
+                                    незнакомым жизненно необходим человеку</a></h2>
+                            <p class="card-text mb-5 fs-5">Что такое полевая лингвистика и зачем изучать малые языки</p>
+                            <div class="mt-auto">
+                                <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a
+                                    href="#" class="card-link text-muted text-decoration-none m-0">лингвистика</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 pb-4 mt-5">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img021.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Наше
+                                    произношение поменялось за 20 лет</a></h2>
+                            <p class="card-text mb-5 fs-5">Лекция Максима Кронгауза</p>
+                            <div class="mt-auto">
+                                <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a
+                                    href="#" class="card-link text-muted text-decoration-none m-0">Искусственный
+                                    интеллект</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 col-md-4 pb-4">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img022.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h4 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Каким мы
+                                    видим искусственный интеллект?</a></h4>
+                            <p class="card-text mb-5 fs-5">Как технологии помогут изучать русский язык</p>
+                            <div class="mt-auto">
+                                <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a
+                                    href="#" class="card-link text-muted text-decoration-none m-0">лингвистика</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 col-md-4 pb-4">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img023.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h4 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Контакт с
+                                    чем-то незнакомым жизненно необходим любому человеку</a></h4>
+                            <p class="card-text mb-5 fs-5">Что такое полевая лингвистика и зачем изучать малые языки
+                            </p>
+                            <div class="mt-auto">
+                                <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a
+                                    href="#" class="card-link text-muted text-decoration-none m-0">Искусственный
+                                    интеллект</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 col-md-4 pb-4 mt-5">
+                    <div class="card pt-3 pb-4 rounded-0 d-flex h-100"
+                        style="border-width: 0.75rem; border-color: #cde0d5;border-style: solid;">
+                        <div class="card-body text-center">
+                            <h4 class="gramota-roboto-400 text-lowercase" style="color: #39735D;">Новинки издательства
+                            </h4>
+                            <a href="#"><img src="../images/img024.png" class="w-50" alt="..."></a>
+                            <p class="text-center mt-4">Словарь русских синонимов и сходных по смыслу выражений</p>
+                            <p class="text-center fw-bold">Л. С. Саломатина</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 pb-4">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img025.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h2 class="card-title"><a href="#"
+                                    class="text-dark fw-bold text-decoration-none">Официальные
+                                    нормы языка изменились</a></h2>
+                            <p class="card-text mb-4 fs-5">Что такое полевая лингвистика и зачем изучать малые языки</p>
+                            <div class="d-flex mt-auto">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img006.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">курс «Русский
+                                            язык»</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none">
+                                            <svg class="icon" width="14" height="14">
+                                                <use xlink:href="../images/sprite.svg#time"></use>
+                                            </svg> 29 минут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 pb-4">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img026.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h4 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Что
+                                    случилось за неделю</a></h4>
+                            <p class="card-text mb-5 fs-5">Еженедельный обзор Владимира Пахомова</p>
+                            <div class="mt-auto">
+                                <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a
+                                    href="#" class="card-link text-muted text-decoration-none m-0">Лингвистика</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 col-md-4 pb-4">
+                    <div class="card border-0 d-flex h-100">
+                        <a href="#"><img src="../images/img027.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h4 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Каким мы
+                                    видим искусственный интеллект?</a></h4>
+                            <p class="card-text mb-5 fs-5">Об одном исследовании, проведенном в 2000 году</p>
+                            <div class="mt-auto">
+                                <a href="#" class="card-link text-muted text-decoration-none m-0">Новости</a> · <a
+                                    href="#" class="card-link text-muted text-decoration-none m-0">школа</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 col-md-4 pb-4">
+                    <div class="card border-0 d-flex flex-column h-100">
+                        <div class="card-body pt-0 ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h2 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Русский
+                                    язык после пандемии</a>
+                            </h2>
+                            <p class="card-text mb-4 fs-5">Изменится ли система школьного обучения</p>
+                            <div class="d-flex mt-auto">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img003.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div><a href="#"
+                                            class="gramota-roboto-700 fw-bold text-dark text-decoration-none">Михаил
+                                            Кронгауз</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">эксперты</a> ·
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">искусственный
+                                            интеллект</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gramota-border-bottom col-xs-12 col-sm-6 col-md-4 pb-4">
+                    <div class="card border-0 d-flex flex-column h-100">
+                        <a href="#"><img src="../images/img028.png" class="card-img-top" style="border-radius: 0;"
+                                alt="..."></a>
+                        <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
+                            <h4 class="card-title"><a href="#" class="text-dark fw-bold text-decoration-none">Что нового
+                                    в звучании нашей речи</a>
+                            </h4>
+                            <p class="card-text mb-4 fs-5">Изменится ли система школьного обучения</p>
+                            <div class="d-flex mt-auto">
+                                <div class="me-3">
+                                    <a href="#" class="rounded-circle border border-dark border-2"
+                                        style="display: block; width: 3.25rem;">
+                                        <img src="../images/img006.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center">
+                                    <div>
+                                        <a href="#" class="card-link text-muted text-decoration-none m-0">Лекции</a> ·
+                                        <a href="#"
+                                            class="card-link text-muted text-decoration-none m-0">подкаст</a><br>
+                                        <a href="#" class="card-link text-muted text-decoration-none">
+                                            <svg class="icon" width="14" height="14">
+                                                <use xlink:href="../images/sprite.svg#time"></use>
+                                            </svg> 29 минут</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn d-block border-2 border-dark rounded-0 py-3 px-4">
+                <span class="gramota-roboto-400 me-2 fs-4">Показать еще</span>
+                <svg class="icon" width="13" height="19">
+                    <use xlink:href="../images/sprite.svg#arrow-down2" fill="black"></use>
+                </svg></a>
+        </div>
+    </div>
+    <div class="gramota-events" style="background-color: #F9F4DD;">
+        <h2 class="gramota-jost text-center text-lowercase mb-5">События<br>
+            <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
+            </svg>
+        </h2>
+        <div class="slider mt-5 mb-5 p-5" style="padding-top: 12rem !important; padding-bottom: 8rem !important;">
+            <div class="border-end ps-5 pe-5">
+                <h5>13 — 24 ноября</h5>
+                <p class="gramota-roboto-300 text-lowercase my-4" style="color: #39735D;">Конференция</p>
+                <h3>
+                    <a href="#" class="text-dark text-decoration-none">XXIV Международная научно-практическая
+                        конференция «Языкознание для
+                        всех»</a>
+                </h3>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <h5>3 ноября — 15 декабря</h5>
+                <p class="gramota-roboto-300 text-lowercase my-4" style="color: #39735D;">Вебинар</p>
+                <h3><a href="#" class="text-dark text-decoration-none">Как помочь детям в условиях дистанционки?</a>
+                </h3>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <h5>18 — 22 декабря</h5>
+                <p class="gramota-roboto-300 text-lowercase my-4" style="color: #39735D;">Лекция</p>
+                <h3><a href="#" class="text-dark text-decoration-none">Конференция «Языкознание для всех»</a>
+                </h3>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <h5>3 ноября — 15 декабря</h5>
+                <p class="gramota-roboto-300 text-lowercase my-4" style="color: #39735D;">Вебинар</p>
+                <h3><a href="#" class="text-dark text-decoration-none">Как помочь детям в условиях дистанционки?</a>
+                </h3>
+            </div>
+            <div class="border-end ps-5 pe-5">
+                <h5>18 — 22 декабря</h5>
+                <p class="gramota-roboto-300 text-lowercase my-4" style="color: #39735D;">Лекция</p>
+                <h3><a href="#" class="text-dark text-decoration-none">Конференция «Языкознание для всех»</a>
+                </h3>
+            </div>
+        </div>
+        <div class="gramota-all-events-button text-center border-top pt-3">
+            <a href="#" class="btn border-0 rounded-0 py-2 px-4">
+                <span class="gramota-roboto-400 me-2">Все события</span>
+                <svg class="icon" width="16" height="14">
+                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('.gramota-events .slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                responsive: [
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    </div>
+    <div class="container-fluid">
+        <div class="container-xxl">
+            <div class="gramota-ad border-bottom pb-5 mb-5 <!--d-sm-none d-md-block-->">
+                <br>
+                <div class="d-flex">
+                    <a href="#" class="d-none d-sm-block pe-5">
+                        <img src="../images/img012.png" class="card-img" alt="...">
+                    </a>
+                    <a href="#" class="d-none d-sm-block pe-5">
+                        <img src="../images/img013.png" class="card-img" alt="...">
+                    </a>
+                    <a href="#" class="d-sm-none d-md-block d-md-none d-lg-block pe-5">
+                        <img src="../images/img014.png" class="card-img" alt="...">
+                    </a>
+                    <a href="#" class="d-sm-none d-md-block pe-5">
+                        <img src="../images/img015.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #f5f6f7">
+        <div class="container-xxl">
+            <footer>
+                <a href="/">
+                    <svg class="icon" width="244" height="52">
+                        <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                    </svg>
+                </a>
+                <div class="row border-bottom pb-5 mb-4 mx-0" style="border-color: #DADADA !important;">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">Рубрики</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Журнал</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Справочное
+                                    бюро</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Проверь себя</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Моя Грамота</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">О проекте</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Редакция</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Обратная связь</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Реклама на
+                                    сайте</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">«Грамота» в соцсетях</h5>
+                        <ul class="gramota-social d-flex p-0">
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img029.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img031.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img032.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="gramota-roboto-300 text-muted">Нашли ошибку на Грамоте?<br> Нажмите Ctrl+Enter</p>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5">
+                        <h5 class="mb-4">Подписка на новости</h5>
+                        <form action="" class="position-relative">
+                            <input class="gramota-roboto-300 form-control bg-transparent border-0 border-bottom px-0"
+                                type="text" placeholder="Ваш электронный адрес">
+                            <button type="submit" class="btn p-0 position-absolute end-0 top-0">
+                                <svg class="icon" width="16" height="14">
+                                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="text-muted pb-4 d-flex justify-content-between"><span class="gramota-roboto-300">©
+                        Грамота.ru,
+                        2000 —
+                        2020 Свидетельство о
+                        регистрации СМИ Эл
+                        № ФС77-57155,
+                        выдано
+                        Роскомнадзором
+                        11.03.2014. 12+</span>
+                    <span class="gramota-roboto-300">Дизайн — Мария Екимова</span>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

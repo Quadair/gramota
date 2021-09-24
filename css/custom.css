@@ -1,0 +1,395 @@
+@media (min-width: 576px) {
+  .container-sm,
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1380px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-left-col {
+    border-right: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .gramota-word p {
+    font-size: 1.25rem !important;
+  }
+  .gramota-questions h3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-search input[type="search"],
+  .gramota-search button[type="submit"] {
+    font-size: 4vw;
+  }
+  .gramota-logo {
+    width: 150px !important;
+    height: 33px !important;
+  }
+}
+
+* {
+  font-family: "Spectral", serif;
+}
+
+h2,
+h2 a,
+h3,
+h3 a,
+h4,
+h4 a,
+h5,
+h5 a,
+h6,
+h6 a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.gramota-spectral {
+  font-family: "Spectral", serif;
+}
+
+.gramota-spectral-800 {
+  font-family: "Spectral", serif;
+  font-weight: 800;
+}
+
+.gramota-roboto-300 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.gramota-roboto-400 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+.gramota-roboto-700 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.gramota-jost {
+  font-family: "Jost", sans-serif;
+  font-weight: normal !important;
+}
+
+.card-link {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.top-search-tabs {
+}
+
+.gramota-top-search-tabs.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background: none;
+  border: 1rem solid #ffe350;
+  border-width: 0 0 0.5rem 0;
+  color: #fff;
+}
+
+.gramota-top-search-tabs.nav-tabs .nav-link {
+  color: #fff;
+  border: 0;
+  font-size: 1.2rem;
+  border: 1rem solid transparent;
+  border-width: 0 0 0.5rem 0;
+  padding-bottom: 0.9rem !important;
+}
+
+.gramota-card-promo {
+  border-width: 0.75rem;
+  border-color: #dce9e2;
+  height: 17rem;
+}
+
+.gramota-card-promo .card-img {
+  width: 27.25rem;
+  position: absolute;
+  right: 1.875rem;
+  bottom: -0.75rem;
+}
+
+@media (max-width: 576px) {
+  .gramota-card-promo .card-img {
+    right: -0.75rem;
+  }
+}
+
+.gramota-card-promo .btn.btn-primary {
+  background-color: #39735d;
+}
+
+.gramota-card-promo .btn.btn-primary svg {
+  margin-right: 0.5rem;
+}
+
+.gramota-nav-tabs {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  -ms-overflow-style: none;
+}
+
+.gramota-nav-tabs.nav-tabs .nav-link {
+  border: 0;
+  border-bottom: 0.5rem solid transparent;
+  border-radius: 0 !important;
+}
+
+.gramota-nav-tabs.nav-tabs .nav-link.active {
+  border-bottom: 0.5rem solid #303030;
+  font-weight: bold;
+}
+
+.gramota-youtube {
+  background: #dadcdf;
+}
+
+.gramota-youtube div {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+.gramota-youtube div iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
+.gramota-checking-list {
+  /*border: 0.75rem solid #cde0d5;*/
+}
+
+.gramota-checking-list ol {
+  list-style: none;
+  counter-reset: list;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.gramota-checking-list ol > li {
+  position: relative;
+  font-size: 1.125rem;
+}
+
+.gramota-checking-list ol > li::before {
+  content: counter(list);
+  counter-increment: list;
+  position: absolute;
+  left: 1.3rem;
+  top: 0rem;
+}
+.gramota-checking-list ol > li svg {
+  content: counter(list);
+  counter-increment: list;
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+}
+
+.gramota-experts,
+.gramota-events {
+  position: relative;
+}
+
+.gramota-experts .slider .slick-arrow,
+.gramota-events .slider .slick-arrow {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #39735d;
+  border: none;
+  background-position: 40% 50%;
+  background-repeat: no-repeat;
+  background-size: 1.3125rem 2.625rem;
+  font-size: 0;
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .gramota-experts .slider .slick-arrow,
+  .gramota-events .slider .slick-arrow {
+    width: 32px;
+  }
+}
+
+.gramota-experts .slider .slick-arrow.slick-prev,
+.gramota-events .slider .slick-arrow.slick-prev {
+  background-image: url("../images/img017.png");
+}
+
+.gramota-experts .slider .slick-arrow.slick-next,
+.gramota-events .slider .slick-arrow.slick-next {
+  left: auto;
+  right: 0;
+  background-image: url("../images/img017.png");
+  transform: rotate(180deg);
+}
+
+.gramota-experts > h2,
+.gramota-events > h2 {
+  position: absolute;
+  left: 50%;
+  top: 4rem;
+  transform: translateX(-50%);
+}
+
+.gramota-all-experts-button {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+}
+
+.gramota-all-events-button {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+}
+
+.gramota-social li a {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+  position: relative;
+}
+.gramota-social li a span {
+  width: 18px;
+  height: auto !important;
+  display: inline-block !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 576px) {
+  .gramota-nav-tabs {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+  }
+
+  .gramota-nav-tabs::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .gramota-ad {
+    display: none;
+  }
+}
+
+.gramota-lections .col-xs-12.col-md-6.col-lg-4 {
+  border-right: 1px solid #e6e6e6;
+}
+
+.gramota-lections .col-xs-12.col-md-6.col-lg-4:last-of-type {
+  border-right: 0;
+}
+
+@media (max-width: 768px) {
+  .gramota-lections .col-xs-12.col-md-6.col-lg-4 {
+    border-right: 0 !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .gramota-lections .col-xs-12.col-md-6.col-lg-4:nth-of-type(2) {
+    border-right: 0 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  footer .gramota-left-col {
+    border-right: 0 !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  footer .gramota-left-col:nth-of-type(2) {
+    border-right: 0 !important;
+  }
+}
+.breadcrumb {
+  background: #f6f6f7;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "";
+  width: 16px;
+  height: 14px;
+  background: url("../images/img034.png") no-repeat;
+  background-size: cover;
+  margin: 5px 8px 0 0;
+}
+
+.gramota-subscribe .row {
+  padding: 95px 0 0 0;
+  margin-top: -70px;
+}
+
+.gramota-subscribe img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: auto;
+  height: 95px;
+}
+
+@media (max-width: 768px) {
+  .gramota-subscribe .row {
+    padding: 165px 0 0 0;
+    margin-top: -70px;
+  }
+  .gramota-subscribe img {
+    transform: translateX(-50%);
+    top: 75px;
+  }
+}
