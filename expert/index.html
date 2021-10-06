@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gramota.ru</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@300;400;700&family=Spectral:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="../css/slick.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/collapse.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header>
+            <div>
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap mt-4 me-3 me-md-5">
+                        <a href="/" class="ms-5 d-none d-xl-block d-xxl-block">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="/" class="ms-3 ms-md-5">
+                            <svg class="gramota-logo icon" width="244" height="52">
+                                <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                            </svg>
+                        </a>
+
+                        <ul class="nav mt-1 mt-xl-0 ms-auto d-md-none d-sm-none d-none d-lg-flex">
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Журнал
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Справочное бюро
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Проверь себя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Моя Грамота
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="mt-sm-1 mt-md-2 ms-4 ms-auto ms-sm-auto ms-md-auto ms-lg-3 d-none d-sm-block">
+                            <svg class="icon" width="22" height="22">
+                                <use xlink:href="../images/sprite.svg#search" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="mt-sm-1 mt-md-2 ms-auto ms-sm-4 d-block">
+                            <svg class="icon" width="22" height="22">
+                                <use xlink:href="../images/sprite.svg#profile" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="/" class="mt-sm-1 mt-md-2 ms-4 d-block d-block">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid" style="background: #39735D;">
+        <div class="py-sm-3 py-md-4 py-lg-5 mb-3" style="padding-top: 12px; padding-bottom: 12px;">
+            <div class="container-fluid">
+                <div class="container-xxl">
+                    <form action="" class="gramota-search">
+                        <ul
+                            class="gramota-top-search-tabs nav nav-tabs border-0 d-flex pe-0 d-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
+                            <li class="nav-item me-4 ms-0">
+                                <a class="text-light nav-link p-0" data-toggle="tab" href="#">Словари русского
+                                    языка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-light nav-link active p-0" data-toggle="tab" href="#">Справочная
+                                    служба</a>
+                            </li>
+                            <li class="nav-item ms-auto">
+                                <a class="text-light nav-link p-0" data-toggle="tab" href="#">Ключевые словари
+                                    русского
+                                    языка</a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <div class="col2 position-relative">
+                                <input type="search" class="border-0 rounded-0 w-100"
+                                    placeholder="Введите слово или словосочетание" aria-label="Search">
+                                <a class="position-absolute d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+                                    style="top: 50%; right: 1rem; transform: translatey(-50%);">
+                                    <svg class="icon" width="32" height="26">
+                                        <use xlink:href="../images/sprite.svg#settings" fill="black"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="col2">
+                                <button type="submit"
+                                    class="gramota-SuisseIntl-Regular btn btn-lg border-0 text-dark fw-weight-bold rounded-0 w-100 h-100"
+                                    style="background: #FFE350;">Проверить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mx-1 my-0 mx-md-3 my-md-4 d-none d-sm-block">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb p-2 mx-2">
+                <li class="breadcrumb-item"><a href="#" class="gramota-jost">Home</a></li>
+                <li class="gramota-roboto-700 text-dark breadcrumb-item active" aria-current="page">Library</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="gramota-x-paddings container-xxl">
+            <div class="row">
+                <div class="gramota-article-text col-sm-12 col-lg-8">
+                    <div class="py-2 my-4 px-0">
+                        <a href="#" class="gramota-jost fs-5 text-dark text-decoration-none">новости</a> · <a href="#"
+                            class="gramota-jost text-dark fs-5 text-decoration-none">лингвистика</a>
+                    </div>
+                    <h1 class="gramota-SuisseIntl-SemiBold px-0 mb-3">Международный молодежный форум русского языка и
+                        культуры
+                        «Паруса
+                        Русского мира»</h1>
+                    <p class="gramota-spectral gramota-article-p font-weight-normal mb-5">Изменится ли система школьного
+                        обучения</p>
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="me-3">
+                            <a href="#" class="rounded-circle border border-dark border-2"
+                                style="display: block; width: 3.25rem;">
+                                <img src="../images/img003.png"
+                                    class="rounded-circle border border-white border-2 w-100" alt="...">
+                            </a>
+                            <svg class="mt-2" width="60" height="8" viewBox="0 0 60 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
+                            </svg>
+                        </div>
+                        <div class="gramota-person d-flex flex-column justify-content-center">
+                            <div><a href="#" class="text-dark text-decoration-none">Михаил
+                                    Кронгауз</a><br>
+                                <div class="card-link text-lowercase text-muted m-0">20
+                                    ноября 2020</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../images/img046.png" class="col-12 col-lg-11" alt="...">
+                    <p class="gramota-SuisseIntl-Regular gramota-first-p mt-4 mt-md-5">1234Государственный институт
+                        русского языка им. А. С.
+                        Пушкина назвал
+                        словами
+                        2020
+                        года «самоизоляцию»
+                        и «обнуление». Как рассказал ТАСС научный руководитель проекта «Слово года» Михаил Осадчий,
+                        сначала в рамках исследования эксперты выявили две наиболее значимые и обсуждаемые темы года —
+                        это пандемия и внесение изменений в Конституцию РФ. Затем в ходе анализа текстов в СМИ были
+                        выявлены ключевые слова, чья частотность употребления наиболее выросла в течение трех предыдущих
+                        лет.</p>
+                    <p class="gramota-article-p mt-3 mt-lg-5 mb-4 mb-lg-5">
+                        Так, слово «самоизоляция» продемонстрировало рост популярности более чем в 10 раз. У слова
+                        «обнуление» похожий показатель, рассказал Осадчий. Dictionary объявили словом 2020 года
+                        «lockdown» (локдаун). </p>
+                    <div class="gramota-jost fs-5 mb-5">
+                        Теги:
+                        <a href="#" class="gramota-jost text-success text-decoration-none ms-3">Слова года</a>
+                        <a href="#" class="gramota-jost text-success text-decoration-none ms-3">Современный русский
+                            язык</a>
+                    </div>
+                </div>
+                <div class="col-4 d-none d-lg-block mb-5">
+                    <a href=" #" class="ms-auto mt-5 mb-4 d-block"
+                        style="width: 320px; position: sticky; top: 1.5rem;"><img src="../images/img035.png"
+                            alt=" ..."></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #f5f6f7">
+        <div class="container-xxl">
+            <footer>
+                <a href="/">
+                    <svg class="icon" width="244" height="52">
+                        <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                    </svg>
+                </a>
+                <div class="row border-bottom pb-5 mb-4 mx-0" style="border-color: #DADADA !important;">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">Рубрики</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Журнал</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Справочное
+                                    бюро</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Проверь себя</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Моя Грамота</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">О проекте</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Редакция</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Обратная связь</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Реклама на
+                                    сайте</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">«Грамота» в соцсетях</h5>
+                        <ul class="gramota-social d-flex p-0">
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img029.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img031.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img032.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="gramota-roboto-300 text-muted">Нашли ошибку на Грамоте?<br> Нажмите Ctrl+Enter</p>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5">
+                        <h5 class="mb-4">Подписка на новости</h5>
+                        <form action="" class="position-relative">
+                            <input class="gramota-roboto-300 form-control bg-transparent border-0 border-bottom px-0"
+                                type="text" placeholder="Ваш электронный адрес">
+                            <button type="submit" class="btn p-0 position-absolute end-0 top-0">
+                                <svg class="icon" width="16" height="14">
+                                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-7 text-muted">Грамота.ru,
+                        2000 —
+                        2020 Свидетельство о
+                        регистрации СМИ Эл
+                        № ФС77-57155,
+                        выдано
+                        Роскомнадзором
+                        11.03.2014. 12+</div>
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-5 text-sm-start text-md-end text-muted">
+                        Дизайн
+                        — Мария
+                        Екимова
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
