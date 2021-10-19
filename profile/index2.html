@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gramota.ru</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@300;400;700&family=Spectral:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="../css/slick.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/base-component.js"></script>
+    <script type="text/javascript" src="../js/collapse.js"></script>
+    <script type="text/javascript" src="../js/dropdown.js"></script>
+    <script type="text/javascript" src="../js/jquery.inputmask.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid border-bottom">
+        <header>
+            <div>
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap mt-4 me-3 me-md-5">
+                        <a href="/" class="ms-5 d-none d-xl-block d-xxl-block">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="/" class="ms-3 ms-md-5">
+                            <svg class="gramota-logo icon" width="244" height="52">
+                                <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                            </svg>
+                        </a>
+
+                        <ul class="nav mt-1 mt-xl-0 ms-auto d-md-none d-sm-none d-none d-lg-flex">
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Журнал
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Справочное бюро
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Проверь себя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Моя Грамота
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="mt-sm-1 mt-md-2 ms-4 ms-auto ms-sm-auto ms-md-auto ms-lg-3 d-none d-sm-block">
+                            <svg class="icon" width="22" height="22">
+                                <use xlink:href="../images/sprite.svg#search" fill="black"></use>
+                            </svg>
+                        </a>
+                        <nav
+                            class="groamota-dropdown navbar navbar-expand-lg navbar-light bg-none p-0 m-0 ms-4 mt-1 ms-auto ms-sm-4 d-block">
+                            <div class="container-fluid">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle m-0 p-0 rounded-circle border border-dark border-1"
+                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" style="display: block; width: 2rem;">
+                                        <img src="../images/img003.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 border-0 p-4" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item py-2" href="#">Настройки</a>
+                                        <li><a class="dropdown-item py-2" href="#">Подписки</a>
+
+                                            </a>
+                                        <li class="px-3">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item text-muted py-2" href="#">Выйти</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <a href="/" class="mt-sm-1 mt-md-2 ms-4 d-block d-xl-none">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid my-5">
+        <div class="gramota-x-paddings container-xxl">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="gramota-profile-userpic rounded-circle border border-dark border-2 position-relative"
+                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="display: block; width: 7.75em;">
+                        <img src="../images/img052.png" class="rounded-circle border border-white border-5 w-100"
+                            alt="...">
+                        <div class="gramota-profile-fade">
+                            <a class="gramota-profile-edit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.33333 14.3333L15.6667 1L19 4.33333L5.66667 17.6667M2.33333 14.3333L1 19L5.66667 17.6667M2.33333 14.3333L5.66667 17.6667M13 3.66667L16.3333 7"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a class="gramota-profile-delete"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="12" height="15" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 4H18" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 1L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 8L8 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 8L12 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="gramota-profile-delete-popup p-4 ">
+                            <h5 class="mb-3">Вы точно хотите удалить фото?</h5>
+                            <div class="text-center">
+                                <a class="gramota-SuisseIntl-SemiBold btn border border-dark px-4 me-1 text-light"
+                                    style="background: #39735D;">Удалить</a>
+                                <a
+                                    class="gramota-profile-delete-cancel gramota-SuisseIntl-SemiBold btn border border-dark px-4">Отменить</a>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                $('.gramota-profile-delete').on('click', function () {
+                                    $('.gramota-profile-delete-popup').show();
+                                });
+                                $('.gramota-profile-delete-cancel').on('click', function () {
+                                    $('.gramota-profile-delete-popup').hide();
+                                });
+                            });
+
+                        </script>
+                    </div>
+                    <h1 class="gramota-SuisseIntl-SemiBold my-4">Мария Екимова</h1>
+                    <div class="d-none d-sm-block">
+                        <hr class="dropdown-divider">
+                        <a href="#"
+                            class="gramota-SuisseIntl-SemiBold gramota-fs-22 text-decoration-none py-2 d-block">Настройки</a>
+                        <hr class="dropdown-divider">
+                        <a href="#"
+                            class="gramota-SuisseIntl-Regular gramota-fs-22 text-decoration-none py-2 d-block">Подписки</a>
+                    </div>
+                    <ul class="gramota-nav-tabs nav nav-tabs d-flex m-0 p-0 d-block d-sm-none">
+                        <li class="nav-item me-4">
+                            <a class="gramota-SuisseIntl-Book nav-link p-0 pb-2 text-dark active" data-toggle="tab"
+                                href="#">Настройки</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="gramota-SuisseIntl-Regular nav-link p-0 text-dark" data-toggle="tab"
+                                href="#">Подписки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <section class="p-3 p-sm-3 p-md-5 mb-4" style="background: #f5f5ee;">
+                        <p class="gramota-SuisseIntl-Regular text-muted">Подпишитесь на наши рубрики и получайте анонсы
+                            новых материалов на электронную почту,
+                            указанную при регистрации — masha.yekimova@gmail.com</p>
+                        <h2 class="gramota-fs-22 mb-4">
+                            Рубрики
+                        </h2>
+                        <form action="">
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check1">
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check1">
+                                    Все материалы Грамоты
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check2" checked>
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check2">
+                                    Новости
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check3" checked>
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check3">
+                                    События
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check4" checked>
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check4">
+                                    Лекции
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check5">
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check5">
+                                    Все эксперты
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check6">
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check6">
+                                    Проверь себя
+                                </label>
+                            </div>
+                            <h2 class="gramota-fs-22 mb-4 mt-5">
+                                Эксперты Грамоты
+                            </h2>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check7">
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check7">
+                                    Михаил Кронгауз
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check8" checked>
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check8">
+                                    Владимир Пахомов
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check9" checked>
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check9">
+                                    Владимир Плунгян
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check10" checked>
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check10">
+                                    Александр Пиперски
+                                </label>
+                            </div>
+                            <div class="form-check mb-4">
+                                <input class="form-check-input rounded-0" type="checkbox" value="" id="check11">
+                                <label class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                    for="check11">
+                                    Вячеслав Волошин
+                                </label>
+                            </div>
+                            <a href="#" class="gramota-SuisseIntl-Regular text-decoration-none text-muted">Показать
+                                еще <img src="../images/img040.png" alt="" style="width: 10px; opacity: 0.5;"></a>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #f5f6f7">
+        <div class="container-xxl">
+            <footer>
+                <a href="/">
+                    <svg class="icon" width="244" height="52">
+                        <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                    </svg>
+                </a>
+                <div class="row border-bottom pb-5 mb-4 mx-0" style="border-color: #DADADA !important;">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">Рубрики</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Журнал</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Справочное
+                                    бюро</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Проверь себя</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Моя Грамота</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">О проекте</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Редакция</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Обратная связь</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Реклама на
+                                    сайте</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">«Грамота» в соцсетях</h5>
+                        <ul class="gramota-social d-flex p-0">
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img029.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img031.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img032.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="gramota-roboto-300 text-muted">Нашли ошибку на Грамоте?<br> Нажмите Ctrl+Enter</p>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5">
+                        <h5 class="mb-4">Подписка на новости</h5>
+                        <form action="" class="position-relative">
+                            <input class="gramota-roboto-300 form-control bg-transparent border-0 border-bottom px-0"
+                                type="text" placeholder="Ваш электронный адрес">
+                            <button type="submit" class="btn p-0 position-absolute end-0 top-0">
+                                <svg class="icon" width="16" height="14">
+                                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-7 text-muted">Грамота.ru,
+                        2000 —
+                        2020 Свидетельство о
+                        регистрации СМИ Эл
+                        № ФС77-57155,
+                        выдано
+                        Роскомнадзором
+                        11.03.2014. 12+</div>
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-5 text-sm-start text-md-end text-muted">
+                        Дизайн
+                        — Мария
+                        Екимова
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1055,11 +1055,15 @@ header a {
   font-family: "Conv_SuisseIntl-Regular";
 }
 
-.gramota-fs-18 {
-  font-size: 20px;
+.gramota-fs-16 {
+  font-size: 16px;
 }
 
 .gramota-fs-18 {
+  font-size: 18px;
+}
+
+.gramota-fs-20 {
   font-size: 20px;
 }
 
@@ -1159,5 +1163,125 @@ header a {
 @media (max-width: 576px) {
   .gramota-event-list-item .gramota-event-date span:first-of-type {
     display: block;
+  }
+}
+
+.groamota-dropdown a::after {
+  display: none;
+}
+
+.groamota-dropdown .dropdown-menu {
+  left: auto;
+  right: 0;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  min-width: 250px;
+}
+@media (max-width: 576px) {
+  .groamota-dropdown .dropdown-menu {
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+  }
+}
+
+.form-check-input {
+  width: 1.4em;
+  height: 1.4em;
+}
+
+.form-check-input:checked {
+  background-color: #39735d;
+  border-color: #39735d;
+}
+
+.gramota-social {
+  justify-content: flex-start;
+}
+
+.gramota-social a {
+  z-index: 10;
+  width: 60px !important;
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .gramota-social a {
+    z-index: 10;
+    width: 40px !important;
+  }
+
+  .gramota-social a svg {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 64px 0 0 0;
+  }
+  header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    z-index: 9999;
+  }
+}
+
+.gramota-profile-fade {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  display: none;
+  cursor: auto;
+}
+
+.gramota-profile-userpic:hover .gramota-profile-fade {
+  display: block;
+}
+
+.gramota-profile-fade .gramota-profile-edit {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+  cursor: pointer;
+}
+.gramota-profile-fade .gramota-profile-delete {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.gramota-profile-delete-popup {
+  width: 320px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  left: -16px;
+  transform: translateX(0);
+  top: -55px;
+  display: none;
+}
+
+.gramota-profile-delete-popup h5 {
+  font-size: 16px;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  .gramota-profile-delete-popup {
+    left: -16px;
+    transform: translateX(0);
   }
 }

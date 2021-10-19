@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gramota.ru</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost&family=Roboto:wght@300;400;700&family=Spectral:wght@400;800&display=swap"
+        rel="stylesheet">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/bootstrap-utilities.css" rel="stylesheet">
+    <link href="../css/slick.css" rel="stylesheet">
+    <link href="../css/fonts.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../js/slick.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.inputmask.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid border-bottom">
+        <header>
+            <div>
+                <div class="container-fluid">
+                    <div class="d-flex flex-wrap mt-4 me-3 me-md-5">
+                        <a href="/" class="ms-5 d-none d-xl-block d-xxl-block">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                        <a href="/" class="ms-3 ms-md-5">
+                            <svg class="gramota-logo icon" width="244" height="52">
+                                <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                            </svg>
+                        </a>
+
+                        <ul class="nav mt-1 mt-xl-0 ms-auto d-md-none d-sm-none d-none d-lg-flex">
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Журнал
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Справочное бюро
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Проверь себя
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
+                                    Моя Грамота
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="#"
+                            class="mt-sm-1 mt-md-2 ms-4 ms-auto ms-sm-auto ms-md-auto ms-lg-3 d-none d-sm-block">
+                            <svg class="icon" width="22" height="22">
+                                <use xlink:href="../images/sprite.svg#search" fill="black"></use>
+                            </svg>
+                        </a>
+                        <nav
+                            class="groamota-dropdown navbar navbar-expand-lg navbar-light bg-none p-0 m-0 ms-4 mt-1 ms-auto ms-sm-4 d-block">
+                            <div class="container-fluid">
+                                <div class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle m-0 p-0 rounded-circle border border-dark border-1"
+                                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" style="display: block; width: 2rem;">
+                                        <img src="../images/img003.png"
+                                            class="rounded-circle border border-white border-2 w-100" alt="...">
+                                    </a>
+                                    <ul class="dropdown-menu rounded-0 border-0 p-4" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item py-2" href="#">Настройки</a>
+                                        <li><a class="dropdown-item py-2" href="#">Подписки</a>
+
+                                            </a>
+                                        <li class="px-3">
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item text-muted py-2" href="#">Выйти</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                        <a href="/" class="mt-sm-1 mt-md-2 ms-4 d-block d-xl-none">
+                            <svg class="icon" width="24" height="24">
+                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="container-fluid my-5">
+        <div class="gramota-x-paddings container-xxl">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="gramota-profile-userpic rounded-circle border border-dark border-2 position-relative"
+                        href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                        style="display: block; width: 7.75em;">
+                        <img src="../images/img052.png" class="rounded-circle border border-white border-5 w-100"
+                            alt="...">
+                        <div class="gramota-profile-fade">
+                            <a class="gramota-profile-edit"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M2.33333 14.3333L15.6667 1L19 4.33333L5.66667 17.6667M2.33333 14.3333L1 19L5.66667 17.6667M2.33333 14.3333L5.66667 17.6667M13 3.66667L16.3333 7"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+                            <a class="gramota-profile-delete"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="12" height="15" stroke="white" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M2 4H18" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 1L13 1" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M8 8L8 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 8L12 15" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="gramota-profile-delete-popup p-4 ">
+                            <h5 class="mb-3">Вы точно хотите удалить фото?</h5>
+                            <div class="text-center">
+                                <a class="gramota-SuisseIntl-SemiBold btn border border-dark px-4 me-1 text-light"
+                                    style="background: #39735D;">Удалить</a>
+                                <a
+                                    class="gramota-profile-delete-cancel gramota-SuisseIntl-SemiBold btn border border-dark px-4">Отменить</a>
+                            </div>
+                        </div>
+                        <script>
+                            $(document).ready(function () {
+                                $('.gramota-profile-delete').on('click', function () {
+                                    $('.gramota-profile-delete-popup').show();
+                                });
+                                $('.gramota-profile-delete-cancel').on('click', function () {
+                                    $('.gramota-profile-delete-popup').hide();
+                                });
+                            });
+
+                        </script>
+                    </div>
+                    <h1 class="gramota-SuisseIntl-SemiBold my-4">Мария Екимова</h1>
+                    <div class="d-none d-sm-block">
+                        <hr class="dropdown-divider">
+                        <a href="#"
+                            class="gramota-SuisseIntl-SemiBold gramota-fs-22 text-decoration-none py-2 d-block">Настройки</a>
+                        <hr class="dropdown-divider">
+                        <a href="#"
+                            class="gramota-SuisseIntl-Regular gramota-fs-22 text-decoration-none py-2 d-block">Подписки</a>
+                    </div>
+                    <ul class="gramota-nav-tabs nav nav-tabs d-flex m-0 p-0 d-block d-sm-none">
+                        <li class="nav-item me-4">
+                            <a class="gramota-SuisseIntl-Book nav-link p-0 pb-2 text-dark active" data-toggle="tab"
+                                href="#">Настройки</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="gramota-SuisseIntl-Regular nav-link p-0 text-dark" data-toggle="tab"
+                                href="#">Подписки</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <section class="p-3 p-sm-3 p-md-5 mb-4" style="background: #f5f5ee;">
+                        <h2 class="gramota-fs-22 mb-4">
+                            Профиль
+                        </h2>
+                        <form action="">
+                            <div class="mb-5">
+                                <label for="exampleFormControlInput1"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Имя</label>
+                                <input type="text"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                                    id="exampleFormControlInput1" value="Мария Екимова">
+                            </div>
+                            <div class="mb-5">
+                                <label for="exampleFormControlInput1"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Электронная
+                                    почта</label>
+                                <input type="email"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                                    id="exampleFormControlInput1" value="masha.yekimova@gmail.com">
+                            </div>
+                            <label
+                                class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Пароль</label><br>
+                            <button type="button"
+                                class="gramota-SuisseIntl-Regular gramota-fs-18 btn border border-1 border-dark rounded-0 px-2"
+                                data-bs-toggle="modal" data-bs-target="#changePasswordModal">Изменить</button>
+                            <button type="button"
+                                class="gramota-SuisseIntl-Regular gramota-fs-18 btn border border-1 border-dark rounded-0 px-2"
+                                data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Восстановить</button>
+                            <button type="button"
+                                class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                                style="background: #e5e5dc; color: #aeae9f !important;">Восстановить</button>
+
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="forgotPasswordModal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content" style="background: #f5f5ee">
+                                        <div class="modal-header border-0">
+                                            <h5 class="modal-title mt-5 mx-2 mx-sm-5" id="exampleModalCenterTitle">
+                                                Восстановить пароль</h5>
+                                            <button type="button" class="btn-close mb-4 me-0 me-md-2"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        </div>
+                                        <div class="modal-body py-0 pb-5 mx-2 mx-sm-5">
+                                            <form action="">
+                                                <input type="email"
+                                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2 mb-4"
+                                                    id="exampleFormControlInput1" placeholder="Электронная почта">
+                                                <p class="gramota-SuisseIntl-Regular text-danger">Адреса
+                                                    vladkdmitriev2005@gmail.ru нет в нашей базе. Пожалуйста,
+                                                    проверьте введенный адрес и повторите попытку.</p>
+                                                <p class="gramota-SuisseIntl-Regular text-muted">Укажите адрес
+                                                    электронной почты, который
+                                                    вы
+                                                    используете для
+                                                    входа на сайт и мы отправим вам
+                                                    ссылку для восстановлению пароля</p>
+                                                <button type="button"
+                                                    class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                                                    style="background: #e5e5dc; color: #aeae9f !important;"
+                                                    disabled>Восстановить</button>
+                                                <button type="button"
+                                                    class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                                                    style="background: #39735D; color: #fff !important;">Восстановить</button>
+                                            </form>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="changePasswordModal" tabindex="-1"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content" style="background: #f5f5ee">
+                                        <div class="modal-header border-0">
+                                            <h5 class="modal-title mt-5 mx-2 mx-sm-5" id="exampleModalCenterTitle">
+                                                Изменить пароль</h5>
+                                            <button type="button" class="btn-close mb-4 me-0 me-md-2"
+                                                data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                        </div>
+                                        <div class="modal-body py-0 pb-5 mx-2 mx-sm-5">
+                                            <form action="">
+                                                <input type="password"
+                                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2 my-2"
+                                                    id="exampleFormControlInput1" placeholder="Введите новый пароль">
+                                                <input type="password"
+                                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                                                    id="exampleFormControlInput1" placeholder="Повторите новый пароль">
+
+                                                <p class="gramota-SuisseIntl-Regular text-muted pt-4">Укажите адрес
+                                                    электронной почты, который
+                                                    вы
+                                                    используете для
+                                                    входа на сайт и мы отправим вам
+                                                    ссылку для восстановлению пароля</p>
+                                                <button type="button"
+                                                    class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                                                    style="background: #e5e5dc; color: #aeae9f !important;"
+                                                    disabled>Изменить</button>
+                                                <button type="button"
+                                                    class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                                                    style="background: #39735D; color: #fff !important;">Изменить</button>
+                                            </form>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </form>
+
+                    </section>
+                    <section class="p-3 p-sm-3 p-md-5  mb-4" style="background: #f5f5ee;">
+                        <h2 class="gramota-fs-22 mb-4">
+                            Данные
+                        </h2>
+                        <form action="">
+                            <div class="mb-4">
+                                <label for="exampleFormControlInput1"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">День
+                                    рождения</label>
+                                <input type="taxt"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2 text-muted text-center"
+                                    id="exampleFormControlInput1" name="date" value="01.01.1970" style="width: 120px;">
+                            </div>
+                            <script>
+                                $(document).ready(function () {
+                                    $('input[name=date]').inputmask("99.99.9999");
+                                })
+                            </script>
+                            <label
+                                class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Пол</label><br>
+                            <div class="d-flex mb-4">
+                                <div class="form-check me-4">
+                                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1">
+                                    <label class="gramota-SuisseIntl-Regular gramota-fs-18 form-check-label"
+                                        for="flexRadioDefault1">
+                                        Мужской
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input me-2" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2" checked>
+                                    <label class="gramota-SuisseIntl-Regular gramota-fs-18 form-check-label"
+                                        for="flexRadioDefault2">
+                                        Женский
+                                    </label>
+                                </div>
+                            </div>
+
+
+                            <div class="mb-5">
+                                <label for="exampleFormControlInput1"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Чем вы
+                                    занимаетесь?</label>
+                                <input type="text"
+                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                                    id="exampleFormControlInput1" placeholder="Выберите сферу деятельности">
+                            </div>
+                            <button type="button"
+                                class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 py-2"
+                                style="background: #e5e5dc; color: #aeae9f !important;">Восстановить</button>
+
+                        </form>
+                    </section>
+                    <section class="p-3 p-sm-3 p-md-5 " style="background: #f5f5ee;">
+                        <h2 class="gramota-fs-22 mb-4">
+                            Социальные связи
+                        </h2>
+                        <div class="gramota-social d-flex">
+                            <a href="#"
+                                class=" position-relative text-decoration-none bg-white p-2 p-md-3 me-2 me-md-3">
+                                <svg class="icon" width="15" height="28">
+                                    <use xlink:href="../images/sprite.svg#fb2"></use>
+                                </svg>
+                                <svg class="icon" width="20" height="20" clip="position-absolute"
+                                    style="position: absolute; right: -10px; top:-10px; z-index: 20;">
+                                    <use xlink:href="../images/sprite.svg#soc-ok"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="position-relative text-decoration-none bg-white p-2 p-md-3 me-2 me-md-3">
+                                <svg class="icon" width="31" height="19">
+                                    <use xlink:href="../images/sprite.svg#vk2"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="position-relative text-decoration-none bg-white p-2 p-md-3 me-2 me-md-3">
+                                <svg class="icon" width="25" height="21">
+                                    <use xlink:href="../images/sprite.svg#twi2"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="position-relative text-decoration-none bg-white p-2 p-md-3 me-2 me-md-3">
+                                <svg class="icon" width="17" height="29">
+                                    <use xlink:href="../images/sprite.svg#ok2"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="position-relative text-decoration-none bg-white p-2 p-md-3 me-2 me-md-3">
+                                <svg class="icon" width="26" height="23">
+                                    <use xlink:href="../images/sprite.svg#tg2"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="position-relative text-decoration-none bg-white p-2 p-md-3 me-2 me-md-3">
+                                <svg class="icon" width="29" height="29">
+                                    <use xlink:href="../images/sprite.svg#wu2"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </section>
+                    <p class="gramota-SuisseIntl-Regular pt-4 pb-0 mb-0">Есть вопросы по работе с сайтом? Напишите нам
+                        на
+                        <a href="mailtto:support@gramota.ru"
+                            class="gramota-SuisseIntl-SemiBold text-decoration-none">support@gramota.ru</a>
+                    </p>
+                    <a href="#" class="gramota-SuisseIntl-Regular text-decoration-none text-muted">Удалить аккаунт</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: #f5f6f7">
+        <div class="container-xxl">
+            <footer>
+                <a href="/">
+                    <svg class="icon" width="244" height="52">
+                        <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
+                    </svg>
+                </a>
+                <div class="row border-bottom pb-5 mb-4 mx-0" style="border-color: #DADADA !important;">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">Рубрики</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Журнал</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Справочное
+                                    бюро</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Проверь себя</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Моя Грамота</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">О проекте</h5>
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Редакция</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Обратная связь</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Реклама на
+                                    сайте</a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0">
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Партнеры
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
+                        <h5 class="mb-4">«Грамота» в соцсетях</h5>
+                        <ul class="gramota-social d-flex p-0">
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img029.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img030.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img031.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                            <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
+                                    <img src="../images/img032.png" class="w-100" alt="...">
+                                </a>
+                            </li>
+                        </ul>
+                        <p class="gramota-roboto-300 text-muted">Нашли ошибку на Грамоте?<br> Нажмите Ctrl+Enter</p>
+                    </div>
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5">
+                        <h5 class="mb-4">Подписка на новости</h5>
+                        <form action="" class="position-relative">
+                            <input class="gramota-roboto-300 form-control bg-transparent border-0 border-bottom px-0"
+                                type="text" placeholder="Ваш электронный адрес">
+                            <button type="submit" class="btn p-0 position-absolute end-0 top-0">
+                                <svg class="icon" width="16" height="14">
+                                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black"></use>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row pb-4">
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-7 text-muted">Грамота.ru,
+                        2000 —
+                        2020 Свидетельство о
+                        регистрации СМИ Эл
+                        № ФС77-57155,
+                        выдано
+                        Роскомнадзором
+                        11.03.2014. 12+</div>
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-5 text-sm-start text-md-end text-muted">
+                        Дизайн
+                        — Мария
+                        Екимова
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!--<div class="modal fade show" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+        wfd-invisible="true" style="padding-right: 17px; display: block;" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-0" style="background: #f5f5ee
+            ;">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title mt-5 mx-2 mx-sm-5" id="exampleModalCenterTitle">Восстановить пароль</h5>
+                    <button type="button" class="close border-0 mb-5" data-dismiss="modal" aria-label="Close"
+                        style="background: none;">
+                        <span aria-hidden="true" class="text-muted fs-2">×</span>
+                    </button>
+                </div>
+                <div class="modal-body py-0 pb-5 mx-2 mx-sm-5">
+                    <form action="">
+                        <input type="email"
+                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                            id="exampleFormControlInput1" placeholder="Электронная почта">
+
+                        <p class="gramota-SuisseIntl-Regular text-muted pt-4">Укажите адрес электронной почты, который
+                            вы
+                            используете для
+                            входа на сайт и мы отправим вам
+                            ссылку для восстановлению пароля</p>
+                        <button type="button"
+                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                            style="background: #e5e5dc; color: #aeae9f !important;" disabled>Восстановить</button>
+                        <button type="button"
+                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                            style="background: #39735D; color: #fff !important;">Восстановить</button>
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: rgba(0, 0, 0, 0.6); position: fixed; left: 0;top: 0; width: 100vw;height: 100vh;"></div>-->
+
+    <style>
+        @media (max-width: 576px) {
+            .modal {
+                width: 100vw !important;
+                height: 100vh !important;
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+
+            .modal-dialog {
+                margin: 0;
+                height: 100vh !important;
+            }
+
+            .modal-dialog-centered {
+                display: flex;
+                align-items: center;
+                min-height: calc(100% - 1rem);
+            }
+
+            .modal-content {
+                height: 100vh;
+                justify-content: center;
+            }
+
+            .modal-body {
+                position: relative;
+                flex: 0 0 auto;
+            }
+
+            .modal-header .btn-close {
+                font-size: 20px !important;
+                position: fixed;
+                right: 20px;
+                top: 90px;
+            }
+    </style>
+</body>
+
+</html>
