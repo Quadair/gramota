@@ -17,7 +17,6 @@
     <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="../js/slick.js"></script>
     <script type="text/javascript" src="../js/bootstrap.js"></script>
-    <script type="text/javascript" src="../js/collapse.js"></script>
 </head>
 
 <body>
@@ -61,13 +60,13 @@
                         </ul>
                         <a href="#"
                             class="mt-sm-1 mt-md-2 ms-4 ms-auto ms-sm-auto ms-md-auto ms-lg-3 d-none d-sm-block">
-                            <svg class="icon" width="22" height="22">
-                                <use xlink:href="../images/sprite.svg#search" fill="black"></use>
+                            <svg class="icon" width="22" <use xlink:href="../images/sprite.svg#search" fill="black">
+                                </use>
                             </svg>
                         </a>
                         <a href="#" class="mt-sm-1 mt-md-2 ms-auto ms-sm-4 d-block">
-                            <svg class="icon" width="22" height="22">
-                                <use xlink:href="../images/sprite.svg#profile" fill="black"></use>
+                            <svg class="icon" width="22" <use xlink:href="../images/sprite.svg#profile" fill="black">
+                                </use>
                             </svg>
                         </a>
                         <a href="/" class="mt-sm-1 mt-md-2 ms-4 d-block d-block">
@@ -124,11 +123,12 @@
         </div>
     </div>
     <div class="mx-1 my-0 mx-md-3 my-md-4 d-none d-sm-block">
-        <nav aria-label="breadcrumb">
+        <nav aria-label="breadcrumb" class="gramota-breadcrumbs position-relative">
             <ol class="breadcrumb p-2 mx-2">
                 <li class="breadcrumb-item"><a href="#" class="gramota-jost">Home</a></li>
                 <li class="gramota-roboto-700 text-dark breadcrumb-item active" aria-current="page">Library</li>
             </ol>
+            <button class="btn-close"></button>
         </nav>
     </div>
     <div class="container-fluid">
@@ -156,10 +156,11 @@
                         произведениях XI–XVII вв. Явления языка рассмотрены в тесной связи с такими
                         социально-культурными явлениями, как становление древнерусского государства, появление
                         письменности, развитие связей со славянским югом, Византией, Западной Европой.</p>
-                    <div class="gramota-collapse p-4 px-5" style="background: #F6F6F7">
-                        <a class="gramota-SuisseIntl-Book btn collapsed" data-bs-toggle="collapse"
-                            href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                            Содержание
+                    <div class="gramota-collapse position-relative p-4 px-5" style="background: #F6F6F7">
+                        <a class="btn collapsed d-block text-start" data-bs-toggle="collapse" href="#collapseExample"
+                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                            <span class="gramota-SuisseIntl-Book"
+                                style="display: inline; text-align: left;">Содержание</span>
                         </a>
                         <div class="collapse" id="collapseExample">
                             <ul class="gramota-contents mt-4">
@@ -239,10 +240,11 @@
                     </p>
                     <script>
                         $(document).ready(function () {
-                            $("sup").click(function () {
-                                $(this).find('.gramota-tooltip-content').addClass('active')
+                            $("sup strong").click(function () {
+                                $(this).parent().find('.gramota-tooltip-content').addClass('active')
                             });
-                            $(".gramota-tooltip-close").click(function () {
+                            $(".gramota-tooltip-close").parent.click(function () {
+                                $('.gramota-tooltip-content').removeClass('active');
                             });
                         });
                     </script>
