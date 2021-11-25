@@ -24,22 +24,21 @@
 </head>
 
 <body>
-    <div class="container-fluid border-bottom">
-        <header>
+    <div class="gramota-header container-fluid">
+        <header class="mt-sm-3 mt-lg-4 pt-3 pt-sm-0">
             <div>
                 <div class="container-fluid">
-                    <div class="d-flex flex-wrap mt-4 me-3 me-md-5">
-                        <a href="/" class="ms-5 d-none d-xl-block d-xxl-block">
+                    <div class="d-flex align-items-start me-4">
+                        <a class="gramota-hamburger ms-5 d-none d-xl-flex">
                             <svg class="icon" width="24" height="24">
-                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                                <use xlink:href="../images/sprite.svg#menu"></use>
                             </svg>
                         </a>
-                        <a href="/" class="ms-3 ms-md-5">
+                        <a href="/" class="ms-4 ms-md-5">
                             <svg class="gramota-logo icon" width="244" height="52">
                                 <use xlink:href="../images/sprite.svg#logo" fill="black"></use>
                             </svg>
                         </a>
-
                         <ul class="nav mt-1 mt-xl-0 ms-auto d-md-none d-sm-none d-none d-lg-flex">
                             <li>
                                 <a href="#" class="gramota-SuisseIntl-Regular nav-link text-dark">
@@ -62,14 +61,14 @@
                                 </a>
                             </li>
                         </ul>
-                        <a href="#"
-                            class="mt-sm-1 mt-md-2 ms-4 ms-auto ms-sm-auto ms-md-auto ms-lg-3 d-none d-sm-block">
+                        <a
+                            class="gramota-menu-search mt-sm-1 mt-md-1 mt-lg-2 ms-4 ms-auto ms-sm-auto ms-md-auto ms-lg-3 d-none d-sm-block">
                             <svg class="icon" width="22" height="22">
-                                <use xlink:href="../images/sprite.svg#search" fill="black"></use>
+                                <use xlink:href="../images/sprite.svg#search"></use>
                             </svg>
                         </a>
                         <nav
-                            class="groamota-dropdown navbar navbar-expand-lg navbar-light bg-none p-0 m-0 ms-4 mt-1 ms-auto ms-sm-4 d-block">
+                            class="groamota-dropdown navbar navbar-expand-lg navbar-light bg-none p-0 m-0 ms-4  mt-sm-0 mt-md-0 mt-lg-1  ms-auto ms-sm-4 d-block">
                             <div class="container-fluid">
                                 <div class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle m-0 p-0 rounded-circle border border-dark border-1"
@@ -79,28 +78,562 @@
                                             class="rounded-circle border border-white border-2 w-100" alt="...">
                                     </a>
                                     <ul class="dropdown-menu rounded-0 border-0 p-4" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item py-2" href="#">Настройки</a>
-                                        <li><a class="dropdown-item py-2" href="#">Подписки</a>
+                                        <li><a class="gramota-SuisseIntl-Regular dropdown-item py-2"
+                                                href="#">Настройки</a>
+                                        <li><a class="gramota-SuisseIntl-Regular dropdown-item py-2"
+                                                href="#">Подписки</a>
 
                                             </a>
                                         <li class="px-3">
                                             <hr class="dropdown-divider">
                                         </li>
-                                        <li><a class="dropdown-item text-muted py-2" href="#">Выйти</a></li>
+                                        <li><a class="gramota-SuisseIntl-Regular dropdown-item text-muted py-2"
+                                                href="#">Выйти</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </nav>
-                        <a href="/" class="mt-sm-1 mt-md-2 ms-4 d-block d-xl-none">
+                        <a
+                            class="gramota-menu-hamburger gramota-hamburger mt-1 mt-sm-1 mt-md-1 mt-lg-2 ms-4 d-block d-xl-none">
                             <svg class="icon" width="24" height="24">
-                                <use xlink:href="../images/sprite.svg#menu" fill="black"></use>
+                                <use xlink:href="../images/sprite.svg#menu"></use>
                             </svg>
                         </a>
+                        <div class="gramota-auth-popup gramota-auth-popup-login bg-white">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 p-3 p-md-5 order-2 order-md-1"
+                                    style="background: #EFEEE3;;">
+                                    <h3 class="mb-5">Авторизуйтесь<br> для доступа ко всем возможностям</h3>
+                                    <ul class="gramota-auth-popup-list list-unstyled">
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg class="icon" width="14" height="18">
+                                                <use xlink:href="../images/sprite.svg#auth-icon1"></use>
+                                            </svg>
+                                            Искать по ключевым словарям
+                                            русского
+                                            языка
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg class="icon" width="17" height="21">
+                                                <use xlink:href="../images/sprite.svg#auth-icon2"></use>
+                                            </svg>
+                                            Добавлять в избранное
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                                style="top: 7px;" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="path-1-inside-1_2467_13682" fill="white">
+                                                    <rect x="6" y="8" width="12" height="6" rx="1" />
+                                                </mask>
+                                                <rect x="6" y="8" width="12" height="6" rx="1" stroke="#303030"
+                                                    stroke-width="3" mask="url(#path-1-inside-1_2467_13682)" />
+                                                <mask id="path-2-inside-2_2467_13682" fill="white">
+                                                    <rect x="6" width="12" height="6" rx="1" />
+                                                </mask>
+                                                <rect x="6" width="12" height="6" rx="1" stroke="#303030"
+                                                    stroke-width="3" mask="url(#path-2-inside-2_2467_13682)" />
+                                                <mask id="path-3-inside-3_2467_13682" fill="white">
+                                                    <rect width="5" height="6" rx="1"
+                                                        transform="matrix(-1 0 0 1 5 0)" />
+                                                </mask>
+                                                <rect width="5" height="6" rx="1" transform="matrix(-1 0 0 1 5 0)"
+                                                    stroke="#303030" stroke-width="3"
+                                                    mask="url(#path-3-inside-3_2467_13682)" />
+                                                <mask id="path-4-inside-4_2467_13682" fill="white">
+                                                    <rect width="5" height="6" rx="1"
+                                                        transform="matrix(-1 0 0 1 5 0)" />
+                                                </mask>
+                                                <rect width="5" height="6" rx="1" transform="matrix(-1 0 0 1 5 8)"
+                                                    stroke="#303030" stroke-width="3"
+                                                    mask="url(#path-4-inside-4_2467_13682)" />
+                                            </svg>
+                                            Создавать свои словари
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="10.5" r="9.5" stroke="#303030"
+                                                    stroke-width="1.5" />
+                                                <path
+                                                    d="M11.1935 5C8.77419 5 7 6.35637 7 8.44309H8.90323C8.95161 7.20596 9.72581 6.43089 11.1613 6.43089C12.1774 6.43089 13.0323 6.90786 13.0323 7.75745C13.0323 8.60705 12.3548 9.15854 11.4032 9.68022C10.2097 10.3509 9.58065 10.977 9.58065 12.3631V12.8699H11.5V12.4079C11.5 11.4241 11.9677 11.126 12.9677 10.5596C13.9516 10.0081 15 9.0542 15 7.65312C15 5.81978 13.129 5 11.1935 5ZM11.6452 16V13.9729H9.45161V16H11.6452Z"
+                                                    fill="#303030" />
+                                            </svg>
+
+                                            Задавать вопросы справочному бюро
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-7 p-3 p-md-5 order-1 order-md-2">
+                                    <br><br>
+                                    <h2 class="mb-3 d-block d-md-none">Вход</h2>
+                                    <form action="">
+                                        <input type="email"
+                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-3"
+                                            id="exampleFormControlInput1" placeholder="Электронная почта">
+                                        <div class="gramota-auth-popup-passwd position-relative mb-2">
+                                            <input type="password"
+                                                class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3"
+                                                id="exampleFormControlInput2" placeholder="Пароль">
+                                            <a><svg width="24" height="17" viewBox="0 0 24 17" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M21.6033 8.39712C20.7784 9.43465 19.3453 11.0591 17.5416 12.4122C15.7226 13.777 13.6712 14.7578 11.5783 14.7578C9.48539 14.7578 7.43404 13.777 5.61495 12.4122C3.8113 11.0591 2.37824 9.43465 1.55327 8.39712C1.51212 8.34537 1.5 8.29718 1.5 8.25781C1.5 8.21844 1.51212 8.17026 1.55327 8.11851C2.37824 7.08098 3.8113 5.45657 5.61495 4.10339C7.43404 2.73863 9.48539 1.75781 11.5783 1.75781C13.6712 1.75781 15.7226 2.73863 17.5416 4.10339C19.3453 5.45657 20.7784 7.08098 21.6033 8.11851C21.6445 8.17026 21.6566 8.21844 21.6566 8.25781C21.6566 8.29718 21.6445 8.34537 21.6033 8.39712ZM22.7774 7.18496C23.283 7.82079 23.283 8.69483 22.7774 9.33067C21.0433 11.5116 16.683 16.2578 11.5783 16.2578C6.47357 16.2578 2.11331 11.5116 0.379179 9.33067C-0.126393 8.69483 -0.126393 7.82079 0.379179 7.18496C2.11331 5.00402 6.47357 0.257812 11.5783 0.257812C16.683 0.257812 21.0433 5.00402 22.7774 7.18496ZM15.0783 8.25781C15.0783 10.1908 13.5113 11.7578 11.5783 11.7578C9.6453 11.7578 8.0783 10.1908 8.0783 8.25781C8.0783 6.32482 9.6453 4.75781 11.5783 4.75781C13.5113 4.75781 15.0783 6.32482 15.0783 8.25781ZM16.5783 8.25781C16.5783 11.0192 14.3397 13.2578 11.5783 13.2578C8.81687 13.2578 6.5783 11.0192 6.5783 8.25781C6.5783 5.49639 8.81687 3.25781 11.5783 3.25781C14.3397 3.25781 16.5783 5.49639 16.5783 8.25781Z"
+                                                        fill="#B9BEC1" />
+                                                </svg></a>
+                                        </div>
+                                        <a
+                                            class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-decoration-none">Забыли
+                                            пароль?</a><br>
+                                        <button type="submit"
+                                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn bg-dark text-light rounded-0 w-100 text-center py-3 mt-3 mb-4">Войти</button>
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15">через соцсети</p>
+                                        <ul
+                                            class="gramota-auth-popup-social list-unstyled d-flex justify-content-between border-bottom pb-4 mb-4">
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="13" height="27" viewBox="0 0 13 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.3186 27V14.3308H0V9.7693H3.3186V5.87317C3.3186 2.81156 5.27891 0 9.79588 0C11.6247 0 12.9771 0.176985 12.9771 0.176985L12.8705 4.43667C12.8705 4.43667 11.4913 4.42311 9.98632 4.42311C8.35743 4.42311 8.09646 5.18087 8.09646 6.43856V9.7693H13L12.7866 14.3308H8.09646V27H3.3186Z"
+                                                            fill="#4267B2" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="30" height="17" viewBox="0 0 30 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M29.3122 1.15124C29.5218 0.487061 29.3122 0 28.3211 0H25.0379C24.2025 0 23.8207 0.421358 23.6111 0.884138C23.6111 0.884138 21.9418 4.76777 19.5764 7.28592C18.8128 8.01865 18.464 8.25004 18.0478 8.25004C17.8397 8.25004 17.5373 8.01865 17.5373 7.35448V1.15124C17.5373 0.354226 17.2963 0 16.6001 0H11.441C10.92 0 10.6056 0.36851 10.6056 0.719879C10.6056 1.47404 11.7883 1.64829 11.9096 3.77365V8.38431C11.9096 9.39414 11.7195 9.57839 11.3003 9.57839C10.1879 9.57839 7.48112 5.68047 5.87471 1.21837C5.56181 0.35137 5.24592 0.00142891 4.40753 0.00142891H1.12584C0.18714 0.00142891 0 0.422787 0 0.885566C0 1.71685 1.11236 5.83045 5.18154 11.271C7.89433 14.9861 11.7135 17 15.1928 17C17.2783 17 17.5358 16.5529 17.5358 15.7816V12.9735C17.5358 12.0794 17.7349 11.8994 18.3951 11.8994C18.8802 11.8994 19.7156 12.1337 21.6634 13.9234C23.8881 16.0459 24.2564 16.9986 25.5065 16.9986H28.7882C29.7254 16.9986 30.194 16.5515 29.9245 15.6688C29.6295 14.7904 28.5666 13.512 27.1563 11.9994C26.3898 11.1367 25.2445 10.2083 24.8956 9.74408C24.4091 9.14561 24.5498 8.88137 24.8956 8.35003C24.8971 8.35145 28.896 2.97807 29.3122 1.15124Z"
+                                                            fill="#2787F5" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="15" height="24" viewBox="0 0 15 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.1718 13.0563H9.50713C6.89262 13.0563 4.35714 11.5203 4.35714 7.68014C4.35714 3.67951 6.73394 2.04785 9.15052 2.04785H11.1718V13.0563H11.1718ZM13.7863 0H9.26939C4.83287 0 1.06895 2.72002 1.06895 8.00021C1.06895 11.1683 2.89201 13.5041 6.1396 14.6561L0.0792648 23.4883C-0.118671 23.7765 0.0792648 24 0.395262 24H3.20798C3.44572 24 3.60437 23.9361 3.68344 23.7765L9.19003 15.1039H11.1717V23.7765C11.1717 23.8722 11.2906 24 11.4479 24H13.9051C14.1429 24 14.2222 23.9041 14.2222 23.7447V0.320256C14.2222 0.095712 14.0635 0 13.7863 0"
+                                                            fill="#EA4335" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                        <g style="mix-blend-mode:multiply">
+                                                            <rect width="26" height="26" fill="url(#pattern0)" />
+                                                        </g>
+                                                        <defs>
+                                                            <pattern id="pattern0"
+                                                                patternContentUnits="objectBoundingBox" width="1"
+                                                                height="1">
+                                                                <use xlink:href="#image0_2467_13669"
+                                                                    transform="translate(-0.00408163) scale(0.00204082)" />
+                                                            </pattern>
+                                                            <image id="image0_2467_13669" width="494" height="490"
+                                                                xlink:href="data:image/png;base64,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" />
+                                                        </defs>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-center">
+                                            Еще не зарегистрированы? <a
+                                                class="gramota-auth-popup-link-register gramota-SuisseIntl-SemiBold gramota-fs-15 text-dark text-decoration-none">Создайте&nbsp;аккаунт</a>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="gramota-auth-popup-close">
+                                <svg class="icon" width="22" height="22">
+                                    <use xlink:href="../images/sprite.svg#menu-close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="gramota-auth-popup gramota-auth-popup-register bg-white">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-5 p-3 p-md-5 order-2 order-md-1"
+                                    style="background: #EFEEE3;;">
+                                    <h3 class="mb-5">Зарегистрируйтесь<br> для доступа ко всем возможностям</h3>
+                                    <ul class="gramota-auth-popup-list list-unstyled">
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg class="icon" width="14" height="18">
+                                                <use xlink:href="../images/sprite.svg#auth-icon1"></use>
+                                            </svg>
+                                            Искать по ключевым словарям
+                                            русского
+                                            языка
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg class="icon" width="17" height="21">
+                                                <use xlink:href="../images/sprite.svg#auth-icon2"></use>
+                                            </svg>
+                                            Добавлять в избранное
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                                style="top: 7px;" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="path-1-inside-1_2467_13682" fill="white">
+                                                    <rect x="6" y="8" width="12" height="6" rx="1" />
+                                                </mask>
+                                                <rect x="6" y="8" width="12" height="6" rx="1" stroke="#303030"
+                                                    stroke-width="3" mask="url(#path-1-inside-1_2467_13682)" />
+                                                <mask id="path-2-inside-2_2467_13682" fill="white">
+                                                    <rect x="6" width="12" height="6" rx="1" />
+                                                </mask>
+                                                <rect x="6" width="12" height="6" rx="1" stroke="#303030"
+                                                    stroke-width="3" mask="url(#path-2-inside-2_2467_13682)" />
+                                                <mask id="path-3-inside-3_2467_13682" fill="white">
+                                                    <rect width="5" height="6" rx="1"
+                                                        transform="matrix(-1 0 0 1 5 0)" />
+                                                </mask>
+                                                <rect width="5" height="6" rx="1" transform="matrix(-1 0 0 1 5 0)"
+                                                    stroke="#303030" stroke-width="3"
+                                                    mask="url(#path-3-inside-3_2467_13682)" />
+                                                <mask id="path-4-inside-4_2467_13682" fill="white">
+                                                    <rect width="5" height="6" rx="1"
+                                                        transform="matrix(-1 0 0 1 5 0)" />
+                                                </mask>
+                                                <rect width="5" height="6" rx="1" transform="matrix(-1 0 0 1 5 8)"
+                                                    stroke="#303030" stroke-width="3"
+                                                    mask="url(#path-4-inside-4_2467_13682)" />
+                                            </svg>
+                                            Создавать свои словари
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="10.5" r="9.5" stroke="#303030"
+                                                    stroke-width="1.5" />
+                                                <path
+                                                    d="M11.1935 5C8.77419 5 7 6.35637 7 8.44309H8.90323C8.95161 7.20596 9.72581 6.43089 11.1613 6.43089C12.1774 6.43089 13.0323 6.90786 13.0323 7.75745C13.0323 8.60705 12.3548 9.15854 11.4032 9.68022C10.2097 10.3509 9.58065 10.977 9.58065 12.3631V12.8699H11.5V12.4079C11.5 11.4241 11.9677 11.126 12.9677 10.5596C13.9516 10.0081 15 9.0542 15 7.65312C15 5.81978 13.129 5 11.1935 5ZM11.6452 16V13.9729H9.45161V16H11.6452Z"
+                                                    fill="#303030" />
+                                            </svg>
+
+                                            Задавать вопросы справочному бюро
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-md-7 p-3 p-md-5 order-1 order-md-2">
+                                    <br><br>
+                                    <h2 class="mb-3 d-block d-md-none">Регистрация</h2>
+                                    <form action="">
+                                        <input type="text"
+                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-3"
+                                            id="exampleFormControlInput1" placeholder="Ваше имя"><input type="email"
+                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-3"
+                                            id="exampleFormControlInput1" placeholder="Электронный адрес">
+                                        <div class="gramota-auth-popup-passwd position-relative mb-4">
+                                            <input type="password"
+                                                class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3"
+                                                id="exampleFormControlInput2" placeholder="Пароль">
+                                            <a><img src="../images/img072.png" width="24" height="20" alt=""></a>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input rounded-0" type="checkbox" value=""
+                                                id="check5">
+                                            <label
+                                                class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                                for="check5">
+                                                Подтверждаю согласие на <a
+                                                    class="gramota-SuisseIntl-Regular text-decoration-none">обработку</a>
+                                                персональных данных
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <input class="form-check-input rounded-0" type="checkbox" value=""
+                                                id="check6">
+                                            <label
+                                                class="form-check-label gramota-SuisseIntl-Regular text-muted mt-1 ms-3"
+                                                for="check6">
+                                                Хочу получать рассылку Грамоты
+                                            </label>
+                                        </div>
+                                        <button type="submit"
+                                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn bg-dark text-light rounded-0 w-100 text-center py-3 mt-3 mb-4"
+                                            style="background: #39735D !important;">Зарегистрироваться</button>
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15">через соцсети</p>
+                                        <ul
+                                            class="gramota-auth-popup-social list-unstyled d-flex justify-content-between border-bottom pb-4 mb-4">
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="13" height="27" viewBox="0 0 13 27" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3.3186 27V14.3308H0V9.7693H3.3186V5.87317C3.3186 2.81156 5.27891 0 9.79588 0C11.6247 0 12.9771 0.176985 12.9771 0.176985L12.8705 4.43667C12.8705 4.43667 11.4913 4.42311 9.98632 4.42311C8.35743 4.42311 8.09646 5.18087 8.09646 6.43856V9.7693H13L12.7866 14.3308H8.09646V27H3.3186Z"
+                                                            fill="#4267B2" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="30" height="17" viewBox="0 0 30 17" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M29.3122 1.15124C29.5218 0.487061 29.3122 0 28.3211 0H25.0379C24.2025 0 23.8207 0.421358 23.6111 0.884138C23.6111 0.884138 21.9418 4.76777 19.5764 7.28592C18.8128 8.01865 18.464 8.25004 18.0478 8.25004C17.8397 8.25004 17.5373 8.01865 17.5373 7.35448V1.15124C17.5373 0.354226 17.2963 0 16.6001 0H11.441C10.92 0 10.6056 0.36851 10.6056 0.719879C10.6056 1.47404 11.7883 1.64829 11.9096 3.77365V8.38431C11.9096 9.39414 11.7195 9.57839 11.3003 9.57839C10.1879 9.57839 7.48112 5.68047 5.87471 1.21837C5.56181 0.35137 5.24592 0.00142891 4.40753 0.00142891H1.12584C0.18714 0.00142891 0 0.422787 0 0.885566C0 1.71685 1.11236 5.83045 5.18154 11.271C7.89433 14.9861 11.7135 17 15.1928 17C17.2783 17 17.5358 16.5529 17.5358 15.7816V12.9735C17.5358 12.0794 17.7349 11.8994 18.3951 11.8994C18.8802 11.8994 19.7156 12.1337 21.6634 13.9234C23.8881 16.0459 24.2564 16.9986 25.5065 16.9986H28.7882C29.7254 16.9986 30.194 16.5515 29.9245 15.6688C29.6295 14.7904 28.5666 13.512 27.1563 11.9994C26.3898 11.1367 25.2445 10.2083 24.8956 9.74408C24.4091 9.14561 24.5498 8.88137 24.8956 8.35003C24.8971 8.35145 28.896 2.97807 29.3122 1.15124Z"
+                                                            fill="#2787F5" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center"><svg
+                                                        width="15" height="24" viewBox="0 0 15 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M11.1718 13.0563H9.50713C6.89262 13.0563 4.35714 11.5203 4.35714 7.68014C4.35714 3.67951 6.73394 2.04785 9.15052 2.04785H11.1718V13.0563H11.1718ZM13.7863 0H9.26939C4.83287 0 1.06895 2.72002 1.06895 8.00021C1.06895 11.1683 2.89201 13.5041 6.1396 14.6561L0.0792648 23.4883C-0.118671 23.7765 0.0792648 24 0.395262 24H3.20798C3.44572 24 3.60437 23.9361 3.68344 23.7765L9.19003 15.1039H11.1717V23.7765C11.1717 23.8722 11.2906 24 11.4479 24H13.9051C14.1429 24 14.2222 23.9041 14.2222 23.7447V0.320256C14.2222 0.095712 14.0635 0 13.7863 0"
+                                                            fill="#EA4335" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="d-block bg-light d-flex flex-column justify-content-around align-items-center">
+                                                    <img src="../images/img071.png" width="26" height="26" alt="">
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-center">
+                                            Уже есть аккаунт? <a
+                                                class="gramota-auth-popup-link-login gramota-SuisseIntl-SemiBold gramota-fs-15 text-dark text-decoration-none">Войдите</a>
+                                        </p>
+                                    </form>
+                                </div>
+                            </div>
+                            <a class="gramota-auth-popup-close">
+                                <svg class="icon" width="22" height="22">
+                                    <use xlink:href="../images/sprite.svg#menu-close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="gramota-search-popup d-flex">
+                            <a href="/"><img src="../images/img070.png" class="h-100" alt=""></a>
+                            <div class="flex-grow-1" style="background: #fff;">
+                                <form action="" class="w-100 h-100">
+                                    <input type="text"
+                                        class="gramota-SuisseIntl-Regular form-control w-100 h-100 border-0 ps-4 pr-5"
+                                        id="exampleFormControlInput1"
+                                        placeholder="Ищите в журнале, справочниках и тренажерах...">
+                                    <button class="gramota-search-popup-find position-absolute" type="submit"><svg
+                                            class="icon" width="30" height="30">
+                                            <use xlink:href="../images/sprite.svg#search"></use>
+                                        </svg></button>
+                                    <a class="gramota-search-popup-close position-absolute"><svg class="icon" width="24"
+                                            height="24">
+                                            <use xlink:href="../images/sprite.svg#menu-close"></use>
+                                        </svg></a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="gramota-fade"></div>
+                        <script>
+                            $(document).ready(function () {
+                                $('.gramota-menu-search').click(function () {
+                                    $('.gramota-search-popup').addClass('active');
+                                    $('.gramota-fade').addClass('active');
+                                    $('body').addClass('overflow-hidden');
+                                });
+                                $('.gramota-search-popup-close, .gramota-fade').click(function () {
+                                    $('.gramota-search-popup').removeClass('active');
+                                    $('.gramota-fade').removeClass('active');
+                                    $('body').removeClass('overflow-hidden');
+                                });
+                                $('.gramota-menu-profile').click(function () {
+                                    $('.gramota-auth-popup-login').addClass('active');
+                                    $('.gramota-fade').addClass('active');
+                                    $('body').addClass('overflow-hidden');
+                                });
+                                $('.gramota-auth-popup-close, .gramota-fade').click(function () {
+                                    $('.gramota-auth-popup-login').removeClass('active');
+                                    $('.gramota-auth-popup-register').removeClass('active');
+                                    $('.gramota-fade').removeClass('active');
+                                    $('body').removeClass('overflow-hidden');
+                                });
+                                $('.gramota-auth-popup-link-register').click(function () {
+                                    $('.gramota-auth-popup-login').removeClass('active');
+                                    $('.gramota-auth-popup-register').addClass('active');
+                                });
+                                $('.gramota-auth-popup-link-login').click(function () {
+                                    $('.gramota-auth-popup-login').addClass('active');
+                                    $('.gramota-auth-popup-register').removeClass('active');
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="row">
+                        <div class="gramota-menu-opened d-flex flex-column col-xs-12 col-xl-8 col-xxl-6 px-2 px-sm-5">
+                            <br>
+                            <div class="row mt-5 mb-4">
+                                <div class="col-xs-12 col-sm-6 border-bottom py-3">
+                                    <h4 class="gramota-fs-24">Журнал</h4>
+                                    <ul style="padding: 0; list-style: none;">
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                text-decoration-none">Новости</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                            text-decoration-none">Лекции</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                            text-decoration-none">Эксперты</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                            text-decoration-none">События</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                            text-decoration-none">Лингвистика</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 border-bottom py-3">
+                                    <h4 class="gramota-fs-24">Справочное бюро</h4>
+                                    <ul style="padding: 0; list-style: none;">
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                text-decoration-none">Ответы справочной службы</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                    text-decoration-none">Справочники</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                        text-decoration-none">Проверить текст</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                            text-decoration-none">Задать вопрос</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 border-bottom py-3 pt-5">
+                                    <h4 class="gramota-fs-24">Проверь себя</h4>
+                                    <ul style="padding: 0; list-style: none;">
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                text-decoration-none">Диктанты</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                    text-decoration-none">Тесты</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                        text-decoration-none">Кроссворды</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 border-bottom py-3 pt-5">
+                                    <h4 class="gramota-fs-24">Моя Грамота</h4>
+                                    <ul style="padding: 0; list-style: none;">
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                text-decoration-none">Мой словарь</a></li>
+                                        <li><a href="#" class="gramota-SuisseIntl-Regular gramota-fs-18
+                                                    text-decoration-none">Избранное</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="#" class="gramota-SuisseIntl-SemiBold gramota-fs-18
+                            text-decoration-none" style="color: #39735D !important;">Проверить слово в словарях
+                                Грамоты <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M8.85278 0.404731C8.54991 0.687293 8.53345 1.16188 8.81601 1.46475L13.2746 6.24378L1 6.24378C0.585788 6.24378 0.250002 6.57956 0.250002 6.99378C0.250002 7.40799 0.585788 7.74378 1 7.74378L13.2746 7.74378L8.81601 12.5228C8.53345 12.8257 8.54991 13.3003 8.85278 13.5828C9.15565 13.8654 9.63024 13.8489 9.91281 13.5461L15.5484 7.5054C15.8172 7.21728 15.8172 6.77028 15.5484 6.48215L9.9128 0.441503C9.63024 0.138632 9.15565 0.122168 8.85278 0.404731Z"
+                                        fill="#39735D" />
+                                </svg>
+                            </a>
+                            <ul class="d-flex border-bottom mt-4 p-0 pb-3 mt-sm-auto">
+                                <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                    <a href="#" class="d-block">
+                                        <svg class="icon" width="36" height="36">
+                                            <use xlink:href="../images/sprite.svg#fb3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                    <a href="#" class="d-block">
+                                        <svg class="icon" width="36" height="36">
+                                            <use xlink:href="../images/sprite.svg#vk3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                    <a href="#" class="d-block">
+                                        <svg class="icon" width="36" height="36">
+                                            <use xlink:href="../images/sprite.svg#inst3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                    <a href="#" class="d-block">
+                                        <svg class="icon" width="36" height="36">
+                                            <use xlink:href="../images/sprite.svg#twi3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="list-group-item bg-transparent border-0 p-0 me-2">
+                                    <a href="#" class="d-block">
+                                        <svg class="icon" width="36" height="36">
+                                            <use xlink:href="../images/sprite.svg#yt3"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="row pb-2">
+                                <div class="col-sm-12 col-md-3 pb-2">
+                                    <a href="#" class="gramota-SuisseIntl-Regular gramota-fs-15
+                                    text-decoration-none text-muted">Редакция</a>
+                                </div>
+                                <div class="col-sm-12 col-md-3 pb-2">
+                                    <a href="#" class="gramota-SuisseIntl-Regular gramota-fs-15
+                                        text-decoration-none text-muted">Обратная связь</a>
+                                </div>
+                                <div class="col-sm-12 col-md-3 pb-2">
+                                    <a href="#" class="gramota-SuisseIntl-Regular gramota-fs-15
+                                            text-decoration-none text-muted">
+                                        Реклама на сайте</a>
+                                </div>
+                                <div class="col-sm-12 col-md-3 pb-2">
+                                    <a href="#" class="gramota-SuisseIntl-Regular gramota-fs-15
+                                                text-decoration-none text-muted">
+                                        Партнеры
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="gramota-menu-opened-close d-block d-sm-none"><svg width="17" height="17"
+                                    viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L16 16" stroke="#B9BEC1" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path d="M1 16L16 1" stroke="#B9BEC1" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
     </div>
+    <script>
+        $(document).ready(function () {
+            headerHeight = $('.gramota-header').innerHeight();
+            windowHeight = $(window).innerHeight();
+            $('.gramota-menu-opened').css('top', headerHeight + 2);
+            $('.gramota-menu-opened').css('height', windowHeight - headerHeight);
+            if ($(window).width() < 576) {
+                $('.gramota-menu-opened').css('height', '100vh');
+                $('.gramota-menu-opened').css('top', '0');
+                $('.gramota-menu-opened-close').click(function () {
+                    $('.gramota-menu-opened').removeClass('active');
+                    $('.gramota-hamburger').removeClass('active');
+                    $('.gramota-hamburger svg use').attr('xlink:href', '../images/sprite.svg#menu');
+                });
+            }
+            $('.gramota-hamburger').click(function () {
+                if ($('.gramota-hamburger').hasClass('active')) {
+                    $('.gramota-menu-opened').removeClass('active');
+                    $('.gramota-hamburger').removeClass('active');
+                    $('.gramota-hamburger svg use').attr('xlink:href', '../images/sprite.svg#menu');
+                    $('.gramota-hamburger svg use').attr('width', '24')
+                } else {
+                    $('.gramota-menu-opened').addClass('active');
+                    $('.gramota-hamburger').addClass('active');
+                    $('.gramota-hamburger svg use').attr('xlink:href', '../images/sprite.svg#menu-close');
+                    $('.gramota-hamburger svg use').attr('width', '18')
+                }
+            });
+        });
+    </script>
     <div class="container-fluid my-5">
         <div class="gramota-x-paddings container-xxl">
             <div class="row">

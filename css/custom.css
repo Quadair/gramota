@@ -35,8 +35,11 @@
   .container-md,
   .container-sm,
   .container {
-    max-width: 1380px;
+    max-width: 1516px;
   }
+}
+
+.gramota-search {
 }
 
 @media (max-width: 576px) {
@@ -59,7 +62,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .gramota-logo {
     width: 188px !important;
     height: 40px !important;
@@ -79,16 +82,50 @@
   box-shadow: none !important;
 }
 
+a,
+a span,
+button {
+  transition: 0.3s !important;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
 .text-dark {
   color: #303030 !important;
 }
 
-.container-fluid {
+.container-xxl {
+  padding: 0;
   padding: 0;
 }
 
-.container-xxl {
-  padding: 0;
+.overflow-hidden {
+  overflow: hidden;
+}
+
+body .row .container-xxl-12,
+body .row .container-xl-12,
+body .row .container-lg-12,
+body .row .container-md-12,
+body .row .container-sm-12,
+body .row .container-xs-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 1024px) {
+  .container-xxl {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-xxl {
+    padding: 0;
+  }
 }
 
 .row {
@@ -143,14 +180,65 @@ h6 a {
 
 @media (max-width: 768px) {
   .gramota-x-paddings {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .gramota-x-paddings.gramota-x-paddings-search {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
-
-header a {
+*/ header a {
   font-family: "Conv_SuisseIntl-Regular" !important;
   font-size: 18px !important;
+}
+
+.gramota-header {
+  border: 1px solid #fff;
+  border-bottom: 0;
+}
+
+@media (max-width: 576px) {
+  .gramota-header {
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+header a {
+  cursor: pointer;
+}
+
+header .container-fluid {
+  position: relative;
+}
+
+.gramota-menu-opened {
+  position: fixed;
+  left: 0;
+  background: #fff;
+  z-index: 200;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.gramota-menu-opened.active {
+  opacity: 1;
+  visibility: visible;
+}
+.gramota-menu-opened-close {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+@media (max-width: 576px) {
+  .gramota-menu-opened {
+    overflow-y: scroll;
+    top: 0 !important;
+    height: 100vh !important;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -161,8 +249,14 @@ header a {
 
 .gramota-search {
   font-family: "Conv_SuisseIntl-Regular" !important;
-  padding-left: 68px;
+  /*  padding-left: 68px;
   padding-right: 68px;
+  padding: 0 12px;*/
+}
+
+@media (min-width: 1400px) {
+  .gramota-search {
+  }
 }
 
 .gramota-search a {
@@ -175,12 +269,12 @@ header a {
   width: 100%;
 }
 
-.gramota-search .col2:last-of-type {
+.gramota-search .col2:nth-of-type(2) {
   flex-basis: 240px !important;
   width: 240px !important;
 }
 
-.gramota-search .col2:last-of-type button[type="submit"] {
+.gramota-search .col2:nth-of-type(2) button[type="submit"] {
   width: 100%;
   font-family: "Conv_SuisseIntl-SemiBold";
   letter-spacing: 0.02rem;
@@ -195,8 +289,9 @@ header a {
 
 @media (max-width: 992px) {
   .gramota-search {
+    /*
     padding-left: 48px;
-    padding-right: 48px;
+    padding-right: 48px;*/
   }
 
   .gramota-search input[type="search"] {
@@ -205,19 +300,19 @@ header a {
     padding: 0 0 0 18px;
   }
 
-  .gramota-search .col2:last-of-type {
+  .gramota-search .col2:nth-of-type(2) {
     flex-basis: 200px !important;
     width: 200px !important;
   }
-  .gramota-search .col2:last-of-type button[type="submit"] {
+  .gramota-search .col2:nth-of-type(2) button[type="submit"] {
     font-size: 18px !important;
   }
 }
 
 @media (max-width: 768px) {
   .gramota-search {
-    padding-left: 12px;
-    padding-right: 12px;
+    /*  padding-left: 12px;
+    padding-right: 12px;*/
   }
 
   .gramota-search input[type="search"] {
@@ -227,19 +322,17 @@ header a {
     border-radius: 0 !important;
   }
 
-  .gramota-search .col2:last-of-type {
+  .gramota-search .col2:nth-of-type(2) {
     flex-basis: 150px !important;
     width: 150px !important;
   }
-  .gramota-search .col2:last-of-type button[type="submit"] {
+  .gramota-search .col2:nth-of-type(2) button[type="submit"] {
     font-size: 14px !important;
   }
 }
 
 @media (max-width: 576px) {
   .gramota-search {
-    padding-left: 12px;
-    padding-right: 12px;
   }
 
   .gramota-search input[type="search"] {
@@ -249,19 +342,41 @@ header a {
     border-radius: 0 !important;
   }
 
-  .gramota-search .col2:last-of-type {
+  .gramota-search .col2:nth-of-type(2) {
     flex-basis: 150px !important;
     width: 150px !important;
   }
-  .gramota-search .col2:last-of-type button[type="submit"] {
+  .gramota-search button[type="submit"] {
     font-size: 14px !important;
     height: 42px !important;
   }
 }
 
+.gramota-search-top-block {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+  /* padding-left: 12px !important;
+  padding-right: 12px !important;*/
+}
+
+@media (max-width: 992px) {
+  .gramota-search-top-block {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-search-top-block {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+  .gramota-search-top-block .col-12 {
+    padding: 0;
+  }
+}
+
 .gramota-card-promo {
-  margin-left: 68px;
-  margin-right: 68px;
 }
 
 .gramota-card-promo h2 {
@@ -279,6 +394,10 @@ header a {
   padding: 10px 20px 10px 20px;
 }
 
+.gramota-card-promo p a {
+  padding: 0;
+}
+
 .gramota-card-promo a svg {
   position: relative;
   top: -3px;
@@ -290,11 +409,39 @@ header a {
   min-height: 17rem;
 }
 
+.gramota-card-promo .btn-primary {
+  border: 0;
+}
+
+.gramota-card-promo.gramota-card-promo2 {
+  /*border-bottom: 0;*/
+}
+
+.gramota-promo2-text-bg-fade {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.7) 100%);
+}
+
+.gramota-promo2-text-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
 .gramota-card-promo .card-img {
   width: 27.25rem;
   position: absolute;
   right: 1.875rem;
   bottom: -0.75rem;
+}
+
+.gramota-card-promo.gramota-card-promo2 .card-img {
+  bottom: 0;
 }
 
 @media (max-width: 576px) {
@@ -311,14 +458,18 @@ header a {
   background-color: #39735d;
 }
 
+.gramota-card-promo.gramota-card-promo2 .btn.btn-primary {
+  background-color: #ffe350;
+}
+
 .gramota-card-promo .btn.btn-primary svg {
   margin-right: 0.5rem;
 }
 
 @media (max-width: 992px) {
   .gramota-card-promo {
-    margin-left: 48px;
-    margin-right: 48px;
+    /* margin-left: 48px;
+    margin-right: 48px;*/
     min-height: 14rem;
   }
   .gramota-card-promo h2 {
@@ -327,8 +478,6 @@ header a {
 }
 @media (max-width: 768px) {
   .gramota-card-promo {
-    margin-left: 12px;
-    margin-right: 12px;
     min-height: 12rem;
   }
   .gramota-card-promo h2 {
@@ -340,7 +489,6 @@ header a {
   font-family: "Conv_EuclidCircularA-Light";
   font-weight: normal;
   font-size: 55px;
-  margin-left: 12px;
 }
 
 @media (max-width: 992px) {
@@ -391,16 +539,12 @@ header a {
   }
 }
 
-.gramota-nav-tabs {
-  margin-left: 12px;
-  margin-right: 12px;
-}
-
 .gramota-nav-tabs.nav-tabs .nav-link {
   border: 0;
   border-bottom: 0.5rem solid transparent;
   border-radius: 0 !important;
   font-size: 18px !important;
+  padding-bottom: 0;
 }
 
 @media (max-width: 992px) {
@@ -692,7 +836,6 @@ header a {
   .gramota-yellow h2 {
     font-size: 32px;
     text-align: left !important;
-    padding-left: 12px;
   }
   .gramota-yellow {
     background: none !important;
@@ -704,13 +847,11 @@ header a {
   .gramota-yellow .justify-content-center {
     text-align: left !important;
     justify-content: start !important;
-    padding-left: 12px;
   }
 }
 
 @media (max-width: 576px) {
   .gramota-yellow h2 {
-    font-size: 22px;
   }
 }
 
@@ -890,7 +1031,22 @@ header a {
   width: 2.5rem !important;
   height: 2.5rem !important;
   position: relative;
+  display: block !important;
 }
+
+.gramota-social li a img {
+  border-radius: 50%;
+  outline: 1px solid transparent;
+  outline-offset: -1px;
+  transition: 0.3s;
+}
+
+/*
+.gramota-social li a svg {
+  width: 85px;
+  height: 85px;
+}
+*/
 .gramota-social li a span {
   width: 18px;
   height: auto !important;
@@ -1028,6 +1184,11 @@ header a {
     text-align: center;
   }
 }
+
+.gramota-breadcrumbs {
+  margin: 0 4px !important;
+}
+
 .gramota-breadcrumbs .btn-close {
   position: absolute;
   top: 50%;
@@ -1063,6 +1224,18 @@ header a {
   font-family: "Conv_SuisseIntl-Regular";
 }
 
+.gramota-fs-13 {
+  font-size: 13px;
+}
+
+.gramota-fs-14 {
+  font-size: 14px;
+}
+
+.gramota-fs-15 {
+  font-size: 15px;
+}
+
 .gramota-fs-16 {
   font-size: 16px;
 }
@@ -1081,6 +1254,16 @@ header a {
 
 .gramota-fs-24 {
   font-size: 24px;
+}
+
+.gramota-fs-32 {
+  font-size: 32px;
+}
+.gramota-fs-36 {
+  font-size: 36px;
+}
+.gramota-fs-40 {
+  font-size: 40px;
 }
 
 .cursor-pointer {
@@ -1128,7 +1311,6 @@ header a {
 }
 
 .page-item {
-  background: !important;
 }
 
 .page-item .page-link {
@@ -1225,11 +1407,15 @@ header a {
   .gramota-social a svg {
     transform: scale(0.5);
   }
+
+  footer .gramota-social a svg {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 576px) {
   body {
-    padding: 64px 0 0 0;
+    padding: 55px 0 0 0;
   }
   header {
     position: fixed;
@@ -1292,4 +1478,797 @@ header a {
     left: -16px;
     transform: translateX(0);
   }
+}
+
+@media (max-width: 576px) {
+  .gramota-x-paddings.gramota-berau {
+    padding: 0;
+  }
+}
+
+.gramota-berau-ol {
+  list-style-type: none;
+  counter-reset: num;
+  margin: 0 0 0 60px;
+  padding: 15px 0 5px 0;
+  font-size: 16px;
+  margin: 0;
+}
+.gramota-berau-ol li {
+  position: relative;
+  margin: 0 0 0 0;
+  padding: 0 50px 10px 0;
+}
+
+.gramota-berau-ol li:before {
+  content: counter(num);
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -20px;
+  width: 30px;
+  font-family: "Conv_SuisseIntl-SemiBold";
+}
+
+.gramota-berua-textarea textarea {
+  resize: none;
+  font-family: "Conv_SuisseIntl-Regular";
+  padding: 23px 23px 23px 121px;
+  height: 288px;
+}
+
+.gramota-berua-select select {
+  font-family: "Conv_SuisseIntl-Regular";
+  padding: 23px 23px 23px 121px;
+}
+
+.gramota-dictionaries {
+}
+
+.gramota-dictionary-link {
+  cursor: pointer;
+}
+
+.gramota-dictionary img {
+  width: 50%;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .gramota-dictionary img {
+    width: 90%;
+    margin: 10% 0 0 10%;
+  }
+}
+
+.gramota-list-slyle-none {
+  list-style: none;
+}
+
+.gramota-answers-menu {
+  position: sticky;
+  left: 0;
+  top: 50px;
+  margin-top: 150px;
+  width: 200px;
+}
+
+.gramota-answers-menu h2 {
+  margin-left: 18px;
+}
+
+.gramota-answers-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.gramota-answers-menu ul li a {
+  padding: 7px 18px;
+  display: block;
+  width: 200px;
+}
+
+.gramota-answers-menu ul li a.active {
+  background: #f3f3f3;
+}
+
+.gramota-answers-list {
+  list-style: none;
+  padding: 0;
+}
+
+@media (max-width: 1649px) {
+  .gramota-answers-menu {
+    display: none;
+  }
+  .grmaota-margin {
+    margin-top: 0 !important;
+  }
+}
+
+.gramota-answers-tabs {
+  display: block !important;
+  border: 0;
+}
+
+.gramota-answers-tabs .nav-link {
+  text-align-last: left;
+  padding: 0;
+  border: 0;
+  display: block;
+  font-family: "Spectral", serif;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.gramota-answers-tabs .nav-link.active {
+  background: #efeee3;
+  position: relative;
+}
+
+.gramota-answers-tabs .nav-link.active:after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 12px;
+  border-color: transparent transparent transparent #efeee3;
+}
+
+@media (max-width: 576px) {
+  .gramota-check-yourself-card {
+    min-height: 200px;
+  }
+}
+
+.gramota-check-yourself-card .card {
+  background: none;
+}
+
+.gramota-check-yourself-card-image {
+  display: block;
+  margin-top: 90px !important;
+  margin-bottom: 90px !important;
+}
+
+.gramota-check-yourself-card-image img {
+  width: 100%;
+}
+
+.gramota-check-yourself-list .list-group-item {
+  position: relative;
+  padding-right: 70px;
+}
+
+.gramota-check-yourself-list .list-group-item:hover {
+  border: 2px solid #39735d !important;
+  box-sizing: border-box;
+  margin-top: -2px;
+  background: #fff;
+}
+
+.gramota-check-yourself-list-wrong {
+  border: 2px solid #ed7979 !important;
+}
+
+.gramota-check-yourself-list .list-group-item.gramota-check-yourself-list-wrong:hover {
+  margin-top: 0px !important;
+  border: 2px solid #ed7979 !important;
+}
+
+.gramota-check-yourself-list .list-group-item span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.gramota-check-yourself-list .list-group-item.gramota-check-yourself-list-right span {
+  top: 0%;
+  right: 0;
+}
+
+.gramota-check-yourself-list .list-group-item span img {
+  width: 12px !important;
+  margin: 0 !important;
+}
+
+.gramota-check-yourself-list .list-group-item em {
+  display: block;
+  font-style: normal;
+}
+
+.gramota-check-yourself-list-right {
+  border: 2px solid #39735d !important;
+}
+
+.gramota-check-yourself-list .list-group-item.gramota-check-yourself-list-right:hover {
+  margin-top: 0px !important;
+}
+
+.gramota-check-yourself-bg {
+  background: url(../images/img061.png);
+}
+
+@media (max-width: 576px) {
+  .gramota-check-yourself-bg {
+    background: none;
+  }
+  .gramota-check-yourself-bg h1 {
+    color: #303030 !important;
+  }
+}
+
+.gramota-check-yourself-list-image img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.gramota-check-yourself-list-image .list-group-item {
+  position: relative;
+  padding-right: 0px;
+}
+
+.gramota-search-h2 {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) calc(50% - 1px),
+    rgb(222, 226, 230) calc(50% + 1px),
+    rgba(0, 0, 0, 0) 0%
+  );
+}
+
+.gramota-search-h2 span {
+  background: #fff;
+  display: inline-block;
+}
+
+.gramota-line {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0) calc(50% - 1px),
+    rgb(222, 226, 230) calc(50% + 1px),
+    rgba(0, 0, 0, 0) 0%
+  );
+}
+
+.gramota-dictionary-container {
+  position: relative;
+}
+
+.gramota-dictionary-popup {
+  position: absolute;
+  background: #0f0;
+  top: -32px;
+  left: 270px;
+  width: calc(100% - 70px);
+  z-index: 10;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gramota-dictionary-popup::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: 35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+
+.gramota-dictionary-popup-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.gramota-dictionary-popup .btn {
+  background: #ffe350;
+}
+
+.gramota-dictionary-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 992px) {
+  .gramota-dictionary-popup::before {
+    display: none;
+  }
+  .gramota-dictionary-popup {
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+  }
+}
+@media (max-width: 576px) {
+  .gramota-dictionary-popup {
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+}
+
+.gramota-dictionaries-list ul {
+  padding: 0;
+}
+
+.gramota-dictionaries-list li {
+  padding: 0 0 0 24px;
+  position: relative;
+}
+
+.gramota-dictionaries-list li svg {
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.gramota-dictionaries-list-btn {
+  padding: 0 27px 0 0;
+  background: url("../images/img041.png") no-repeat 100% 5px;
+  cursor: pointer;
+}
+
+.gramota-dictionaries-list-btn.collapsed {
+  background: url("../images/img040.png") no-repeat 100% 5px;
+}
+
+.gramota-search-settings-button {
+  top: 50%;
+  right: 1rem;
+  transform: translatey(-50%);
+  cursor: pointer;
+}
+
+.gramota-search-settings-popup {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  background: #fff;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.gramota-search-settings-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gramota-search-settings-popup:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(100% - 180px);
+  top: -12px;
+  width: 22px;
+  height: 12px;
+  background: url("../images/img068.png");
+}
+
+.gramota-search-settings-popup .nav-tabs .nav-link {
+  border: 0 !important;
+  font-family: "Conv_SuisseIntl-Regular";
+}
+
+.gramota-search-settings-popup .nav-tabs .active {
+  border: 0;
+  border-bottom: 8px solid #303030 !important;
+  font-family: "Conv_SuisseIntl-SemiBold";
+}
+
+.gramota-search-settings-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.gramota-search-settings-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gramota-search-settings-popup label a {
+  font-family: "Conv_SuisseIntl-SemiBold" !important;
+  font-size: 15px !important;
+}
+
+.gramota-dictation-container {
+  position: relative;
+}
+
+.gramota-dictation span a {
+  font-weight: 800;
+  color: #2569ec !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gramota-dictation-popup {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 35px;
+  width: 270px;
+  background: #fff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+  display: block;
+}
+
+@media (max-width: 576px) {
+  .gramota-dictation-popup {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+  }
+}
+.gramota-dictation-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gramota-dictation-popup strong {
+  display: block;
+}
+
+.gramota-dictation-popup-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.gramota-dictation span a.gramota-dictation-popup-option {
+  font-weight: normal !important;
+  font-family: "Conv_SuisseIntl-Regular";
+  color: #303030 !important;
+  font-size: 15px;
+  display: block;
+  padding: 9px 21px;
+}
+
+.gramota-dictation-popup-option:hover {
+  background: #f3f3f3;
+}
+
+.gramota-berau-list li {
+  position: relative;
+  padding: 0 0 0 26px;
+}
+
+.gramota-berau-list a::before {
+  content: "";
+  width: 13px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  background: url("../images/img069.png");
+  background-size: cover;
+}
+
+.gramota-search-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  z-index: 120;
+  top: -80px;
+  transition: 0.5s;
+}
+.gramota-search-popup.active {
+  top: 0;
+}
+
+.gramota-search-popup input {
+  font-size: 24px;
+  padding-right: 120px;
+}
+
+.gramota-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.gramota-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gramota-search-popup-find {
+  right: 75px;
+  top: 29px;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: 0;
+}
+
+.gramota-search-popup-close {
+  right: 30px;
+  top: 29px;
+  opacity: 0.5;
+}
+
+@media (max-width: 1024px) {
+  .gramota-search-popup {
+    height: 60px;
+  }
+
+  .gramota-search-popup-find {
+    right: 60px;
+    top: 19px;
+  }
+
+  .gramota-search-popup-close {
+    right: 20px;
+    top: 19px;
+  }
+}
+
+.gramota-auth-popup {
+  position: fixed;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+  z-index: 120;
+  transition: 0.3s;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.gramota-auth-popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gramota-auth-popup-list li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.gramota-auth-popup-list li svg {
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.gramota-auth-popup-close {
+  position: absolute;
+  right: 19px;
+  top: 19px;
+  cursor: pointer;
+}
+
+.gramota-auth-popup-passwd a {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.gramota-auth-popup-social a {
+  width: 88px;
+  height: 60px;
+  border-radius: 55px;
+}
+
+@media (max-width: 1500px) {
+  .gramota-auth-popup {
+    width: 60%;
+  }
+}
+@media (max-width: 1280px) {
+  .gramota-auth-popup {
+    width: 70%;
+  }
+}
+@media (max-width: 992px) {
+  .gramota-auth-popup {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-auth-popup {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-auth-popup-social a {
+    width: 67px;
+    height: 41px;
+    border-radius: 55px;
+  }
+  .gramota-auth-popup-social a svg,
+  .gramota-auth-popup-social a img {
+    transform: scale(0.7);
+  }
+}
+@media (max-width: 768px) {
+  .gramota-check {
+    margin: 0 !important;
+  }
+}
+
+/* styles for hovers & hovers */
+
+.gramota-header .nav-link.text-dark:hover {
+  opacity: 0.8;
+}
+
+.gramota-hamburger:hover {
+  opacity: 0.6;
+}
+.gramota-menu-search:hover {
+  opacity: 0.6;
+}
+
+.gramota-menu-profile:hover {
+  opacity: 0.6;
+}
+
+.gramota-search .nav-link:hover {
+  opacity: 0.65;
+}
+
+.gramota-top-search-tabs .nav-link {
+  color: #fff !important;
+}
+
+.gramota-top-search-tabs .nav-link:hover {
+  color: #bacec6 !important;
+  opacity: 1;
+}
+
+.gramota-search-top-block button.btn:hover {
+  background: #f7da47 !important;
+}
+
+.gramota-search-settings-button:hover {
+  opacity: 0.65;
+}
+
+.gramota-card-promo a.btn {
+  color: #fff !important;
+}
+
+.gramota-card-promo a:hover {
+  background: #336854 !important;
+}
+.gramota-card-promo.gramota-card-promo2 a:hover {
+  background: #f7da47 !important;
+}
+
+.gramota-btn {
+}
+
+.gramota-btn:hover {
+  opacity: 0.6;
+}
+
+.gramota-show-more:hover {
+  opacity: 0.6;
+}
+
+a.text-muted:hover {
+  color: #303030 !important;
+}
+
+a:hover,
+a span:hover,
+a.text-dark:hover,
+a.text-dark:hover span {
+  color: #656565 !important;
+}
+
+a.btn.border-dark:hover {
+  border-color: #656565 !important;
+}
+
+.gramota-collapse a:hover {
+  opacity: 0.7;
+}
+
+.gramota-subscribe button[type="submit"]:hover {
+  background: #505050 !important;
+}
+
+.gramota-favourites a:hover {
+  opacity: 0.7;
+}
+
+.pagination .page-link:hover {
+  background: #cde0d5;
+}
+
+.gramota-social a:hover img {
+  outline: 1px solid #303030;
+  border-radius: 50%;
+  display: block;
+}
+
+.gramota-btn-green {
+  background: #39735d;
+  transition: 0.3s;
+}
+
+.gramota-btn-green:hover {
+  background: #336854;
+}
+
+.gramota-check-yourself-card * {
+  position: relative;
+  z-index: 40;
+}
+
+.gramota-check-yourself-card-image {
+  filter: ;
+}
+
+.gramota-check-yourself-card-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  opacity: 0;
+  z-index: 30;
+}
+
+.gramota-check-yourself-card:hover .gramota-check-yourself-card-bg {
+  opacity: 1;
+}
+
+.gramota-btn-black {
+  background: #303030;
+  transition: 0.3s;
+}
+.gramota-btn-black:hover {
+  background: #505050;
 }
