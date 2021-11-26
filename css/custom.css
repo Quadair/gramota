@@ -539,6 +539,14 @@ header .container-fluid {
   }
 }
 
+.gramota-nav-tabs {
+  height: 51px !important;
+}
+
+.gramota-nav-tabs .nav-item a {
+  display: inline-block;
+}
+
 .gramota-nav-tabs.nav-tabs .nav-link {
   border: 0;
   border-bottom: 0.5rem solid transparent;
@@ -550,6 +558,10 @@ header .container-fluid {
 @media (max-width: 992px) {
   .gramota-nav-tabs.nav-tabs .nav-link {
     font-size: 15px !important;
+  }
+
+  .gramota-nav-tabs {
+    height: 48px !important;
   }
 }
 
@@ -572,10 +584,11 @@ header .container-fluid {
     flex-wrap: nowrap;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
+    height: 28px !important;
   }
 
-  .gramota-nav-tabs::-webkit-scrollbar {
-    width: 0;
+  .gramota-nav-tabs {
+    height: 48px !important;
   }
 }
 
