@@ -161,6 +161,9 @@ h6 a {
 .gramota-SuisseIntl-SemiBold {
   font-family: "Conv_SuisseIntl-SemiBold";
 }
+.gramota-SuisseIntl-Bold {
+  font-family: "Conv_SuisseIntl-Bold";
+}
 
 .gramota-Spectral {
   font-family: "Spectral", serif;
@@ -353,8 +356,8 @@ header .container-fluid {
 }
 
 .gramota-search-top-block {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-top: 45px !important;
+  padding-bottom: 51px !important;
   /* padding-left: 12px !important;
   padding-right: 12px !important;*/
 }
@@ -377,6 +380,13 @@ header .container-fluid {
 }
 
 .gramota-card-promo {
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+
+.gramota-card-promo .card-body {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .gramota-card-promo h2 {
@@ -489,6 +499,7 @@ header .container-fluid {
   font-family: "Conv_EuclidCircularA-Light";
   font-weight: normal;
   font-size: 55px;
+  margin-bottom: 33px;
 }
 
 @media (max-width: 992px) {
@@ -602,6 +613,12 @@ header .container-fluid {
 .gramota-card-1 h2 a {
   font-size: 2rem;
   font-weight: normal !important;
+}
+
+@media (max-width: 1024px) {
+  .gramota-card-1 h2 a {
+    font-size: 1.5rem;
+  }
 }
 
 .gramota-card-1 .card-text {
@@ -954,6 +971,44 @@ header .container-fluid {
   position: relative;
 }
 
+.gramota-experts .slick-slide,
+.gramota-events .slick-slide {
+  padding: 0;
+  margin: 0 0 30px 0;
+  border-right: 1px solid #dadcdf;
+  float: none;
+  height: auto;
+}
+
+.gramota-experts .slick-slide:nth-of-type(3n),
+.gramota-events .slick-slide:nth-of-type(3n) {
+  border: 0;
+}
+
+@media (max-width: 1280px) {
+  .gramota-experts .slick-slide,
+  .gramota-events .slick-slide {
+    border-right: 1px solid #dadcdf !important;
+  }
+  .gramota-experts .slick-slide:nth-of-type(2n),
+  .gramota-events .slick-slide:nth-of-type(2n) {
+    border: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-experts .slick-slide,
+  .gramota-events .slick-slide {
+    border: 0 !important;
+  }
+}
+
+.gramota-experts .slick-track,
+.gramota-events .slick-track {
+  display: flex !important;
+  align-items: stretch !important;
+}
+
 .gramota-experts h2,
 .gramota-events h2 {
   font-size: 28px;
@@ -961,15 +1016,19 @@ header .container-fluid {
 
 .gramota-experts h3 a,
 .gramota-events h3 a {
-  font-family: "Conv_SuisseIntl-SemiBold";
+  font-family: "Conv_SuisseIntl-Bold";
   font-size: 1.5rem;
-  letter-spacing: 0.02rem;
+  /*letter-spacing: 0.02rem;*/
 }
 
 .gramota-events h5 {
   font-family: "Conv_SuisseIntl-Regular";
   font-size: 1.2rem;
   letter-spacing: 0.02rem;
+}
+
+.slick-slider {
+  position: static;
 }
 
 .gramota-experts .slider .slick-arrow,
@@ -1016,28 +1075,28 @@ header .container-fluid {
   transform: rotate(180deg);
 }
 
-.gramota-experts > h2,
+.gramota-experts > h2 {
+  position: absolute;
+  left: 50%;
+  top: 4.1rem;
+  transform: translateX(-50%);
+}
+
 .gramota-events > h2 {
   position: absolute;
   left: 50%;
-  top: 4rem;
+  top: 5.5rem;
   transform: translateX(-50%);
 }
 
 .gramota-all-experts-button {
-  position: absolute;
-  width: 100%;
-  left: 50%;
+  position: relative;
   bottom: 1.5rem;
-  transform: translateX(-50%);
 }
 
 .gramota-all-events-button {
-  position: absolute;
-  width: 100%;
-  left: 50%;
+  position: relative;
   bottom: 1.5rem;
-  transform: translateX(-50%);
 }
 
 .gramota-social li a {
@@ -1094,6 +1153,10 @@ header .container-fluid {
   .gramota-lections .col-xs-12.col-md-6.col-lg-4:nth-of-type(2) {
     border-right: 0 !important;
   }
+}
+
+.gramota-copygirgt {
+  font-size: 14px;
 }
 
 @media (max-width: 576px) {
@@ -1269,8 +1332,15 @@ header .container-fluid {
   font-size: 24px;
 }
 
+.gramota-fs-28 {
+  font-size: 28px;
+}
+
 .gramota-fs-32 {
   font-size: 32px;
+}
+.gramota-fs-35 {
+  font-size: 35px !important;
 }
 .gramota-fs-36 {
   font-size: 36px;
@@ -1867,11 +1937,19 @@ header .container-fluid {
   content: "";
   display: block;
   position: absolute;
-  left: calc(100% - 180px);
+  left: calc(100% - 245px);
   top: -12px;
   width: 22px;
   height: 12px;
   background: url("../images/img068.png");
+}
+@media (max-width: 992px) {
+  .gramota-search-settings-popup:before {
+    left: calc(100% - 205px);
+    top: -12px;
+    width: 22px;
+    height: 12px;
+  }
 }
 
 .gramota-search-settings-popup .nav-tabs .nav-link {
