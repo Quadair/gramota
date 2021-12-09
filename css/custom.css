@@ -39,6 +39,10 @@
   }
 }
 
+.text-muted {
+  color: #b9bec1 !important;
+}
+
 .gramota-search {
 }
 
@@ -360,6 +364,7 @@ header .container-fluid {
   padding-bottom: 51px !important;
   /* padding-left: 12px !important;
   padding-right: 12px !important;*/
+  margin-bottom: 60px;
 }
 
 @media (max-width: 992px) {
@@ -379,14 +384,32 @@ header .container-fluid {
   }
 }
 
+@media (max-width: 576px) {
+  .gramota-search-top-block {
+    margin-bottom: 32px;
+  }
+}
+
 .gramota-card-promo {
-  margin-top: 60px;
-  margin-bottom: 35px;
+  /*margin-top: 60px;*/
 }
 
 .gramota-card-promo .card-body {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+  .gramota-card-promo .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .gramota-card-promo .card-body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .gramota-card-promo h2 {
@@ -499,7 +522,7 @@ header .container-fluid {
   font-family: "Conv_EuclidCircularA-Light";
   font-weight: normal;
   font-size: 55px;
-  margin-bottom: 33px;
+  margin-top: 35px;
 }
 
 @media (max-width: 992px) {
@@ -511,6 +534,12 @@ header .container-fluid {
 @media (max-width: 768px) {
   .gramota-journal-h1 {
     font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-journal-h1 {
+    margin-top: 20px;
   }
 }
 
@@ -551,7 +580,14 @@ header .container-fluid {
 }
 
 .gramota-nav-tabs {
+  margin-top: 33px;
   height: 51px !important;
+}
+
+@media (max-width: 992px) {
+  .gramota-nav-tabs {
+    margin-top: 21px;
+  }
 }
 
 .gramota-nav-tabs .nav-item a {
@@ -596,6 +632,7 @@ header .container-fluid {
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
     height: 28px !important;
+    margin-top: 11px;
   }
 
   .gramota-nav-tabs {
@@ -608,6 +645,10 @@ header .container-fluid {
   font-size: 0.9375rem;
   color: #7c858f;
   opacity: 0.7;
+}
+
+.gramota-card-1.gramota-card-1_1 .card-body {
+  min-height: 242px;
 }
 
 .gramota-card-1 h2 a {
@@ -634,6 +675,26 @@ header .container-fluid {
   opacity: 0.7;
 }
 
+.gramota-lections h2 a {
+  font-size: 24px !important;
+}
+
+@media (max-width: 768px) {
+  .gramota-lections h2 a {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-lections h2 a {
+    font-size: 18px !important;
+  }
+
+  .gramota-lections .col-xs-12 {
+    padding: 0 !important;
+  }
+}
+
 @media (max-width: 1200px) {
   .gramota-card-1 h2 a {
     font-size: 24px;
@@ -642,6 +703,11 @@ header .container-fluid {
 @media (max-width: 992px) {
   .gramota-card-1 h2 a {
     font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .gramota-card-1 h2 a {
+    font-size: 18px;
   }
 }
 
@@ -665,6 +731,30 @@ header .container-fluid {
 .gramota-person .card-link {
   font-family: "Conv_EuclidCircularA-Light", Sans-Serif !important;
   font-weight: normal !important;
+}
+
+.gramota-card-2_1 {
+  min-height: 560px;
+}
+
+@media (max-width: 1024px) {
+  .gramota-card-2_1 {
+    min-height: 444px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-card-2_1 {
+    min-height: 1px;
+  }
+}
+
+.gramota-card-2_1 .card-body {
+  height: 100%;
+}
+
+.gramota-card-2_2 .card-body {
+  padding: 0;
 }
 
 .gramota-card-2 h2 {
@@ -732,6 +822,12 @@ header .container-fluid {
   font-size: 28px;
 }
 
+@media (max-width: 1024px) {
+  .gramota-checking-list h2 {
+    font-size: 20px;
+  }
+}
+
 .gramota-checking-list ol {
   list-style: none;
   counter-reset: list;
@@ -744,6 +840,12 @@ header .container-fluid {
   position: relative;
   font-family: "Conv_SuisseIntl-Light";
   font-size: 18px;
+}
+
+@media (max-width: 1024px) {
+  .gramota-checking-list ol > li {
+    font-size: 15px;
+  }
 }
 
 .gramota-checking-list ol > li::before {
@@ -762,6 +864,15 @@ header .container-fluid {
 }
 
 @media (max-width: 992px) {
+  .gramota-checking-list ol > li::before {
+    left: 1.5rem;
+  }
+  .gramota-checking-list ol > li svg {
+    top: 0.4rem;
+  }
+}
+
+@media (max-width: 992px) {
   .gramota-checking-list h2 {
     font-size: 20px;
   }
@@ -775,6 +886,12 @@ header .container-fluid {
 
 .gramota-word h2 {
   font-size: 28px;
+}
+@media (max-width: 768px) {
+  .gramota-questions svg {
+    width: 32px !important;
+    height: 26px !important;
+  }
 }
 
 .gramota-word h3 {
@@ -847,12 +964,40 @@ header .container-fluid {
 
 @media (max-width: 768px) {
   .gramota-journal-h2 {
-    font-size: 18px;
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-journal-h2 {
+    border: 0 !important;
+  }
+}
+
+.gramota-yellow {
+  padding: 118px 0 129px 0;
+}
+
+@media (max-width: 768px) {
+  .gramota-yellow {
+    padding: 48px 0 30px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-yellow {
+    padding: 28px 0 20px 0;
   }
 }
 
 .gramota-yellow h2 {
   font-size: 52px;
+}
+
+@media (max-width: 1024px) {
+  .gramota-yellow h2 {
+    font-size: 32px;
+  }
 }
 
 .gramota-yellow p {
@@ -864,7 +1009,7 @@ header .container-fluid {
 
 @media (max-width: 768px) {
   .gramota-yellow h2 {
-    font-size: 32px;
+    font-size: 18px;
     text-align: left !important;
   }
   .gramota-yellow {
@@ -971,6 +1116,37 @@ header .container-fluid {
   position: relative;
 }
 
+.gramota-experts .gramota-userpic {
+  width: 7.125rem;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .gramota-experts .gramota-userpic {
+    width: 5rem;
+  }
+}
+
+.gramota-experts .text-muted,
+.gramota-events .text-muted {
+  color: #7c858f !important;
+}
+
+.gramota-experts .slider,
+.gramota-events .slider {
+  padding-top: 8.2rem !important;
+  padding-bottom: 2rem !important;
+}
+
+@media (max-width: 768px) {
+  .gramota-experts .slider,
+  .gramota-events .slider {
+    padding-top: 2.2rem !important;
+    padding-bottom: 1rem !important;
+  }
+}
+
 .gramota-experts .slick-slide,
 .gramota-events .slick-slide {
   padding: 0;
@@ -1012,6 +1188,22 @@ header .container-fluid {
 .gramota-experts h2,
 .gramota-events h2 {
   font-size: 28px;
+}
+
+.gramota-experts .slick-slide > div,
+.gramota-events .slick-slide > div {
+  height: 100%;
+}
+.gramota-experts .slick-slide > div > div,
+.gramota-events .slick-slide > div > div {
+  height: 100%;
+}
+
+.gramota-experts .slick-slide > div > div > div,
+.gramota-events .slick-slide > div > div > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .gramota-experts h3 a,
@@ -1075,18 +1267,19 @@ header .container-fluid {
   transform: rotate(180deg);
 }
 
-.gramota-experts > h2 {
+.gramota-experts > h2,
+.gramota-events > h2 {
   position: absolute;
   left: 50%;
   top: 4.1rem;
   transform: translateX(-50%);
 }
 
-.gramota-events > h2 {
-  position: absolute;
-  left: 50%;
-  top: 5.5rem;
-  transform: translateX(-50%);
+@media (max-width: 768px) {
+  .gramota-experts > h2,
+  .gramota-events > h2 {
+    top: 1.6rem;
+  }
 }
 
 .gramota-all-experts-button {
@@ -1157,6 +1350,35 @@ header .container-fluid {
 
 .gramota-copygirgt {
   font-size: 14px;
+}
+
+footer h5 {
+  font-size: 18px;
+}
+
+footer LI {
+  font-size: 15px;
+}
+
+@media (max-width: 1024px) {
+  footer h5 {
+    font-size: 15px;
+  }
+
+  footer LI {
+    font-size: 14px;
+  }
+}
+footer .gramota-social li a {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
+}
+
+@media (max-width: 1024px) {
+  footer .gramota-social li a {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2222,6 +2444,18 @@ header .container-fluid {
 @media (max-width: 768px) {
   .gramota-check {
     margin: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-hr-1 {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .gramota-hr-2 {
+    display: none !important;
   }
 }
 
