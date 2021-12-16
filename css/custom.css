@@ -361,10 +361,9 @@ header .container-fluid {
 
 .gramota-search-top-block {
   padding-top: 45px !important;
-  padding-bottom: 51px !important;
+  padding-bottom: 45px !important;
   /* padding-left: 12px !important;
   padding-right: 12px !important;*/
-  margin-bottom: 60px;
 }
 
 @media (max-width: 992px) {
@@ -391,7 +390,7 @@ header .container-fluid {
 }
 
 .gramota-card-promo {
-  /*margin-top: 60px;*/
+  margin-top: 60px;
 }
 
 .gramota-card-promo .card-body {
@@ -478,6 +477,9 @@ header .container-fluid {
 }
 
 @media (max-width: 576px) {
+  .gramota-card-promo {
+    margin-top: 32px;
+  }
   .gramota-card-promo a {
     padding: 9px 10px 6px 10px;
     font-size: 15px;
@@ -545,19 +547,35 @@ header .container-fluid {
 
 .gramota-article-h1 {
   font-weight: normal;
-  font-size: 55px;
+  font-size: 52px;
   margin-left: 0;
 }
 
 @media (max-width: 992px) {
   .gramota-article-h1 {
-    font-size: 45px;
+    font-size: 44px;
   }
 }
 
 @media (max-width: 768px) {
   .gramota-article-h1 {
     font-size: 24px;
+  }
+}
+
+.gramota-article-h1-p {
+  font-size: 38px;
+}
+
+@media (max-width: 1024px) {
+  .gramota-article-h1-p {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gramota-article-h1-p {
+    font-size: 20px;
   }
 }
 
@@ -587,6 +605,32 @@ header .container-fluid {
 @media (max-width: 992px) {
   .gramota-nav-tabs {
     margin-top: 21px;
+  }
+}
+
+.gramota-tags a {
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .gramota-tags a {
+    font-size: 14px;
+  }
+}
+
+.gramota-tags.gramota-tags h2 a {
+  font-size: 32px;
+  font-family: "Conv_SuisseIntl-Bold";
+}
+
+@media (max-width: 992px) {
+  .gramota-tags.gramota-tags h2 a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .gramota-tags.gramota-tags h2 a {
+    font-size: 18px;
   }
 }
 
@@ -649,6 +693,25 @@ header .container-fluid {
 
 .gramota-card-1.gramota-card-1_1 .card-body {
   min-height: 242px;
+}
+
+@media (max-width: 768px) {
+  .gramota-card-1 {
+    /* border-bottom: 1px solid #ddd !important;
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;*/
+    height: auto !important;
+  }
+  .gramota-card-2 {
+    /*border-bottom: 1px solid #ddd !important;
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;*/
+    height: auto !important;
+  }
+
+  .gramota-card-1.gramota-card-1_1 .card-body {
+    min-height: auto;
+  }
 }
 
 .gramota-card-1 h2 a {
@@ -981,6 +1044,7 @@ header .container-fluid {
 @media (max-width: 768px) {
   .gramota-yellow {
     padding: 48px 0 30px 0;
+    border-bottom: 1px solid #ddd;
   }
 }
 
@@ -1111,7 +1175,67 @@ header .container-fluid {
   outline-width: 0;
 }
 
-.gramota-experts,
+.gramota-article-expert h1 a {
+  font-size: 45px;
+}
+
+.gramota-article-expert .card-link a {
+  font-size: 18px;
+  color: #000 !important;
+  padding: 0 20px 0 0;
+  background-image: url("../images/img040.png");
+  background-repeat: no-repeat;
+  background-position: right 60%;
+  background-size: 10px 6px;
+  cursor: pointer;
+}
+
+.gramota-article-expert .card-link a.active {
+  background-image: url("../images/img041.png");
+}
+
+.gramota-article-expert .card-link p {
+  display: none;
+}
+
+.gramota-article-expert .card-link a.active {
+}
+
+.gramota-article-expert .card-link p {
+  font-size: 18px;
+  color: #777763 !important;
+}
+
+.gramota-article-expert-image {
+  width: 73%;
+}
+
+@media (max-width: 768px) {
+  .gramota-article-expert-image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-article-expert {
+    margin-top: -32px;
+  }
+
+  .gramota-article-expert h1 a {
+    font-size: 26px;
+  }
+  .gramota-article-expert .card-link a {
+    font-size: 14px;
+    padding: 0 18px 0 0;
+    background-position: right 55%;
+    background-size: 10px 6px;
+  }
+  .gramota-article-expert .card-link p {
+    font-size: 14px;
+  }
+}
+
+.gramota-expert .gramota-experts,
 .gramota-events {
   position: relative;
 }
@@ -1327,7 +1451,15 @@ header .container-fluid {
     display: none;
   }
 }
-
+@media (max-width: 788px) {
+  .gramota-lections .col-xs-12 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px !important;
+  }
+  .gramota-lections.row {
+    border: 0 !important;
+  }
+}
 .gramota-lections .col-xs-12.col-md-6.col-lg-4 {
   border-right: 1px solid #e6e6e6;
 }
@@ -1394,6 +1526,7 @@ footer .gramota-social li a {
 }
 .breadcrumb {
   background: #f6f6f7;
+  margin-top: 24px;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
@@ -1431,6 +1564,10 @@ footer .gramota-social li a {
     transform: translateX(-50%);
     top: 75px;
   }
+
+  .gramota-subscribe h4 {
+    font-size: 18px;
+  }
 }
 
 .gramota-show-more {
@@ -1462,18 +1599,38 @@ footer .gramota-social li a {
 .gramota-article-text > p {
 }
 
-.gramota-article-text > .gramota-first-p {
+.gramota-article-text .gramota-first-p {
   font-size: 24px;
 }
 
 @media (max-width: 768px) {
-  .gramota-article-text > .gramota-first-p {
+  .gramota-article-text .gramota-first-p {
+    font-size: 18px;
+  }
+}
+
+.gramota-article-text .gramota-p {
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .gramota-article-text .gramota-p {
     font-size: 18px;
   }
 }
 
 .gramota-article-h2 {
-  font-size: 28px;
+  font-size: 24px;
+}
+
+.gramota-article-h2-1 {
+  font-size: 36px;
+}
+
+@media (max-width: 768px) {
+  .gramota-article-h2-1 {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1483,15 +1640,57 @@ footer .gramota-social li a {
   }
 }
 
+.gramota-article-text h3 {
+  font-size: 26px !important;
+}
+
+@media (max-width: 768px) {
+  .gramota-article-text h3 {
+    font-size: 18px !important;
+  }
+}
+
+.gramota-article-text h4 strong {
+  font-size: 26px !important;
+}
+
+.gramota-article-text-news h2 a {
+  font-size: 32px;
+}
+
+@media (max-width: 1024px) {
+  .gramota-article-text-news h2 a {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gramota-article-text-news h2 a {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-article-text h4 strong {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .gramota-article-text p {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .gramota-breadcrumbs {
-  margin: 0 4px !important;
+  margin: 0 4px 0 4px !important;
 }
 
 .gramota-breadcrumbs .btn-close {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  right: 20px;
+  right: 35px;
   width: 0.3rem;
   height: 0.3em;
 }
@@ -1505,9 +1704,55 @@ footer .gramota-social li a {
   background: url("../images/img040.png") no-repeat 100% 8px;
 }
 
+.gramota-collapse-article .btn {
+  font-size: 18px;
+}
+
+.gramota-contents ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+.gramota-contents ul ul {
+  padding-left: 4px 0 4px 0 24px;
+}
+
+@media (max-width: 768px) {
+  .gramota-contents ul {
+    padding: 3px 0 3px 12px;
+  }
+}
+
+.gramota-contents li {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .gramota-contents li a {
+    font-size: 14px !important;
+  }
+}
+
 .gramota-contents li {
   list-style: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.58rem;
+  font-size: 18px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .gramota-contents li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+.gramota-contents li li {
+  margin-top: 0.6rem;
+}
+
+@media (max-width: 768px) {
+  .gramota-contents li li {
+    margin-top: 0.3rem;
+  }
 }
 
 .gramota-contents a {
@@ -2357,19 +2602,52 @@ footer .gramota-social li a {
 
 .gramota-auth-popup {
   position: fixed;
-  width: 50%;
+  width: 900px;
   left: 50%;
-  transform: translateX(-50%);
-  top: 200px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
   z-index: 120;
   transition: 0.3s;
   visibility: hidden;
   opacity: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 576px) {
+  .gramota-auth-popup {
+  }
 }
 
 .gramota-auth-popup.active {
   visibility: visible;
   opacity: 1;
+}
+
+.gramota-auth-popup h3 {
+  font-size: 24px;
+}
+
+.gramota-auth-popup-social a {
+  width: 88px;
+  height: 60px;
+  border-radius: 55px;
+}
+
+@media (max-width: 992px) {
+  .gramota-auth-popup {
+    width: 670px;
+  }
+
+  .gramota-auth-popup h3 {
+    font-size: 20px;
+  }
+
+  .gramota-auth-popup-social a {
+    width: 68px;
+    height: 50px;
+    border-radius: 20px;
+  }
 }
 
 .gramota-auth-popup-list li {
@@ -2398,34 +2676,14 @@ footer .gramota-social li a {
   cursor: pointer;
 }
 
-.gramota-auth-popup-social a {
-  width: 88px;
-  height: 60px;
-  border-radius: 55px;
-}
-
-@media (max-width: 1500px) {
-  .gramota-auth-popup {
-    width: 60%;
-  }
-}
-@media (max-width: 1280px) {
-  .gramota-auth-popup {
-    width: 70%;
-  }
-}
-@media (max-width: 992px) {
-  .gramota-auth-popup {
-    width: 90%;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .gramota-auth-popup {
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
+    left: 0;
+    transform: translate(0, 0);
     overflow-y: scroll;
   }
 }
@@ -2456,6 +2714,34 @@ footer .gramota-social li a {
 @media (min-width: 768px) {
   .gramota-hr-2 {
     display: none !important;
+  }
+}
+
+.gramota-event-list-item h2 {
+  font-size: 24px;
+}
+
+@media (max-width: 575px) {
+  .gramota-event-list-item h2 {
+    font-size: 18px;
+  }
+}
+
+.gramota-events-tabs a {
+  font-size: 15px;
+}
+
+.gramota-event-list-item-date {
+  width: 180px !important;
+  flex-basis: 180px !important;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .gramota-event-list-item-date {
+    width: 140px;
+    flex-basis: 140px !important;
+    flex-shrink: 0;
   }
 }
 
@@ -2546,6 +2832,13 @@ a.btn.border-dark:hover {
   opacity: 0.7;
 }
 
+.pagination .page-link {
+  width: 48px;
+  height: 48px;
+  padding: 12px 0 0 0 !important;
+  text-align: center;
+}
+
 .pagination .page-link:hover {
   background: #cde0d5;
 }
@@ -2571,7 +2864,6 @@ a.btn.border-dark:hover {
 }
 
 .gramota-check-yourself-card-image {
-  filter: ;
 }
 
 .gramota-check-yourself-card-bg {
