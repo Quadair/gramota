@@ -19,7 +19,7 @@
     <script type="text/javascript" src="../js/bootstrap.js"></script>
 </head>
 
-<body style="overflow-x: hidden;">
+<body>
     <div class="gramota-header container-fluid">
         <header class="mt-sm-3 mt-lg-4 pt-3 pt-sm-0">
             <div>
@@ -74,31 +74,29 @@
                                 <use xlink:href="../images/sprite.svg#menu"></use>
                             </svg>
                         </a>
-                        <div class="gramota-auth-popup gramota-auth-popup-login bg-white active">
+                        <div class="gramota-auth-popup gramota-auth-popup-login bg-white">
                             <div class="row">
-                                <div class="col-xs-12 col-sm-6 col-lg-5 p-4 p-md-5 order-2 order-sm-1"
+                                <div class="col-xs-12 col-md-5 p-3 p-md-5 order-2 order-md-1"
                                     style="background: #EFEEE3;;">
-                                    <br>
-                                    <h3 class="mb-4 d-none d-sm-block">
-                                        Авторизуйтесь<br> для доступа ко всем
-                                        возможностям</h3>
-                                    <p class="gramota-SuisseIntl-Regular d-block d-sm-none">Получите доступ ко всем
-                                        возможностям Грамоты
-                                    </p>
+                                    <h3 class="mb-5">Авторизуйтесь<br> для доступа ко всем возможностям</h3>
                                     <ul class="gramota-auth-popup-list list-unstyled">
-                                        <li class="gramota-SuisseIntl-Regular mb-3">
-                                            <img src="../images/img073.png" alt="">
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg class="icon" width="14" height="18">
+                                                <use xlink:href="../images/sprite.svg#auth-icon1"></use>
+                                            </svg>
                                             Искать по ключевым словарям
                                             русского
                                             языка
                                         </li>
-                                        <li class="gramota-SuisseIntl-Regular mb-3">
-                                            <img src="../images/img074.png" alt="">
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg class="icon" width="17" height="21">
+                                                <use xlink:href="../images/sprite.svg#auth-icon2"></use>
+                                            </svg>
                                             Добавлять в избранное
                                         </li>
-                                        <li class="gramota-SuisseIntl-Regular mb-3">
-                                            <svg viewBox="0 0 18 14" fill="none" style="top: 7px;"
-                                                xmlns="http://www.w3.org/2000/svg">
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                                style="top: 7px;" xmlns="http://www.w3.org/2000/svg">
                                                 <mask id="path-1-inside-1_2467_13682" fill="white">
                                                     <rect x="6" y="8" width="12" height="6" rx="1" />
                                                 </mask>
@@ -126,8 +124,9 @@
                                             </svg>
                                             Создавать свои словари
                                         </li>
-                                        <li class="gramota-SuisseIntl-Regular mb-3">
-                                            <svg viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="10.5" cy="10.5" r="9.5" stroke="#303030"
                                                     stroke-width="1.5" />
                                                 <path
@@ -139,16 +138,16 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-lg-7 p-4 p-md-4 p-lg-5 pt-lg-4 order-1 order-sm-2">
+                                <div class="col-xs-12 col-md-7 p-3 p-md-5 order-1 order-md-2">
                                     <br><br>
-                                    <h2 class="mb-1 d-block d-sm-none">Вход</h2>
+                                    <h2 class="mb-3 d-block d-md-none">Вход</h2>
                                     <form action="">
                                         <input type="email"
-                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-2"
+                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-3"
                                             id="exampleFormControlInput1" placeholder="Электронная почта">
-                                        <div class="gramota-auth-popup-passwd position-relative mb-4 mb-md-4">
+                                        <div class="gramota-auth-popup-passwd position-relative mb-2">
                                             <input type="password"
-                                                class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-2"
+                                                class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3"
                                                 id="exampleFormControlInput2" placeholder="Пароль">
                                             <a><svg width="24" height="17" viewBox="0 0 24 17" fill="none"
                                                     xmlns="http://www.w3.org/2000/svg">
@@ -157,13 +156,12 @@
                                                         fill="#B9BEC1" />
                                                 </svg></a>
                                         </div>
-                                        <div
-                                            class="gramomota-forgot-heafing gramota-SuisseIntl-Regular text-muted text-decoration-none">
-                                            Забыли
-                                            пароль?</div>
+                                        <a
+                                            class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-decoration-none">Забыли
+                                            пароль?</a><br>
                                         <button type="submit"
-                                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn bg-dark text-light rounded-0 w-100 text-center py-3 mt-2 mt-md-3 mb-4">Войти</button>
-                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 mb-2">через соцсети</p>
+                                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn bg-dark text-light rounded-0 w-100 text-center py-3 mt-3 mb-4">Войти</button>
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15">через соцсети</p>
                                         <ul
                                             class="gramota-auth-popup-social list-unstyled d-flex justify-content-between border-bottom pb-4 mb-4">
                                             <li>
@@ -222,8 +220,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <p
-                                            class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-center mb-0 mb-md-3">
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-center">
                                             Еще не зарегистрированы? <a
                                                 class="gramota-auth-popup-link-register gramota-SuisseIntl-SemiBold gramota-fs-15 text-dark text-decoration-none">Создайте&nbsp;аккаунт</a>
                                         </p>
@@ -238,17 +235,9 @@
                         </div>
                         <div class="gramota-auth-popup gramota-auth-popup-register bg-white">
                             <div class="row">
-                                <div class="col-xs-12 col-md-6 col-lg-5 p-4 p-md-5 order-2 order-sm-1"
-                                    style="background: #EFEEE3;;"><br>
-                                    <h3 class="mb-2 d-none text-dark d-sm-block">Зарегистрируйтесь<br> для доступа ко
-                                        всем
-                                        возможностям</h3>
-                                    <p class="d-block d-sm-none gramota-SuisseIntl-Regular"
-                                        style="color: #777763 !important;">
-                                        Получите доступ ко всем
-                                        возможностям Грамоты для
-                                        зарегистрированных пользователей
-                                    </p>
+                                <div class="col-xs-12 col-md-5 p-3 p-md-5 order-2 order-md-1"
+                                    style="background: #EFEEE3;;">
+                                    <h3 class="mb-5">Зарегистрируйтесь<br> для доступа ко всем возможностям</h3>
                                     <ul class="gramota-auth-popup-list list-unstyled">
                                         <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
                                             <svg class="icon" width="14" height="18">
@@ -264,38 +253,66 @@
                                             </svg>
                                             Добавлять в избранное
                                         </li>
-                                        <svg class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
-                                            <sv </svg>
-                                                <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
-                                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
-                                                        xmlns="http://www.w3.org/2000/svg">
-                                                        <circle cx="10.5" cy="10.5" r="9.5" stroke="#303030"
-                                                            stroke-width="1.5" />
-                                                        <path
-                                                            d="M11.1935 5C8.77419 5 7 6.35637 7 8.44309H8.90323C8.95161 7.20596 9.72581 6.43089 11.1613 6.43089C12.1774 6.43089 13.0323 6.90786 13.0323 7.75745C13.0323 8.60705 12.3548 9.15854 11.4032 9.68022C10.2097 10.3509 9.58065 10.977 9.58065 12.3631V12.8699H11.5V12.4079C11.5 11.4241 11.9677 11.126 12.9677 10.5596C13.9516 10.0081 15 9.0542 15 7.65312C15 5.81978 13.129 5 11.1935 5ZM11.6452 16V13.9729H9.45161V16H11.6452Z"
-                                                            fill="#303030" />
-                                                    </svg>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="18" height="14" viewBox="0 0 18 14" fill="none"
+                                                style="top: 7px;" xmlns="http://www.w3.org/2000/svg">
+                                                <mask id="path-1-inside-1_2467_13682" fill="white">
+                                                    <rect x="6" y="8" width="12" height="6" rx="1" />
+                                                </mask>
+                                                <rect x="6" y="8" width="12" height="6" rx="1" stroke="#303030"
+                                                    stroke-width="3" mask="url(#path-1-inside-1_2467_13682)" />
+                                                <mask id="path-2-inside-2_2467_13682" fill="white">
+                                                    <rect x="6" width="12" height="6" rx="1" />
+                                                </mask>
+                                                <rect x="6" width="12" height="6" rx="1" stroke="#303030"
+                                                    stroke-width="3" mask="url(#path-2-inside-2_2467_13682)" />
+                                                <mask id="path-3-inside-3_2467_13682" fill="white">
+                                                    <rect width="5" height="6" rx="1"
+                                                        transform="matrix(-1 0 0 1 5 0)" />
+                                                </mask>
+                                                <rect width="5" height="6" rx="1" transform="matrix(-1 0 0 1 5 0)"
+                                                    stroke="#303030" stroke-width="3"
+                                                    mask="url(#path-3-inside-3_2467_13682)" />
+                                                <mask id="path-4-inside-4_2467_13682" fill="white">
+                                                    <rect width="5" height="6" rx="1"
+                                                        transform="matrix(-1 0 0 1 5 0)" />
+                                                </mask>
+                                                <rect width="5" height="6" rx="1" transform="matrix(-1 0 0 1 5 8)"
+                                                    stroke="#303030" stroke-width="3"
+                                                    mask="url(#path-4-inside-4_2467_13682)" />
+                                            </svg>
+                                            Создавать свои словари
+                                        </li>
+                                        <li class="gramota-SuisseIntl-Regular gramota-fs-18 mb-3">
+                                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="10.5" cy="10.5" r="9.5" stroke="#303030"
+                                                    stroke-width="1.5" />
+                                                <path
+                                                    d="M11.1935 5C8.77419 5 7 6.35637 7 8.44309H8.90323C8.95161 7.20596 9.72581 6.43089 11.1613 6.43089C12.1774 6.43089 13.0323 6.90786 13.0323 7.75745C13.0323 8.60705 12.3548 9.15854 11.4032 9.68022C10.2097 10.3509 9.58065 10.977 9.58065 12.3631V12.8699H11.5V12.4079C11.5 11.4241 11.9677 11.126 12.9677 10.5596C13.9516 10.0081 15 9.0542 15 7.65312C15 5.81978 13.129 5 11.1935 5ZM11.6452 16V13.9729H9.45161V16H11.6452Z"
+                                                    fill="#303030" />
+                                            </svg>
 
-                                                    Задавать вопросы справочному бюро
-                                                </li>
+                                            Задавать вопросы справочному бюро
+                                        </li>
                                     </ul>
                                 </div>
-                                <div class="col-xs-12 col-sm-6 col-lg-7 p-4 p-md-4 p-lg-5 order-1 order-sm-2">
+                                <div class="col-xs-12 col-md-7 p-3 p-md-5 order-1 order-md-2">
                                     <br><br>
                                     <h2 class="mb-3 d-block d-md-none">Регистрация</h2>
                                     <form action="">
                                         <input type="text"
-                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-2"
+                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-3"
                                             id="exampleFormControlInput1" placeholder="Ваше имя"><input type="email"
-                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-2"
+                                            class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3 mb-3"
                                             id="exampleFormControlInput1" placeholder="Электронный адрес">
-                                        <div class="gramota-auth-popup-passwd position-relative mb-3">
+                                        <div class="gramota-auth-popup-passwd position-relative mb-4">
                                             <input type="password"
                                                 class="gramota-SuisseIntl-Regular gramota-fs-18 form-control bg-light border-0 p-3"
                                                 id="exampleFormControlInput2" placeholder="Пароль">
                                             <a><img src="../images/img072.png" width="24" height="20" alt=""></a>
                                         </div>
-                                        <div class="form-check mb-1">
+                                        <div class="form-check mb-2">
                                             <input class="form-check-input rounded-0" type="checkbox" value=""
                                                 id="check5">
                                             <label
@@ -306,7 +323,7 @@
                                                 персональных данных
                                             </label>
                                         </div>
-                                        <div class="form-check mb-1">
+                                        <div class="form-check mb-2">
                                             <input class="form-check-input rounded-0" type="checkbox" value=""
                                                 id="check6">
                                             <label
@@ -316,9 +333,9 @@
                                             </label>
                                         </div>
                                         <button type="submit"
-                                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn bg-dark text-light rounded-0 w-100 text-center py-3 mt-1 mb-4"
+                                            class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn bg-dark text-light rounded-0 w-100 text-center py-3 mt-3 mb-4"
                                             style="background: #39735D !important;">Зарегистрироваться</button>
-                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 mb-1">через соцсети</p>
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15">через соцсети</p>
                                         <ul
                                             class="gramota-auth-popup-social list-unstyled d-flex justify-content-between border-bottom pb-4 mb-4">
                                             <li>
@@ -361,7 +378,7 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-center m-0">
+                                        <p class="gramota-SuisseIntl-Regular gramota-fs-15 text-muted text-center">
                                             Уже есть аккаунт? <a
                                                 class="gramota-auth-popup-link-login gramota-SuisseIntl-SemiBold gramota-fs-15 text-dark text-decoration-none">Войдите</a>
                                         </p>
@@ -393,7 +410,7 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="gramota-fade active"></div>
+                        <div class="gramota-fade"></div>
                         <script>
                             $(document).ready(function () {
                                 $('.gramota-menu-search').click(function () {
@@ -729,7 +746,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade" id="dictionary" role="tabpanel "
+                                        <div class="tab-pane fade" id="dictionary" role="tabpanel"
                                             aria-labelledby="dictionary-tab">
                                             <div class="form-check mt-4">
                                                 <input class="form-check-input rounded-0" type="checkbox" value=""
@@ -798,6 +815,9 @@
                                         $(".gramota-search-settings-fade").click(function () {
                                             $('.gramota-search-settings-button, .gramota-search-settings-popup, .gramota-search-settings-fade').removeClass('active');
                                         });
+                                        $(".my-gramota-acces").click(function () {
+                                            $('.my-gramota-acces').toggleClass('active')
+                                        });
                                     });
                                 </script>
                             </div>
@@ -807,729 +827,443 @@
             </div>
         </div>
     </div>
-    <div class="my-0 my-sm-2 mx-2 d-none d-sm-block">
-        <nav aria-label="breadcrumb" class="gramota-breadcrumbs position-relative">
-            <ol class="breadcrumb p-4 mx-3">
-                <li class="breadcrumb-item"><a href="#" class="gramota-jost">Home</a></li>
-                <li class="gramota-roboto-700 text-dark breadcrumb-item active" aria-current="page">Library</li>
-            </ol>
-            <button class="btn-close"></button>
-        </nav>
-    </div>
-
-
     <div class="container-fluid">
         <div class="gramota-x-paddings container-xxl">
             <div class="row">
                 <div class="col-12">
-                    <div class="gramota-tags sm-0 mt-lg-4">
-                        <a href="#"
-                            class="gramota-EuclidCircularA-Light gramota-josttext-dark text-decoration-none">новости</a>
-                        · <a href="#"
-                            class="gramota-EuclidCircularA-Light text-dark text-decoration-none">лингвистика</a>
-                    </div>
-                    <h1
-                        class="gramota-article-h1 gramota-SuisseIntl-Bold font-weight-bold display-4 mt-3 mt-sm-5 mt-xl-5">
-                        Русский
-                        язык после пандемии</h1>
-                    <p class="gramota-spectral gramota-article-h1-p font-weight-normal">Изменится ли система школьного
-                        обучения</p>
-                    <div class="gramota-jost text-muted my-3 my-md-4 my-lg-5">
-                        Автор: И. С. Улуханов
-                    </div>
+                    <ul class="gramota-nav-tabs my-gramota-nav-tabs nav nav-tabs d-flex">
+                        <li class="nav-item me-4">
+                            <a class="gramota-SuisseIntl-Regular nav-link p-0 pb-3 pb-2 text-dark active"
+                                data-toggle="tab" href="#">Мой словарь</a>
+                        </li>
+                        <li class="nav-item me-4">
+                            <a class="gramota-SuisseIntl-Regular nav-link p-0 pb-3 pb-2 text-dark" data-toggle="tab"
+                                href="#">Избранное</a>
+                        </li>
+                        <li class="my-gramota-more1 ms-auto d-block d-sm-none">
+                            <a><svg width="21" height="5" viewBox="0 0 21 5" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="2.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                    <circle cx="10.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                    <circle cx="18.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="gramota-article-text col-sm-12 col-lg-8 mt-3">
-                    <p class="gramota-first-p gramota-SuisseIntl-Regular">В исследовании рассматривается формирование
-                        и развитие
-                        основных разновидностей письменного и
-                        устного языка Древней Руси с XI по XVII в. Автор – И. С. Улуханов – показывает, как
-                        взаимодействовали книжные и народно-разговорные элементы языка, изменялось значение слов,
-                        сменялись одни грамматические формы другими, как формировались словарный состав и грамматика
-                        современного русского языка. Описаны художественные приемы, использовавшиеся в различных
-                        произведениях XI–XVII вв. Явления языка рассмотрены в тесной связи с такими
-                        социально-культурными явлениями, как становление древнерусского государства, появление
-                        письменности, развитие связей со славянским югом, Византией, Западной Европой.</p>
-                    <div class="gramota-collapse gramota-collapse-article position-relative py-3 px-3 px-lg-5 mt-3 mt-lg-5"
-                        style="background: #F6F6F7">
-                        <a class="btn collapsed d-block text-start" data-bs-toggle="collapse" href="#collapseExample"
-                            role="button" aria-expanded="false" aria-controls="collapseExample">
-                            <span class="gramota-SuisseIntl-SemiBold"
-                                style="display: inline; text-align: left;">Содержание</span>
-                        </a>
-                        <div class="collapse mt-2" id="collapseExample">
-                            <ul class="gramota-contents mt-4 list-unstyled">
-                                <li><a><strong>Введение</strong></a></li>
 
-                                <li><a><strong>1. Церковно-славянский язык русской редакции</strong></a>
-                                    <ul>
-                                        <li><a>Языки близкие, но разные</a></li>
-                                        <li><a>Старославянский язык и навыки живой речи</a></li>
-                                        <li><a>Почему русские слова попадали в церковнославянский язык?</a>
-                                        <li><a>По книжным образцам</a></li>
-                                        <ul>
-                                            <li><a>Словотворчество</li>
-                                            <li><a>Грамматика и орфография</a></li>
-                                            <li><a>Книжная риторика</a></li>
-                                        </ul>
+
+                <script>
+
+
+                    $(document).ready(function () {
+                        $(".my-gramota-more1 a").click(function () {
+
+                            $(".my-gramota-more1 a").addClass('active');
+                            $('.my-gramota-p1').addClass('active');
+                            $(".my-gramota-p1-fade").addClass('active')
+
+                        });
+                        $(".my-gramota-p1-fade").click(function () {
+                            $(".my-gramota-more1 a").removeClass('active');
+                            $('.my-gramota-p1').removeClass('active');
+                            $(".my-gramota-p1-fade").removeClass('active')
+                        });
+                        setTimeout(function () {
+                            $('.my-gramota-hint.active').removeClass('active');
+                        }, 1200);
+                    });
+
+
+                </script>
+
+
+                <div class=" d-flex mt-4" style="position: relative;">
+                    <div class=" all-dictionaries">
+                        <a class="gramota-SuisseIntl-Regular all-dictionaries-link text-muted text-decoration-none">
+                            Все
+                            словари</a>
+                        <span
+                            class="my-gramota-hint gramota-SuisseIntl-Regular text-white rounded-1 p-4 active">Соберите
+                            свой
+                            словарь.
+                            Добавляйте в него
+                            любые словарные статьи, найденные на Грамоте
+                            <a class="gramota-SuisseIntl-Bold btn p-0 mt-2" style="color: #5DA489 !important;">Еще
+                                подсказки</a>
+                            <a class="close"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 0.999023L12 11.999" stroke="#7C858F" />
+                                    <path d="M1 11.999L12 0.999023" stroke="#7C858F" />
+                                </svg>
+                            </a>
+                        </span>
+                        <div class="my-gramota-dictionaries bg-white border border-1">
+                            <ul>
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none active">Большой толковый
+                                        словарь</a>
+                                </li>
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none">Словарь иностранных
+                                        слов</a>
+                                </li>
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none">Словарь личных имён</a>
                                 </li>
                             </ul>
+                            <ul class="my-gramota-my-dictionaries">
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none">Словарь иностранных
+                                        слов</a>
+                                </li>
+                            </ul>
+                            <a
+                                class="add-to-my-list gramota-SuisseIntl-Regular btn d-block border border-1 rounded-2 py-2">+
+                                Добавить
+                                мой
+                                список</a>
+                        </div>
+                        <div class="add-to-my-list-popup p-3">
+                            <form action="">
+                                <input type="text" class="gramota-SuisseIntl-Regular rounded-0 px-3 py-2 mb-3" name=""
+                                    id="" placeholder="Название">
+                                <button class="gramota-SuisseIntl-Regular rounded-2 border-0 px-3 py-2 me-2 text-muted
+                                    bg-light" type="submit">Сохранить</button>
+                                <a class="add-to-my-list-popup-cancel gramota-SuisseIntl-Regular rounded-2 border border-1 border-dark px-3 py-2 text-decoration-none"
+                                    type="submit">Отменить</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="my-gramota-p2-fade"></div>
+                    <div class="my-gramota-p1 d-flex ms-auto">
+                        <a
+                            class="my-gramota-share gramota-SuisseIntl-Regular text-muted text-decoration-none">Поделиться</a>
+                        <hr class="my-gramota-hr1">
+                        <div class="my-gramota-acces gramota-SuisseIntl-Regular text-muted ms-3 d-flex">Публичный
+                            доступ
+                            <div class="my-gramota-switch ms-auto ms-sm-2">
+                                <div class="my-gramota-switch-round"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" my-gramota mt-4 mb-5 d-flex">
+                    <div class="my-gramota-left-col d-none d-sm-flex">
+                        <ul class="my-gramota-letter-list">
+                            <li>
+                                <a>А</a>
                             </li>
-                            <li><a><strong>2. Русский язык X–XVII веков</strong></a>
-                                <ul>
-                                    <li><a>Устная речь Древней Руси</a></li>
-                                    <li><a>Речь книжная и речь разговорная</a></li>
-                                    <li><a>Славянизмы в разговорной речи</a></li>
-                                    <li><a>Важнейшие изменения в разговорной речи</a></li>
-                                    <li><a>Русский язык в письменности</a></li>
-                                    <li><a>Язык оригинальных произведений светской литературы</a>
-                                        <ul>
-                                            <li><a>Соединение разговорного и книжного</a></li>
-                                            <li><a>Книжные и фольклорные художественные средства</a></li>
-                                        </ul>
-                                    </li>
-                                    <il><a>Деловая речь Древней Руси</a></il>
-                                </ul>
+                            <li>
+                                <a>Б</a>
                             </li>
-                            <li><a><strong>3. Славянизмы в русском языке</strong></a></li>
-                            <li><a>Чем определялась судьба славянизмов в русском языке?</a></li>
-                            <li><a>Как славянизмы изменяют свое значение?</a></li>
-                            <li><a>В новой сфере – с новым значением</a></li>
+                            <li>
+                                <a class="active">В</a>
+                            </li>
+                            <li>
+                                <a>Г</a>
+                            </li>
+                            <li>
+                                <a>Д</a>
+                            </li>
+                            <li>
+                                <a>Е</a>
+                            </li>
+                            <li>
+                                <a>Ё</a>
+                            </li>
+                            <li>
+                                <a>Ж</a>
+                            </li>
+                            <li>
+                                <a>З</a>
+                            </li>
+                            <li>
+                                <a>И</a>
+                            </li>
+                            <li>
+                                <a>Й</a>
+                            </li>
+                            <li>
+                                <a>К</a>
+                            </li>
+                            <li>
+                                <a>Л</a>
+                            </li>
+                            <li>
+                                <a>М</a>
+                            </li>
+                            <li>
+                                <a>Н</a>
+                            </li>
+                            <li>
+                                <a>О</a>
+                            </li>
+                            <li>
+                                <a>П</a>
+                            </li>
+                            <li>
+                                <a>Р</a>
+                            </li>
+                            <li>
+                                <a>С</a>
+                            </li>
+                            <li>
+                                <a>Т</a>
+                            </li>
+                            <li>
+                                <a>У</a>
+                            </li>
+                            <li>
+                                <a>Ф</a>
+                            </li>
+                            <li>
+                                <a>Х</a>
+                            </li>
+                            <li>
+                                <a>Ц</a>
+                            </li>
+                            <li>
+                                <a>Ч</a>
+                            </li>
+                            <li>
+                                <a>Ш</a>
+                            </li>
+                            <li>
+                                <a>Щ</a>
+                            </li>
+                            <li>
+                                <a>Ъ</a>
+                            </li>
+                            <li>
+                                <a>Ы</a>
+                            </li>
+                            <li>
+                                <a>Ь</a>
+                            </li>
+                            <li>
+                                <a>Э</a>
+                            </li>
+                            <li>
+                                <a>Ю</a>
+                            </li>
+                            <li>
+                                <a>Я</a>
+                            </li>
+                        </ul>
+                        <div class="my-gramota-left-col-content">
+                            <ul class="terms-list">
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none active">Авангардизм</a>
+                                </li>
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none">Внимательный</a>
+                                </li>
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none">Не</a>
+                                </li>
+                                <li>
+                                    <a class="gramota-SuisseIntl-Regular text-decoration-none">Согласие</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                    <h2 class="gramota-EuclidCircularA-Light gramota-article-h2 text-lowercase text-start mt-4 mt-lg-5">
-                        Введение<br>
-                        <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
-                        </svg>
-                    </h2>
-                    <h2 class="gramota-article-h2-1 gramota-SuisseIntl-Bold my-3 my-lg-5">
-                        1. Церковно-славянский язык русской редакции
-                    </h2>
-                    <h4 class="gramota-Spectral pb-3">
-                        <strong>Языки близкие, но разные</strong>
-                    </h4>
-                    <p class="gramota-article-p">Язык Древней Руси – это язык далекого прошлого <sup
-                            class="gramota-tooltip position-relative text-decoration-underline cursor-pointer"
-                            style="color: #39735d;"><strong>1</strong>
-                            <span class="gramota-tooltip-content p-5">Гамкрелидзе Т. В. Иванов Вяч. Вс. Индоевропейский
-                                язык
-                                и индоевропейцы. Т. I-II. Тбилиси, 1984; Леонтьев А. А. Возникновение и первоначальное
-                                развитие языка. М., 1963; Трубачев О. Н. Этногенез и культура древнейших славян.
-                                Лингвистические исследования. М., 1991; Трубачев О. Н. В поисках единства. 2-е изд. М.,
-                                1992; Филин Ф. П. Образование языка восточных славян. М.-Л., 1962; Филин Ф. П.
-                                Языки-братья. // Русская речь, 1970, № 5.
-                                <a class="gramota-tooltip-close"><svg width="17" height="17" viewBox="0 0 17 17"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M1 1L16 16" stroke="#B9BEC1" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M1 16L16 1" stroke="#B9BEC1" stroke-width="1.5" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                </a>
-                            </span>
-                        </sup>. Но
-                        прошлое языка
-                        постоянно
-                        напоминает о себе.
-                    </p>
-                    <script>
-                        $(document).ready(function () {
-                            $("sup strong").click(function () {
-                                $(this).parent().find('.gramota-tooltip-content').addClass('active')
-                            });
-                            $(".gramota-tooltip-close").click(function () {
-                                $(this).parent().removeClass('active');
-                            });
-                        });
-                    </script>
-                    <p class="gramota-article-p">Вот несколько отрывков из «Руслана и Людмилы» А. С. Пушкина:</p>
-                    <p class="gramota-article-p ps-4 py-3">Уже Фарлаф по граду мчится,<br> И шум на стогнах
-                        восстает...<br>
-                        В
-                        полях
-                        наездники мелькают,<br>
-                        Вдали подъемля черный прах ...<br> В устах открытых замер глас,<br> И пал без чувств он на
-                        колена...</p>
-                    <p class="gramota-article-p">Как видим, устаревшие элементы языка можно встретить даже в широко
-                        известном и всеми любимом
-                        произведении: это слова, отсутствующие в современном языке (стогна – «площадь», подъемля –
-                        «поднимая») или малоупотребительные (град, глас, уста), слова, выступающие в иных значениях,
-                        нежели в современном языке (восстать – в значении «подняться», прах – в значении «пыль»),
-                        наконец, устаревшие формы широко употребительных слов (на колена вместо на колени).</p>
-                    <p class="gramota-article-p">Чтобы правильно понять текст многих произведений (в том числе и
-                        входящих в
-                        постоянный круг нашего
-                        чтения), зачастую необходимо знать старые значения слов, употребляющихся сейчас в других
-                        значениях.</p>
-                    <p class="gramota-article-p">Приведем примеры из «Евгения Онегина»:</p>
-                    <p class="gramota-article-p ps-4 py-3">Увы! Любовник молодой,<br> Поэт, задумчивый мечтатель<br>
-                        Убит
-                        приятельской
-                        рукой.</p>
-                    <p class="gramota-article-p">Слово любовник употреблено Пушкиным в значении «влюбленный, горячо
-                        любящий», которое не
-                        свойственно этому слову в современном языке.</p>
-                    <p class="gramota-article-p ps-4 py-3">Зачем у вас я на примете?<br> Не потому ль, что в высшем
-                        свете<br> Теперь
-                        являться я должна;<br>
-                        Что я богата и знатна,<br> Что муж в сраженьях изувечен,<br> Что нас за то ласкает двор?<br> Не
-                        потому ль, что мой позор<br> Теперь бы всеми был замечен,<br> И мог бы в обществе принесть<br>
-                        Вам соблазнительную честь?</p>
-                    <p class="gramota-article-p">В этом монологе Татьяны слово соблазнительный означает «скандальный»,
-                        т. е.
-                        речь идет о «чести»
-                        соблазнителя. В современном языке это прилагательное означает только «содержащий соблазн,
-                        заманчивый, привлекающий»: например, соблазнительное приглашение.</p>
-                    <p class="gramota-article-p">Но не только устаревшие слова, их значения и формы заставляют нас
-                        обращаться к прошлому языка.
-                    </p>
-                    <p class="gramota-article-p">Задумывались ли вы когда-нибудь, например, над тем, почему можно
-                        сказать
-                        причинить зло, но нельзя
-                        – причинить удовольствие? Почему говорят прервать разговор, но нельзя прервать нитку? Почему в
-                        современном русском языке рядом со словами берег, дерево, голова имеются прибрежный, древесный,
-                        обезглавить? Родственно ли слово подражать слову дорога, обвязать – обязать, гражданин –
-                        горожанин, смрад – смородина? Ответить на эти вопросы можно, лишь обратившись к истории русского
-                        языка, к языку Древней Руси.</p>
-                    <p class="gramota-article-p">История языка помогает узнать, как жили, мыслили наши предки, каковыми
-                        были
-                        их мировоззрение, их
-                        внутренний мир. Следы язычества можно найти, например, в таких словах, как чаровать, обаяние,
-                        кудесник и др. Глагол чаровати в древности означал «колдовать, ворожить», обаяние –
-                        «чародейство, волхвование», а кудесник – «колдун» (образовано от кудеса – «колдовство, чудеса»).
-                    </p>
-                    <p class="gramota-article-p">Старые названия часто сохраняют память о том, что находилось в
-                        названном
-                        месте, чем там
-                        занимались люди. Так, название улицы Кузнецкий Мост напоминает о слободе кузнецов, находившейся
-                        на реке Неглинной, через которую был перекинут мост; в начале XIX века река была заключена в
-                        трубу.</p>
-                    <p class="gramota-article-p">Обыденские переулки в Москве получили название по церкви Ильи
-                        Обыденного
-                        (XVII в.). Название
-                        церкви объясняется тем, что она была выстроена обыдень, т. е. за один день. Старое значение
-                        слова обыденный – «построенный или совершенный в один день» (обыденная церковь, обыденный путь);
-                        в современном языке слово означает «обыкновенный, заурядный».</p>
-                    <p class="gramota-article-p">Многие устаревшие слова или формы слов, выйдя из употребления, оставили
-                        следы в языке в составе
-                        устойчивых сочетаний, имен собственных или производных слов.</p>
-                    <p class="gramota-article-p">Слово зеница в выражении беречь как зеницу ока означает «зрачок», и все
-                        выражение в целом
-                        первоначально значило «беречь, как зрачок глаза». В выражении почил в Бозе (т. е. умер «в Боге»,
-                        как подобает христианину) мы встречаемся со старой формой предложного (местного) падежа (с
-                        чередованием г-з) в Бозе. (Вот как понимает эту форму маленький мальчик, герой повести В.
-                        Каверина «Неизвестный друг»: «Все цари (изображенные на гимназическом похвальном листе. – И.
-                        У.)... ездили умирать в какую-то „Бозу“: почти под каждым портретом было написано: „Почил в
-                        Бозе“ тогда-то». Аналогично – у А. Бруштейн («Дорога уходит в даль...»): «А почему он (Александр
-                        III) умер в Бозе? Он же был в Ливадии / Разве он оттуда переехал в Бозу?») В выражении попасть
-                        впросак сохранилось слово просак, которым называли станок для кручения веревок.</p>
-                    <p class="gramota-article-p">Слово мытищи означало место, где собирали мыто – «пошлину за проезд и
-                        провоз багажа». Глагол
-                        ошеломить, по-видимому, был образован от слова шелом – «шлем» и означал либо «сильно ударить по
-                        голове, шлему» (по-древнерусски «по шелому»), либо «надеть шлем, опустить забрало и тем самым
-                        лишить себя слуха»; есть и другое мнение: глагол является производным от белор. шолам «шум».</p>
-
-                    <div class="grampta-prev-next border-top border-bottom py-5 mt-5">
-                        <div class="row">
-                            <div class="col-6">
-                                <a href="#"
-                                    class="gramota-SuisseIntl-SemiBold position-relative d-inline-block ps-5"><img
-                                        src="../images/img042.png" class="position-absolute"
-                                        style="width: 18px; left: 0;top: 3px;" alt=" ...">Введение</a>
-                            </div>
-                            <div class="col-6">
-                                <a href="#" class="gramota-SuisseIntl-SemiBold position-relative d-inline-block pe-5">
-                                    <img src="../images/img034.png" class="position-absolute"
-                                        style="width: 18px; right: 0; top: 3px;" alt=" ...">
-                                    2. Русский язык
-                                    X–XVII веков.
-                                    пример
-                                    длинного заголовки</a>
-                            </div>
+                    <div class="my-gramota-right-col ps-0 ps-sm-4 ps-xl-5">
+                        <div class="my-gramota-view pb-3 mb-3 d-block d-sm-none">
+                            <a class="my-gramota-list-view p-2 pe-1 active">
+                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1H20" stroke="#7C858F" stroke-width="1.5" />
+                                    <path d="M0 6.5H20" stroke="#7C858F" stroke-width="1.5" />
+                                    <path d="M0 11.5H20" stroke="#7C858F" stroke-width="1.5" />
+                                    <path d="M0 16.5H20" stroke="#7C858F" stroke-width="1.5" />
+                                </svg>
+                            </a>
+                            <a class="my-gramota-table-view p-2">
+                                <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.75" y="0.75" width="18.5" height="5.5" stroke="#7C858F"
+                                        stroke-width="1.5" />
+                                    <rect x="0.75" y="10.75" width="18.5" height="5.5" stroke="#7C858F"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </a>
                         </div>
-                    </div>
-
-                    <p class="gramota-SuisseIntl-Regular gramota-first-p mt-4 mt-md-5">Государственный институт
-                        русского
-                        языка
-                        им.
-                        А. С.
-                        Пушкина
-                        назвал словами 2020
-                        года
-                        «самоизоляцию»
-                        и «обнуление». Как рассказал ТАСС научный руководитель проекта «Слово года» Михаил Осадчий,
-                        сначала в рамках исследования эксперты выявили две наиболее значимые и обсуждаемые темы года —
-                        это пандемия и внесение изменений в Конституцию РФ. </p>
-                    <img src="../images/img036.png" class="col-12 col-lg-11 my-2 my-lg-5" alt="...">
-                    <p class="gramota-article-p mt-3 mt-lg-5">1234Государственный институт русского языка им. А. С.
-                        Пушкина назвал
-                        словами
-                        2020
-                        года «самоизоляцию»
-                        и «обнуление». Как рассказал ТАСС научный руководитель проекта «Слово года» Михаил Осадчий,
-                        сначала в рамках исследования эксперты выявили две наиболее значимые и обсуждаемые темы года —
-                        это пандемия и внесение изменений в Конституцию РФ. Затем в ходе анализа текстов в СМИ были
-                        выявлены ключевые слова, чья частотность употребления наиболее выросла в течение трех предыдущих
-                        лет.</p>
-                    <p class="gramota-article-p mt-3 mt-lg-5 mb-4 mb-lg-5">
-                        Так, слово «самоизоляция» продемонстрировало рост популярности более чем в 10 раз. У слова
-                        «обнуление» похожий показатель, рассказал Осадчий. Dictionary объявили словом 2020 года
-                        «lockdown» (локдаун). </p>
-                    <img src=" ../images/img037.png" class="col-12 col-lg-11" alt="...">
-                    <div class="gramota-roboto-700 col-11 mt-3">10 ноября составители толкового словаря английского
-                        языка
-                        Collins
-                        English Dictionary объявили
-                        словом 2020 года «lockdown» (локдаун</div>
-                    <div class="gramota-roboto-300 text-muted">Иллюстрация: Ivan Mennins</div>
-                    <p class="gramota-article-p mt-4 mt-md-4">10 ноября составители толкового словаря английского языка
-                        Collins
-                        English
-                        Dictionary объявили
-                        словом 2020 года «lockdown» (локдаун). В 2019-м институт русского языка называл словами года
-                        «пожар» и «протест».</p>
-                    <div
-                        class="gramota-card-2 card border-0 border-bottom border-top py-2 mt-sm-0 mt-lg-5 mb-sm-0 mb-lg-3 pt-sm-1 pt-lg-4 pb-sm-1 pb-md-4">
-                        <div class="row g-0 d-flex">
-                            <div class="col-3">
-                                <a href="#"><img src="../images/img008.png" class="w-100" alt="..."></a>
-                            </div>
-                            <div class="col-md-9 col-9 d-flex">
-                                <div
-                                    class="card-body p-0 ms-3 d-flex flex-column justify-content-center ps-sm-0 ps-md-3">
-                                    <h2 class="card-title">
-                                        <a href="#" class="text-dark text-decoration-none">Новый тренажер
-                                            Грамоты.<br> Диктант для 7 класса</a>
-                                    </h2>
-                                    <div>
-                                        <p><a class="gramota-SuisseIntl-Regular text-decoration-none">Что такое полевая
-                                                лингвистика
-                                                и зачем
-                                                изучать малые языки <svg class="icon" width="16" height="14">
-                                                    <use xlink:href="../images/sprite.svg#arrow-right" fill="black">
-                                                    </use>
-                                                </svg></a></p>
+                        <ul class="terms-list-values">
+                            <li class="terms-list-value p-3 p-sm-5 px-0 px-0 px-sm-5">
+                                <h2 class="gramota-SuisseIntl-Bold d-flex">Авангарди́зм
+                                    <div class="terms-actions-button px-3 d-none d-sm-block ms-auto active">
+                                        <svg width="21" height="5" viewBox="0 0 21 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                            <circle cx="10.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                            <circle cx="18.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                        </svg>
+                                    </div>
+                                    <div class="terms-actions-collapse px-3 d-block d-sm-none ms-auto">
+                                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8 8L15 1" stroke="#DADCDF" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </h2>
+                                <div class="my-gramota-terms-actions">
+                                    <ul class="terms-actions">
+                                        <li>
+                                            <a
+                                                class="terms-add-note-button gramota-SuisseIntl-Regular text-decoration-none">
+                                                <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M2.33333 14.3333L15.6667 1L19 4.33333L5.66667 17.6667M2.33333 14.3333L1 19L5.66667 17.6667M2.33333 14.3333L5.66667 17.6667M13 3.66667L16.3333 7"
+                                                        stroke="#303030" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Добавить
+                                                заметку</a>
+                                        </li>
+                                        <li>
+                                            <a class="gramota-SuisseIntl-Regular text-decoration-none"><svg
+                                                    viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M18.568 6.78702L11.736 1V4.30687C4.90399 5.13359 1.976 9.26717 1 13.4008C3.44 10.5072 6.85599 9.1845 11.736 9.1845V12.574L18.568 6.78702Z"
+                                                        stroke="#303030" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg>
+                                                Поделиться</a>
+                                        </li>
+                                        <li>
+                                            <a class="gramota-SuisseIntl-Regular text-decoration-none"><svg
+                                                    viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="4" y="4" width="11" height="13" stroke="#303030"
+                                                        stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M12 1H1V15" stroke="#303030" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Скопировать в
+                                                раздел</a>
+                                        </li>
+                                        <hr>
+                                        <li>
+                                            <a
+                                                class="terms-add-delete-button gramota-SuisseIntl-Regular text-decoration-none"><svg
+                                                    viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <rect x="3" y="4" width="12" height="15" stroke="#303030"
+                                                        stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path d="M1 4H17" stroke="#303030" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M6 1L12 1" stroke="#303030" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M7 8L7 15" stroke="#303030" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                    <path d="M11 8L11 15" stroke="#303030" stroke-width="1.5"
+                                                        stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                                Удалить
+                                                статью</a>
+                                        </li>
+                                    </ul>
+                                    <div class="terms-add-note active">
+                                        <form action="">
+                                            <textarea class="gramota-SuisseIntl-Regular rounded-0 p-3 mb-3" name=""
+                                                id="" cols="30" rows="10" placeholder="Напишите заметку"></textarea>
+                                            <button
+                                                class="terms-add-note-cancel gramota-SuisseIntl-Regular rounded-2 border-0 px-3 py-2 me-2 text-muted bg-light"
+                                                type="submit">Сохранить</button>
+                                            <a class="terms-add-note-cancel gramota-SuisseIntl-Regular rounded-2 border border-1 border-dark px-3 py-2 text-decoration-none"
+                                                type="submit">Отменить</a>
+                                        </form>
+                                    </div>
+                                    <div class="terms-add-delete gramota-SuisseIntl-Bold text-white py-5">
+                                        Вы точно хотите удалить эту заметку?<br>
+                                        <button type="submit"
+                                            class="gramota-btn-green gramota-SuisseIntl-Bold btn rounded-2 py-2 px-4 me-3 my-2 text-white">
+                                            Удалить</button>
+                                        <a
+                                            class="terms-add-delete-cancel gramota-SuisseIntl-Bold btn rounded-2 rounded-2 border border-1 border-white py-2 px-4 my-2 text-white">
+                                            Отменить</a>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="gramota-article-p mt-3 mt-lg-5">Так, слово «самоизоляция» продемонстрировало рост
-                        популярности более чем
-                        в 10 раз. У слова
-                        «обнуление» похожий показатель, рассказал Осадчий. В финал также попали слова «голосование»,
-                        «дистанцирование», «карантин», «ковид», «конституция», «коронавирус», «поправки», «удаленка».
-                    </p>
-                    <p class="gramota-article-p mt-3 mt-lg-5">10 ноября составители толкового словаря английского языка
-                        Collins English
-                        Dictionary объявили
-                        словом 2020 года «lockdown» (локдаун). В 2019-м институт русского языка называл словами года
-                        «пожар» и «протест». Так, слово «самоизоляция» продемонстрировало рост популярности более чем в
-                        10 раз. У слова «обнуление» похожий показатель, рассказал Осадчий. В финал также попали слова
-                        «голосование», «дистанцирование», «карантин», «ковид», «конституция», «коронавирус», «поправки»,
-                        «удаленка».</p>
-                    <p class="gramota-article-p mt-3 mt-lg-5">10 ноября составители толкового словаря английского языка
-                        Collins English
-                        Dictionary объявили
-                        словом 2020 года «lockdown» (локдаун). В 2019-м институт русского языка называл словами года
-                        «пожар» и «протест».</p>
-                    <div class="gramota-jost fs-5 mt-5 mb-4">
-                        Теги:
-                        <a href="#" class="gramota-jost text-success text-decoration-none ms-3">Слова года</a>
-                        <a href="#" class="gramota-jost text-success text-decoration-none ms-3">Современный русский
-                            язык</a>
-                    </div>
-                    <div class="gramota-subscribe mt-5"
-                        style="border-width: 0.75rem; border-color: #cde0d5; border-style: solid;">
-                        <form action="" class="m-3 mt-lg-5">
-                            <h4 class="col-sm-12 col-md-6 p-0 m-0">Новые материалы Грамоты в вашей почте</h4>
-                            <div class="row position-relative">
-                                <img src="../images/img039.png" alt=" ..."></a>
-                                <div class="col-md-9 col-sm-12 px-0 position-relative mb-3 mb-md-0">
-                                    <input type="search"
-                                        class="gramota-roboto-400 form-control-lg border-0 rounded-0 py-3 pe-5 w-100 h-100"
-                                        placeholder="Ваш электронный адрес" aria-label="Search"
-                                        style="background: #F6F6F7;">
+                                <div class="terms-list-value-hidden">
+                                    <p>мн. нет, м. [фр. avantgardisme < avantgarde — см. авангард]. общее название
+                                            различных течений в искусстве 20 — 21 вв., отходящих от реализма и ищущих
+                                            новые формы художественного <span
+                                            class="my-gramota-see-also gramota-SuisseIntl-Regular d-block pt-4">См.
+                                            также:<br>
+                                            Ср.
+                                            <a
+                                                class="gramota-SuisseIntl-Bold text-decoration-none">модернизм</a>.</span>
+
+                                    </p>
+                                    <div class="terms-list-values border-dictionaries d-flex flex-wrap">
+                                        <a href="#"
+                                            class="gramota-SuisseIntl-Regular text-decoration-none p-1 mb-2 me-2"
+                                            style="border: 2px solid #fff4b9">Большой толковый словарь</a> <a href="#"
+                                            class="gramota-SuisseIntl-Regular text-decoration-none p-1 mb-2 me2"
+                                            style="border: 2px solid #fff4b9">Мой словарь</a>
+                                    </div>
                                 </div>
-                                <div class="col-md-3 col-sm-12 px-0">
-                                    <button type="submit"
-                                        class="gramota-roboto-400 btn btn-lg border-0 text-white fw-weight-bold rounded-0 w-100 h-100"
-                                        style="background: #303030;">Подписаться</button>
+                            </li>
+                            <li class="terms-list-value p-3 p-sm-5 px-0 px-0 px-sm-5">
+                                <h2 class="gramota-SuisseIntl-Bold d-flex">Авангарди́зм
+                                    <div class="terms-actions-button px-3 d-none d-sm-block ms-auto">
+                                        <svg width="21" height="5" viewBox="0 0 21 5" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="2.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                            <circle cx="10.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                            <circle cx="18.5" cy="2.5" r="2.5" fill="#DADCDF" />
+                                        </svg>
+                                    </div>
+                                    <div class="terms-actions-collapse px-3 d-block d-sm-none ms-auto">
+                                        <svg width="16" height="9" viewBox="0 0 16 9" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L8 8L15 1" stroke="#DADCDF" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </h2>
+                                <div class="terms-list-value-hidden" style="display: block;">
+                                    <p>мн. нет, м. [фр. avantgardisme < avantgarde — см. авангард]. общее название
+                                            различных течений в искусстве 20 — 21 вв., отходящих от реализма и ищущих
+                                            новые формы художественногомн. нет, м. [фр. avantgardisme < avantgarde — см.
+                                            авангард]. общее название различных <i class="text-muted">течений в
+                                            искусстве 20 — 21 вв.,
+                                            отходящих от реализма и ищущих новые формы художественного</i><br>
+                                            <a class="gramota-SuisseIntl-Bold my-gamota-colapse brn text-decoration-none"
+                                                data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                                aria-expanded="false" aria-controls="collapseExample">Развернуть</a>
+                                            <div class="collapse" id="collapseExample">
+                                                <p>мн. нет, м. [фр. avantgardisme < avantgarde — см. авангард]. общее
+                                                        название различных течений в искусстве 20 — 21 вв., отходящих от
+                                                        реализма и ищущих новые формы художественногомн. нет, м. [фр.
+                                                        avantgardisme <p avantgarde — см. авангард]. общее название
+                                                        различных <i class="text-muted">течений в
+                                                        искусстве 20 — 21 вв.,
+                                                        отходящих от реализма и ищущих новые формы художественного</i>
+                                                </p>
+                                            </div>
+                                            <div class="terms-list-values border-dictionaries d-flex flex-wrap">
+                                                <a href="#"
+                                                    class="gramota-SuisseIntl-Regular text-decoration-none p-1 mb-2 me-2"
+                                                    style="border: 2px solid #fff4b9">Большой толковый словарь</a> <a
+                                                    href="#"
+                                                    class="gramota-SuisseIntl-Regular text-decoration-none p-1 mb-2 me2"
+                                                    style="border: 2px solid #fff4b9">Мой словарь</a>
+                                            </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div
-                        class="gramota-favourites mt-5 py-4 border-top border-bottom d-block d-sm-flex align-items-center">
-                        <a href="#" class="btn border-dark rounded-0 d-block py-2 px-4">
-                            <svg class="icon" width="16" height="14">
-                                <use xlink:href="../images/sprite.svg#favourites"></use>
-                            </svg>
-                            <span class="gramota-roboto-700 ps-2 me-2">В избранное</span>
-                        </a>
-                        <span
-                            class="gramota-roboto-300 d-block d-sm-inline text-muted text-center p-4 p-sm-0 ms-3">Поделиться:</span>
-                        <ul class="list-group list-group-horizontal justify-content-center">
-                            <li class="list-group-item border-0">
-                                <a href="#">
-                                    <svg class="icon" width="11" height="21">
-                                        <use xlink:href="../images/sprite.svg#fb"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-group-item border-0">
-                                <a href="#">
-                                    <svg class="icon" width="22" height="14">
-                                        <use xlink:href="../images/sprite.svg#vk"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-group-item border-0">
-                                <a href="#">
-                                    <svg class="icon" width="18" height="15">
-                                        <use xlink:href="../images/sprite.svg#twi"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-group-item border-0">
-                                <a href="#">
-                                    <svg class="icon" width="12" height="20">
-                                        <use xlink:href="../images/sprite.svg#ok"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-group-item border-0">
-                                <a href="#">
-                                    <svg class="icon" width="19" height="16">
-                                        <use xlink:href="../images/sprite.svg#tg"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="list-group-item border-0">
-                                <a href="#">
-                                    <svg class="icon" width="21" height="21">
-                                        <use xlink:href="../images/sprite.svg#wu"></use>
-                                    </svg>
-                                </a>
                             </li>
                         </ul>
-                    </div>
-                    <h2 class="gramota-EuclidCircularA-Light gramota-article-h2 text-lowercase mt-5">Еще на
-                        эту тему<br>
-                        <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
-                        </svg>
-                    </h2>
-                    <div class="gramota-card-2 card border-0 mt-3 mt-md-5">
-                        <div class="card-body p-0">
-                            <h4 class="card-title">
-                                <a href="#" class="text-dark text-decoration-none">Главные слова 2019 года</a>
-                            </h4>
-                            <p class="card-text fs-5">Что говорят специалисты русского языка</p>
-                        </div>
-                    </div>
-                    <div class="gramota-card-2 card border-0 mt-3 mt-md-5">
-                        <div class=" card-body p-0">
-                            <h4 class="card-title">
-                                <a href="#" class="text-dark text-decoration-none">Битва за феминитивы</a>
-                            </h4>
-                            <p class="card-text fs-5">Что говорят специалисты русского языка</p>
-                        </div>
-                    </div>
-                    <div class="gramota-card-2 card border-0 mt-3 mt-md-5">
-                        <div class=" card-body p-0">
-                            <h4 class="card-title">
-                                <a href="#" class="text-dark text-decoration-none">Динамика сюжетов в русской литературе
-                                    XIX века</a>
-                            </h4>
-                            <p class="card-text fs-5">Что говорят специалисты русского языка</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-4 d-none d-lg-block mb-5 text-end position-sticky align-self-start pt-5" style="top:0">
-                    <a href=" #" style="width: 240px; "><img src="../images/img035.png" alt=" ..."></a>
-                </div>
-            </div>
-            <div class="gramota-ad border-bottom pb-5 mb-3 mt-5 pt-4 border-top"
-                style="margin-left: 12px; margin-right: 12px;">
-                <br>
-                <div class="d-flex">
-                    <a href="#" class="d-none d-sm-block pe-5">
-                        <img src="../images/img012.png" class="card-img" alt="...">
-                    </a>
-                    <a href="#" class="d-none d-sm-block pe-5">
-                        <img src="../images/img013.png" class="card-img" alt="...">
-                    </a>
-                    <a href="#" class="d-sm-none d-md-block d-md-none d-lg-block pe-5">
-                        <img src="../images/img014.png" class="card-img" alt="...">
-                    </a>
-                    <a href="#" class="d-sm-none d-md-block pe-5">
-                        <img src="../images/img015.png" class="card-img" alt="...">
-                    </a>
-                </div>
-                <br>
-                <span class="gramota-jost text-muted text-lowercase">РЕКЛАМА</span>
-            </div>
-        </div>
-    </div>
-    <h2 class="gramota-journal-h2 gramota-EuclidCircularA-Light text-center mb-2 mb-lg-2 mt-4 mt-sm-5">лучшее в
-        журнале<br>
-        <svg width="60" height="8" viewBox="0 0 60 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <line y1="4" x2="60" y2="4" stroke="#303030" stroke-width="8"></line>
-        </svg>
-    </h2>
-    <div class="container-fluid" ">
-        <div class=" gramota-x-paddings container-xxl">
-        <div class="row pb-3 mb-4">
-
-            <div class="gramota-border col-xs-12 col-sm-6 mt-3 mt-sm-5">
-                <div class="gramota-card-1 gramota-card-1_1 card border-0 d-flex h-100">
-                    <a href="#"><img src="../images/img020.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Контакт с
-                                незнакомым жизненно необходим человеку</a></h2>
-                        <p class="card-text mb-4">Что такое полевая лингвистика и зачем изучать малые языки</p>
-                        <div class="mt-auto">
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">Новости</a>
-                            ·
-                            <a href="#"
-                                class="card-link text-lowercase text-muted text-decoration-none m-0">лингвистика</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 mt-3 mt-sm-5">
-                <div class=" gramota-card-1 gramota-card-1_1 card border-0 d-flex h-100">
-                    <a href="#"><img src="../images/img021.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Наше
-                                произношение поменялось за 20 лет</a></h2>
-                        <p class="card-text mb-4 fs-5">Лекция Максима Кронгауза</p>
-                        <div class="mt-auto">
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">Новости</a>
-                            ·
-                            <a href="#"
-                                class="card-link text-lowercase text-muted text-decoration-none m-0">Искусственный
-                                интеллект</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="gramota-border col-xs-12 col-sm-6 col-md-4 mt-3 mt-sm-5">
-                <div class="gramota-card-2 card border-0 d-flex h-100">
-                    <a href="#"><img src="../images/img022.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Каким мы
-                                видим искусственный интеллект?</a></h2>
-                        <p class="card-text mb-4 fs-5">Как технологии помогут изучать русский язык</p>
-                        <div class="mt-auto">
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">Новости</a>
-                            ·
-                            <a href="#"
-                                class="card-link text-lowercase text-muted text-decoration-none m-0">лингвистика</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 col-md-4 mt-3 mt-sm-5">
-                <div class="gramota-card-2 card border-0 d-flex h-100">
-                    <a href="#"><img src="../images/img023.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Контакт с
-                                чем-то незнакомым жизненно необходим любому человеку</a></h2>
-                        <p class="card-text mb-4 fs-5">Что такое полевая лингвистика и зачем изучать малые языки
-                        </p>
-                        <div class="mt-auto">
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">Новости</a>
-                            ·
-                            <a href="#"
-                                class="card-link text-lowercase text-muted text-decoration-none m-0">Искусственный
-                                интеллект</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 col-md-4 mt-3 mt-sm-5">
-                <div class="card pt-3 pb-4 rounded-0 d-flex h-100"
-                    style="border-width: 0.75rem; border-color: #869c8f;border-style: solid;">
-                    <div class="card-body text-center">
-                        <h4 class="gramota-EuclidCircularA-Light text-lowercase" style="color: #39735D !important;">
-                            Новинки
-                            издательства
-                        </h4>
-                        <a href="#"><img src="../images/img024.png" class="w-50" alt="..."></a>
-                        <p class="gramota-SuisseIntl-Regular text-center mt-4">Словарь русских синонимов и сходных
-                            по смыслу выражений</p>
-                        <p class="gramota-SuisseIntl-SemiBold text-center fw-bold">Л. С. Саломатина</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 mt-3 mt-sm-5">
-                <div class="gramota-card-1 card border-0 d-flex h-100">
-                    <a href="#"><img src="../images/img025.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Официальные
-                                нормы языка изменились</a></h2>
-                        <p class="card-text mb-4">Что такое полевая лингвистика и зачем изучать малые языки</p>
-                        <br><br>
-                        <div class="d-flex mt-auto">
-                            <div class="me-3">
-                                <a href="#" class="rounded-circle border border-dark border-2"
-                                    style="display: block; width: 3.25rem;">
-                                    <img src="../images/img006.png"
-                                        class="rounded-circle border border-white border-2 w-100" alt="...">
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column justify-content-center">
-                                <div>
-                                    <a href="#"
-                                        class="card-link text-lowercase text-muted text-decoration-none m-0">Лекции</a>
-                                    ·
-                                    <a href="#"
-                                        class="card-link text-lowercase text-muted text-decoration-none m-0">курс
-                                        «Русский
-                                        язык»</a><br>
-                                    <a href="#" class="card-link text-muted text-decoration-none">
-                                        <svg class="icon" width="14" height="14">
-                                            <use xlink:href="../images/sprite.svg#time"></use>
-                                        </svg> 29 минут</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 mt-3 mt-3 mt-sm-4 mt-md-5">
-                <div class="gramota-card-1 card border-0 d-flex h-100">
-                    <a href="#"><img src="../images/img026.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Что
-                                случилось за неделю</a></h2>
-                        <p class="card-text mb-4 fs-5">Еженедельный обзор Владимира Пахомова</p>
-                        <div class="mt-auto">
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">Новости</a>
-                            ·
-                            <a href="#"
-                                class="card-link text-lowercase text-muted text-decoration-none m-0">Лингвистика</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <hr class="gramota-hr-1 border-bottom mt-4 mt-lg-5">
-            <div class="gramota-border col-xs-12 col-sm-6 col-md-4 mt-3 mt-sm-4 mt-lg-5">
-                <div class="gramota-card-2 gramota-card-2_1 card border-0 d-flex">
-                    <a href="#"><img src="../images/img027.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none">Каким мы
-                                видим искусственный интеллект?</a></h2>
-                        <p class="card-text mb-4 fs-5">Об одном исследовании, проведенном в 2000 году</p>
-                        <div class="mt-auto">
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">Новости</a>
-                            ·
-                            <a href="#" class="card-link text-lowercase text-muted text-decoration-none m-0">школа</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 col-md-4 mt-3 mt-sm-4 mt-lg-5">
-                <div class="gramota-card-2 gramota-card-2_1 card border-0 d-flex flex-column">
-                    <div class="card-body pt-0 ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h2 class="card-title"><a href="#" class="text-dark text-decoration-none"><span
-                                    class="gramota-SuisseIntl-Bold gramota-fs-32">Русский
-                                    язык после пандемии</span></a>
-                        </h2>
-                        <p class="card-text mb-4">Изменится ли система школьного обучения</p>
-                        <div class="d-flex mt-auto">
-                            <div class="me-3">
-                                <a href="#" class="rounded-circle border border-dark border-2"
-                                    style="display: block; width: 3.25rem;">
-                                    <img src="../images/img003.png"
-                                        class="rounded-circle border border-white border-2 w-100" alt="...">
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column justify-content-center">
-                                <div><a href="#"
-                                        class="gramota-SuisseIntl-SemiBold  text-dark text-decoration-none">Михаил
-                                        Кронгауз</a>
-                                    <br>
-                                    <a href="#" class="card-link text-muted text-decoration-none m-0">эксперты</a> ·
-                                    <a href="#" class="card-link text-muted text-decoration-none m-0">искусственный
-                                        интеллект</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="gramota-border col-xs-12 col-sm-6 col-md-4 mt-3 mt-sm-4 mt-lg-5">
-                <div class="gramota-card-2 gramota-card-2_1 card border-0 d-flex flex-column">
-                    <a href="#"><img src="../images/img028.png" class="card-img-top rounded-0" alt="..."></a>
-                    <div class="card-body ps-0 pe-0 pb-0 d-flex flex-column">
-                        <h4 class="card-title"><a href="#" class="text-dark text-decoration-none">Что нового
-                                в звучании нашей речи</a>
-                        </h4>
-                        <p class="card-text mb-4">Изменится ли система школьного обучения</p>
-                        <div class="d-flex mt-auto">
-                            <div class="me-3">
-                                <a href="#" class="rounded-circle border border-dark border-2"
-                                    style="display: block; width: 3.25rem;">
-                                    <img src="../images/img006.png"
-                                        class="rounded-circle border border-white border-2 w-100" alt="...">
-                                </a>
-                            </div>
-                            <div class="d-flex flex-column justify-content-center">
-                                <div>
-                                    <a href="#"
-                                        class="card-link text-lowercase text-muted text-decoration-none m-0">Лекции</a>
-                                    ·
-                                    <a href="#"
-                                        class="card-link text-lowercase text-muted text-decoration-none m-0">подкаст</a><br>
-                                    <a href="#" class="card-link text-muted text-decoration-none">
-                                        <svg class="icon" width="14" height="14">
-                                            <use xlink:href="../images/sprite.svg#time"></use>
-                                        </svg> 29 минут</a>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="actions-fade active"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="#"
-            class="gramota-show-more btn d-block border-2 border-dark rounded-0 py-sm-1 px-sm-2 mb-4 py-md-3 px-md-4 mt-3 mt-sm-5">
-            <span class="gramota-SuisseIntl-Regular me-2">Показать еще</span>
-            <svg class="icon" width="13" height="19">
-                <use xlink:href="../images/sprite.svg#arrow-down2" fill="black"></use>
-            </svg></a>
-        <div class="gramota-ad mb-5 mt-5" style="margin-left: 12px; margin-right: 12px;">
-            <br>
-            <div class="d-flex">
-                <a href="#" class="d-none d-sm-block pe-5">
-                    <img src="../images/img012.png" class="card-img" alt="...">
-                </a>
-                <a href="#" class="d-none d-sm-block pe-5">
-                    <img src="../images/img013.png" class="card-img" alt="...">
-                </a>
-                <a href="#" class="d-sm-none d-md-block d-md-none d-lg-block pe-5">
-                    <img src="../images/img014.png" class="card-img" alt="...">
-                </a>
-                <a href="#" class="d-sm-none d-md-block pe-5">
-                    <img src="../images/img015.png" class="card-img" alt="...">
-                </a>
-            </div>
-            <br>
-            <span class="gramota-jost text-muted text-lowercase">РЕКЛАМА</span>
-        </div>
     </div>
-    </div>
+    <div class="my-gramota-p1-fade"></div>
     <div class="container-fluid" style="background: #f5f6f7">
-        <div class="gramota-x-paddings container-xxl">
+        <div class="container-xxl">
             <footer>
                 <a href="/">
                     <svg class="icon" width="244" height="52">
@@ -1537,48 +1271,44 @@
                     </svg>
                 </a>
                 <div class="row border-bottom pb-5 mb-4 mx-0" style="border-color: #DADADA !important;">
-                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 mt-5 border-end">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
                         <h5 class="mb-4">Рубрики</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Журнал</a>
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Журнал</a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Справочное
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Справочное
                                     бюро</a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Проверь
-                                    себя</a>
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Проверь себя</a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Моя
-                                    Грамота</a>
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Моя Грамота</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-2 ps-sm-3 ps-md-4 mt-5 border-end">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
                         <h5 class="mb-4">О проекте</h5>
                         <ul class="list-group">
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#"
-                                    class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Редакция</a>
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Редакция</a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Обратная
-                                    связь</a>
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Обратная связь</a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Реклама на
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Реклама на
                                     сайте</a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0">
-                                <a href="#" class="gramota-SuisseIntl-Regular text-dark text-decoration-none">Партнеры
+                                <a href="#" class="gramota-roboto-400 text-dark text-decoration-none">Партнеры
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-2 ps-sm-3 ps-md-4 mt-5 border-end">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5 border-end">
                         <h5 class="mb-4">«Грамота» в соцсетях</h5>
                         <ul class="gramota-social d-flex p-0">
                             <li class="list-group-item bg-transparent border-0 p-0 me-2">
@@ -1587,34 +1317,32 @@
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0 me-2">
-                                <a href="#" class="d-block">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
                                     <img src="../images/img030.png" class="w-100" alt="...">
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0 me-2">
-                                <a href="#" class="d-block">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
                                     <img src="../images/img030.png" class="w-100" alt="...">
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0 me-2">
-                                <a href="#" class="d-block">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
                                     <img src="../images/img031.png" class="w-100" alt="...">
                                 </a>
                             </li>
                             <li class="list-group-item bg-transparent border-0 p-0 me-2">
-                                <a href="#" class="d-block">
+                                <a href="#" class="d-block" style="width: 2.25rem;">
                                     <img src="../images/img032.png" class="w-100" alt="...">
                                 </a>
                             </li>
                         </ul>
-                        <p class="gramota-SuisseIntl-Regular text-muted">Нашли ошибку на Грамоте?<br> Нажмите Ctrl+Enter
-                        </p>
+                        <p class="gramota-roboto-300 text-muted">Нашли ошибку на Грамоте?<br> Нажмите Ctrl+Enter</p>
                     </div>
-                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-2 ps-sm-3 ps-md-4 mt-5">
+                    <div class="gramota-left-col col-xs-12 col-sm-6 col-md-3 ps-4 ps-sm-3 ps-md-4 mt-5">
                         <h5 class="mb-4">Подписка на новости</h5>
                         <form action="" class="position-relative">
-                            <input
-                                class="gramota-SuisseIntl-Regular form-control bg-transparent border-0 border-bottom px-0"
+                            <input class="gramota-roboto-300 form-control bg-transparent border-0 border-bottom px-0"
                                 type="text" placeholder="Ваш электронный адрес">
                             <button type="submit" class="btn p-0 position-absolute end-0 top-0">
                                 <svg class="icon" width="16" height="14">
@@ -1624,16 +1352,16 @@
                         </form>
                     </div>
                 </div>
-                <div class="gramota-copygirgt row pb-4">
-                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-8 text-muted">Грамота.ru,
+                <div class="row pb-4">
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-7 text-muted">Грамота.ru,
                         2000 —
                         2020 Свидетельство о
                         регистрации СМИ Эл
                         № ФС77-57155,
                         выдано
                         Роскомнадзором
-                        11.03.2014. <strong class="gramota-SuisseIntl-Bold text-muted">12+</strong></div>
-                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-4 text-sm-start text-md-end text-muted">
+                        11.03.2014. 12+</div>
+                    <div class="gramota-SuisseIntl-Regular col-12 col-sm-5 text-sm-start text-md-end text-muted">
                         Дизайн
                         — Мария
                         Екимова

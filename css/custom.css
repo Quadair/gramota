@@ -1974,7 +1974,7 @@ footer .gramota-social li a {
     width: 100vw;
     background: #fff;
     border-bottom: 1px solid #ccc;
-    z-index: 9999;
+    z-index: 100;
   }
 }
 
@@ -2538,7 +2538,7 @@ footer .gramota-social li a {
   width: 100%;
   height: 80px;
   background: #fff;
-  z-index: 120;
+  z-index: 250;
   top: -80px;
   transition: 0.5s;
 }
@@ -2606,8 +2606,7 @@ footer .gramota-social li a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-
-  z-index: 120;
+  z-index: 160;
   transition: 0.3s;
   visibility: hidden;
   opacity: 0;
@@ -2628,13 +2627,147 @@ footer .gramota-social li a {
   font-size: 24px;
 }
 
-.gramota-auth-popup-social a {
-  width: 88px;
-  height: 60px;
+.gramota-auth-popup-social li {
   border-radius: 55px;
+  background: #f6f6f7;
+  width: 22%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
 }
 
-@media (max-width: 992px) {
+.gramota-auth-popup-social a img,
+.gramota-auth-popup-social a svg {
+  height: 27px;
+  width: auto;
+  margin: 18px auto;
+}
+
+.gramota-auth-popup form input[type="email"] {
+  width: 100%;
+  font-family: "Conv_SuisseIntl-Regular";
+  height: 52px;
+  background: #f6f6f7;
+  border: 0;
+  text-indent: 0px;
+  margin: 0 0 12px 0;
+  font-size: 18px;
+}
+
+.gramota-auth-popup form input[type="password"] {
+  font-size: 18px;
+}
+
+.gramota-auth-popup form input[type="text"] {
+  font-size: 18px;
+}
+
+.gramota-auth-popup form input[type="email"]::placeholder {
+  color: #b9bec1;
+}
+
+.gramota-auth-popup form input[type="text"]::placeholder {
+  color: #b9bec1;
+}
+
+.gramota-auth-popup form input[type="password"]::placeholder {
+  color: #b9bec1;
+}
+
+.gramota-auth_login {
+  font-size: 18px !important;
+}
+
+.gramota-auth-submit {
+  font-size: 18px;
+}
+
+.gramota-register-form label {
+  font-size: 15xpx !important;
+  color: #7c858f !important;
+}
+
+.gramota-auth-popup-register input[type="email"],
+.gramota-auth-popup-register input[type="passworrd"],
+.gramota-auth-popup-register input[type="text"] {
+  height: 52px;
+}
+
+@media (max-width: 576px) {
+  .gramota-auth-popup form input[type="email"] {
+    font-size: 15px;
+  }
+
+  .gramota-auth-popup form input[type="password"] {
+    font-size: 15px;
+  }
+
+  .gramota-auth-popup form input[type="text"]::placeholder {
+    font-size: 15px;
+  }
+
+  .gramota-auth-submit {
+    font-size: 15px;
+  }
+
+  .gramota-register-form label {
+    font-size: 15px !important;
+  }
+}
+
+html body .form-check-label {
+  color: #7e858e !important;
+  margin-top: 2px !important;
+}
+
+html body .form-check-label a {
+  font-family: "Conv_SuisseIntl-Regular";
+  cursor: pointer;
+  color: #303030 !important;
+}
+
+.gramomota-forgot-heafing {
+  font-size: 15px;
+}
+.gramota-auth_login {
+  font-size: 15px !important;
+}
+
+.gramota-auth-popup2 {
+  visibility: hidden;
+  opacity: 1;
+}
+
+.gramota-auth-popup2.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.gramota-auth-popup2__sociallist {
+  padding: 0;
+  margin: 14px 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d7ce;
+  padding: 0 0 23px 0;
+}
+
+.gramota-auth-popup2__sociallist li {
+  border-radius: 55px;
+  background: #f6f6f7;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.gramota-auth-popup2__sociallist li svg {
+  height: 27px;
+  margin: 18px 0;
+}
+
+@media (max-width: 1024px) {
   .gramota-auth-popup {
     width: 670px;
   }
@@ -2648,14 +2781,21 @@ footer .gramota-social li a {
     height: 50px;
     border-radius: 20px;
   }
+
+  .gramota-auth-popup-list li {
+    font-size: 15px !important;
+  }
 }
 
 .gramota-auth-popup-list li {
   position: relative;
   padding-left: 30px;
+  font-size: 18px;
 }
 
-.gramota-auth-popup-list li svg {
+.gramota-auth-popup-list li svg,
+.gramota-auth-popup-list li img {
+  width: 16px;
   position: absolute;
   left: 0;
   top: 4px;
@@ -2666,6 +2806,7 @@ footer .gramota-social li a {
   right: 19px;
   top: 19px;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .gramota-auth-popup-passwd a {
@@ -2689,14 +2830,18 @@ footer .gramota-social li a {
 }
 
 @media (max-width: 576px) {
+  .gramota-auth-popup-social li {
+    width: 22%;
+  }
   .gramota-auth-popup-social a {
-    width: 67px;
-    height: 41px;
+    width: 100%;
     border-radius: 55px;
   }
-  .gramota-auth-popup-social a svg,
-  .gramota-auth-popup-social a img {
-    transform: scale(0.7);
+  .gramota-auth-popup-social a img,
+  .gramota-auth-popup-social a svg {
+    height: 15px;
+    width: auto;
+    margin: 8px auto;
   }
 }
 @media (max-width: 768px) {
@@ -2742,6 +2887,120 @@ footer .gramota-social li a {
     width: 140px;
     flex-basis: 140px !important;
     flex-shrink: 0;
+  }
+  .gramota-auth-popup-list li svg,
+  .gramota-auth-popup-list li img {
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+  }
+}
+
+.gramota-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 150;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.gramota-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.gramota-popup {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 540px;
+  background: #fff;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 160;
+}
+
+.gramota-popup h3 {
+  font-size: 24px;
+}
+
+.gramota-popup-close {
+  position: absolute;
+  right: 19px;
+  top: 19px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.gramota-popup.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 576px) {
+  .gramota-popup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .gramota-popup h3 {
+    margin-top: 50px;
+  }
+  .gramota-popup {
+    left: 0%;
+    top: 0%;
+    transform: translate(0, 0);
+    width: 100vw;
+    height: 100vh;
+    z-index: 11190;
+  }
+}
+
+.gramota-profile h1 {
+  font-size: 44px;
+}
+
+.gramota-left-menu a {
+  font-size: 22px !important;
+}
+
+h2.gramoa-form-h2 {
+  font-size: 24px !important;
+}
+
+.gramota-profile label {
+  font-size: 15px !important;
+}
+
+.gramota-profile input {
+  font-size: 18px !important;
+}
+
+@media (max-width: 768px) {
+  .gramota-profile label {
+    font-size: 13px !important;
+  }
+
+  .gramota-profile input {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gramota-profile h1 {
+    font-size: 18px;
+  }
+  .gramota-left-menu a {
+    font-size: 18px !important;
   }
 }
 
@@ -2858,6 +3117,10 @@ a.btn.border-dark:hover {
   background: #336854;
 }
 
+body .gramota-btn-green:disabled {
+  background: #ccc !important;
+}
+
 .gramota-check-yourself-card * {
   position: relative;
   z-index: 40;
@@ -2888,4 +3151,1822 @@ a.btn.border-dark:hover {
 }
 .gramota-btn-black:hover {
   background: #505050;
+}
+
+.gramota-auth-popup2 {
+  position: fixed;
+  width: 900px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 120;
+  transition: 0.3s;
+  /*visibility: hidden;
+  opacity: 0;*/
+  box-sizing: border-box;
+  display: flex;
+  background: #fff;
+  z-index: 200;
+}
+
+.gramota-auth-popup2__h3 {
+  display: none;
+}
+
+.gramota-auth-popup2__mob-p {
+  display: none;
+}
+
+.gramota-auth-popup2__leftcol {
+  width: 395px;
+  padding: 75px 43px 0 64px;
+  background: #efeee3;
+}
+
+.gramota-auth-popup2__leftcol-h2 {
+  font-family: "Conv_SuisseIntl-Bold";
+  color: #303030;
+  font-size: 24px !important;
+  line-height: 32px;
+}
+
+.gramota-auth-popup2__leftcol-list {
+  padding: 0;
+  margin: 33px 0 0 0;
+  list-style: none;
+}
+
+.gramota-auth-popup2__leftcol-list li {
+  font-family: "Conv_SuisseIntl-Regular";
+  font-size: 18px;
+  line-height: 24px;
+  padding: 0 0 0 30px;
+  margin: 0 0 18px 0;
+  position: relative;
+  display: block;
+}
+
+.gramota-auth-popup2__leftcol-list li img {
+  width: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gramota-auth-popup2__leftcol-list li svg {
+  width: 16px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.gramota-auth-popup2__rightcol {
+  width: 505px;
+}
+
+.gramota-auth-popup2__rightcol form {
+  margin: 90px 64px 0 64px;
+}
+
+.gramota-auth-popup2__rightcol form input[type="text"] {
+  width: 100%;
+  font-family: "Conv_SuisseIntl-Regular";
+  height: 52px;
+  background: #f6f6f7;
+  border: 0;
+  text-indent: 14px;
+  margin: 0 0 12px 0;
+}
+
+.gramota-auth-popup2__text {
+  position: relative;
+  margin: 0 0 9px 0;
+}
+
+.gramota-auth-popup2__rightcol form input[type="email"] {
+  width: 100%;
+  font-family: "Conv_SuisseIntl-Regular";
+  height: 52px;
+  background: #f6f6f7;
+  border: 0;
+  text-indent: 14px;
+  margin: 0 0 12px 0;
+}
+
+.gramota-auth-popup2__password {
+  position: relative;
+  margin: 0 0 0 0;
+}
+
+.gramota-auth-popup2__password span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: block;
+}
+
+.gramota-auth-popup2__password a img {
+  width: 23px;
+  height: auto;
+}
+
+.gramota-auth-popup2__rightcol form input[type="password"] {
+  width: 100%;
+  font-family: "Conv_SuisseIntl-Regular";
+  height: 52px;
+  background: #f6f6f7;
+  border: 0;
+  text-indent: 14px;
+}
+
+.gramota-auth-popup2__forgot {
+  font-family: "Conv_SuisseIntl-Regular";
+  color: #b8bec1 !important;
+  text-decoration: none;
+  font-size: 15px !important;
+  margin: 20px 0 18px 0;
+  display: inline-block;
+}
+
+.gramota-auth-popup2__rightcol form input[type="submit"] {
+  width: 100%;
+  font-family: "Conv_SuisseIntl-bold";
+  height: 52px;
+  background: #303030;
+  color: #fff !important;
+  border: 0;
+  text-align: center;
+  margin: 0 0 25px 0;
+  font-size: 18px;
+}
+
+.gramota-auth-popup2__social-heading {
+  font-family: "Conv_SuisseIntl-Regular";
+  font-size: 15px;
+  color: #303030;
+  display: block;
+}
+
+.gramota-auth-popup2__sociallist {
+  padding: 0;
+  margin: 14px 0 0 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8d7ce;
+  padding: 0 0 23px 0;
+}
+
+.gramota-auth-popup2__sociallist li {
+  border-radius: 55px;
+  background: #f6f6f7;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.gramota-auth-popup2__sociallist li svg {
+  height: 27px;
+  margin: 18px 0;
+}
+
+.gramota-auth-popup2__authtext {
+  font-family: "Conv_SuisseIntl-Regular";
+  font-size: 15px;
+  color: #b8bec1 !important;
+  text-align: center;
+  padding: 26px 0 40px 0;
+}
+
+.gramota-auth-popup2__authlink {
+  font-family: "Conv_SuisseIntl-Bold";
+  font-size: 1 15px;
+  color: #303030 !important;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.gramota-auth-popup2__rightcol form input[type="email"]::placeholder,
+.gramota-auth-popup2__rightcol form input[type="password"]::placeholder,
+.gramota-auth-popup2__rightcol form input[type="text"]::placeholder {
+  color: #b9bec1 !important;
+}
+
+.gramota-auth-popup2__checkline {
+  border: 1px solid #0f0;
+}
+
+.gramota-auth-popup2__checkbox form .form-check-input {
+  width: 22px;
+  height: 22px;
+}
+
+.gramota-auth-popup2__checkbox .form-check {
+  margin-bottom: 2px !important;
+}
+
+.gramota-auth-popup2__checkbox .form-check-label {
+  margin: 0 0 0 6px;
+  line-height: 24px;
+  line-height: 18px;
+}
+gramota-auth-popup2__checbox .gramota-auth-popup2__checkbox {
+  padding: 10px 0;
+}
+.gramota-auth-popup2__checkbox * {
+  font-family: "Conv_SuisseIntl-Regular" !important;
+  font-weight: 200 !important ;
+}
+
+.form-check-label {
+  font-family: "Conv_SuisseIntl-Regular" !important;
+  font-weight: 200 !important ;
+}
+
+.gramota-auth-popup2__chexboxes {
+  padding: 19px 0 18px 0;
+}
+
+@media (max-width: 1024px) {
+  .gramota-auth-popup2 {
+    width: 670px;
+  }
+
+  .gramota-auth-popup2__leftcol {
+    width: 315px;
+    padding: 61px 36px 0 42px;
+    background: #efeee3;
+  }
+  .gramota-auth-popup2__leftcol-h2 {
+    font-size: 20px !important;
+    line-height: 28px;
+  }
+
+  .gramota-auth-popup2__leftcol-list {
+    margin: 23px 0 0 0;
+  }
+
+  .gramota-auth-popup2__leftcol-list li {
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 0 0 30px;
+    margin: 0 0 19px 0;
+  }
+
+  .gramota-auth-popup2__rightcol {
+    width: 355px;
+  }
+
+  .gramota-auth-popup2__rightcol form {
+    margin: 66px 42px 0 42px;
+  }
+
+  .gramota-auth-popup2__rightcol form input[type="submit"] {
+    margin: 0 0 20px 0;
+  }
+
+  .gramota-auth-popup2__sociallist {
+    margin: 12px 0 0 0;
+    padding: 0 0 15px 0;
+  }
+
+  .gramota-auth-popup2__sociallist li svg {
+    height: 20px;
+    margin: 12px 0;
+  }
+
+  .gramota-auth-popup2__authtext {
+    font-family: "Conv_SuisseIntl-Regular";
+    font-size: 15px;
+    color: #b8bec1 !important;
+    text-align: center;
+    padding: 22px 0 35px 0;
+  }
+
+  .gramota-auth-popup2__chexboxes {
+    padding: 21px 0 5px 0;
+  }
+}
+
+.gramota-auth-popup2__login {
+  background: #39735d !important;
+}
+
+.gramota-auth-popup2__checkboxes {
+  padding: 10px 0 0 0;
+}
+
+.gramota-auth-popup2__checkboxes label {
+  font-family: "Conv_SuisseIntl-Regular" !important;
+  color: #7c858f !important;
+  padding: 0 0 0 0;
+}
+
+.gramota-auth-popup2__checkboxes label a {
+  font-family: "Conv_SuisseIntl-Regular";
+  color: #303030 !important;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 678px) {
+  .gramota-auth-popup2 {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+    overflow-y: scroll;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .gramota-auth-popup2__h3 {
+    display: block;
+  }
+
+  .gramota-auth-popup2__rightcol {
+    order: 1;
+    width: 100%;
+  }
+
+  .gramota-auth-popup2__leftcol {
+    order: 2;
+    width: 100%;
+    padding: 28px 24px 20px 24px;
+  }
+
+  .gramota-auth-popup2__leftcol-h2 {
+    display: none;
+  }
+
+  .gramota-auth-popup2__mob-p {
+    font-family: "Conv_SuisseIntl-Regular";
+    font-size: 15px !important;
+    line-height: 20px;
+    color: #777763 !important;
+    display: block;
+  }
+
+  .gramota-auth-popup2__rightcol form {
+    margin: 11px 24px 0 24px;
+  }
+
+  .gramota-auth-popup2__h3 {
+    font-family: "Conv_SuisseIntl-Bold", Sans-Serif;
+    font-size: 24px !important;
+    color: #303030 !important;
+    padding: 42px 19px 6px 24px;
+  }
+
+  .gramota-auth-popup2__rightcol form input[type="email"] {
+    margin: 0 0 14px 0;
+    height: 56px;
+    font-size: 15px;
+  }
+
+  .gramota-auth-popup2__rightcol form input[type="password"] {
+    height: 52px;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .gramota-auth-popup2__rightcol form input[type="submit"] {
+    margin: 7px 0 25px 0;
+    font-size: 15px;
+  }
+
+  .gramota-auth-popup2__rightcol form input[type="email"]::placeholder,
+  .gramota-auth-popup2__rightcol form input[type="password"]::placeholder {
+    color: #b9bec1;
+  }
+
+  .gramota-auth-popup2__sociallist {
+    margin: 16px 0 0 0;
+    padding: 0 0 30px 0;
+  }
+  .gramota-SuisseIntl-Regular {
+    padding: 100pz=z 0;
+  }
+
+  .gramota-auth-popup2__checkboxes {
+    padding: 5px 0 15px 0;
+  }
+
+  .gramota-auth-popup2__chexboxes {
+    padding: 0px 0 10px 0;
+  }
+  .gramota-auth-popup2__password span {
+    transform: translateY(-80%);
+    right: 20px;
+  }
+
+  .gramota-auth-popup2__chexboxes {
+    padding: 8px 0 18px 0;
+  }
+
+  .gramota-auth-popup2__forgot {
+    margin: 7px 0 22px 0;
+  }
+}
+
+.gramota-auth-popup2__checbox {
+  padding: 0 0 0 0;
+}
+
+.gramota-auth-popup2__checbox:last-of-type {
+  padding: 0 0 0 0;
+}
+
+.my-gramota-left-col {
+  background: #f5f5ee;
+  width: 420px;
+  flex-basis: 420px;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.my-gramota-letter-list {
+  list-style: none;
+  padding: 17px 0;
+  margin: 0;
+  width: 38px;
+  border-right: 1px solid #dadcdf;
+}
+
+.my-gramota-letter-list li {
+  width: 100%;
+}
+
+.my-gramota-letter-list li a {
+  font-family: "Conv_SuisseIntl-Regular";
+  font-size: 12px;
+  color: #7c858f !important;
+  display: block;
+  cursor: pointer;
+  text-align: center;
+  padding: 1.7px 0 1.7px 0;
+}
+
+.my-gramota-letter-list li a.active {
+  background: #000;
+  color: #fff !important;
+  font-family: "Conv_SuisseIntl-Bold";
+  text-decoration: none;
+}
+
+.my-gramota-left-col-content-empty * {
+  font-size: 18px !important;
+  /* color: #b9bec1 !important;*/
+}
+
+.my-gramota-left-col-content-empty svg {
+  width: 99px;
+  height: 23px;
+}
+
+.my-gramota-left-col-content {
+  flex-grow: 1;
+}
+
+@media (max-width: 1280px) {
+  .my-gramota-left-col {
+    width: 340px;
+    flex-basis: 340px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .my-gramota-left-col {
+    width: 269px;
+    flex-basis: 269px;
+  }
+}
+
+.my-gramota-right-col {
+  flex-grow: 1;
+}
+
+.my-gramota-greeting-list {
+  margin-top: -30px;
+}
+
+.my-gramota-greeting-list img {
+  width: 62px;
+}
+
+.my-gramota-greeting-list2 {
+  margin-top: -30px;
+}
+
+.my-gramota-greeting-list2 img {
+  width: 34px;
+}
+
+.my-gramota-greeting-list2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.my-gramota-greeting-list2 ul li {
+  position: relative;
+  padding: 0 0 0 21px;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+
+.my-gramota-greeting-list2 ul li::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: url("../images/img081.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.my-gramota-listitem1 {
+  font-size: 18px;
+}
+
+.my-gramota-heading2 {
+  font-size: 24px;
+}
+
+.all-dictionaries {
+  position: relative;
+}
+
+.all-dictionaries-link {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 19px 0 0;
+  z-index: 80;
+}
+
+.all-dictionaries-link::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../images/img082.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.all-dictionaries-link.active::before {
+  transform: rotate(180deg);
+}
+
+.all-dictionaries > span {
+  display: block;
+  width: 263px;
+  position: relative;
+  background: #303030;
+  font-size: 15px !important;
+  position: absolute;
+  left: -20px;
+  top: 40px;
+  z-index: 200;
+}
+
+.all-dictionaries > span a {
+  font-size: 15px !important;
+}
+
+.all-dictionaries > span .close {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  cursor: pointer;
+}
+
+.all-dictionaries span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 11.5px 12px 11.5px;
+  border-color: transparent transparent #303030 transparent;
+}
+
+.all-dictionaries .my-gramota-dictionaries {
+  padding: 34px 24px 24px 24px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 50;
+  width: 350px;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+.all-dictionaries .my-gramota-dictionaries.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 200;
+}
+
+.all-dictionaries .my-gramota-dictionaries ul {
+  list-style: none;
+  padding: 0 0 7px 0;
+}
+
+.all-dictionaries .my-gramota-my-dictionaries {
+  border-top: 1px solid #e6e6e6;
+  padding: 27px 0 5px 0;
+}
+
+.all-dictionaries .my-gramota-dictionaries ul li {
+  padding: 0 0 0 23px;
+  position: relative;
+  margin: 15px 0 0px 0;
+}
+
+.all-dictionaries .my-gramota-dictionaries ul a {
+  cursor: pointer;
+}
+
+.all-dictionaries .my-gramota-dictionaries ul a.active {
+  font-family: "Conv_SuisseIntl-Bold", Sans-Serif;
+}
+
+.all-dictionaries .my-gramota-dictionaries ul a.active::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 10px;
+  background: url("../images/img081.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.my-gramota-share {
+  font-style: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 0 0 29px;
+}
+
+.my-gramota-share::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 16px;
+  background: url("../images/img083.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 3px;
+}
+
+.my-gramota-acces {
+  font-style: 18px;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  top: -2px;
+}
+
+.my-gramota-acces:hover {
+  color: #303030 !important;
+}
+
+.my-gramota-acces .my-gramota-switch {
+  background: #dadcdf;
+  position: relative;
+  width: 32px;
+  height: 19px;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.my-gramota-acces.active {
+  color: #000 !important;
+}
+
+.my-gramota-acces.active .my-gramota-switch {
+  background: #69bb9c;
+}
+
+.my-gramota-acces .my-gramota-switch .my-gramota-switch-round {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: 6%;
+  top: 50%;
+  transform: translateY(-53%);
+  transition: 0.3s;
+}
+
+.my-gramota-acces.active .my-gramota-switch .my-gramota-switch-round {
+  left: 50%;
+}
+
+.my-gramota-more1 {
+  cursor: pointer;
+}
+
+.my-gramota-hr1 {
+  display: none;
+}
+
+.my-gramota-p1-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.my-gramota-p1-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+.my-gramota-p2-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.my-gramota-p2-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.terms-actions-collapse {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .my-gramota-p1 {
+    position: fixed;
+    left: 0;
+    bottom: -40vw;
+    width: 100vw;
+    display: block !important;
+    background: #fff;
+    z-index: 220;
+    transition: 0.3s;
+  }
+
+  .my-gramota-p1.active {
+    bottom: 0;
+  }
+
+  .my-gramota-hr1 {
+    border: 1px solid #edeeef !important;
+    margin: 0 24px 20px 24px;
+    display: block;
+  }
+
+  .my-gramota-acces {
+    margin: 0 24px 24px 24px;
+  }
+
+  .my-gramota-share {
+    margin: 24px 0 20px 24px;
+    display: inline-block;
+  }
+
+  .all-dictionaries .my-gramota-dictionaries {
+    position: fixed;
+    top: auto;
+    bottom: -100vh;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 100;
+    padding: 34px 24px 24px 24px;
+    border: 0 !important;
+    max-height: calc(100vh - 124px);
+    transition: 0.3s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .all-dictionaries .my-gramota-dictionaries.active {
+    bottom: 0;
+    z-index: 200;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .terms-actions-collapse {
+    display: block;
+  }
+
+  .terms-actions.active {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    left: 0;
+    width: 100vw;
+    align-self: flex-start;
+    display: block;
+    z-index: 220;
+  }
+}
+
+.terms-list {
+  list-style: none;
+  padding: 25px 0 0 0;
+}
+
+.terms-list li a {
+  font-size: 18px !important;
+  display: block;
+  padding: 7px 17px;
+  cursor: pointer;
+}
+
+.terms-list li a.active {
+  background: #e8e8d5;
+}
+
+.terms-list li a:hover {
+  background: #e8e8d5;
+}
+
+.terms-list-values {
+  list-style: none;
+  padding: 0;
+}
+
+.terms-list-values li h2 {
+  font-size: 24px !important;
+}
+
+.terms-list-values li p {
+  font-size: 22px !important;
+}
+
+.terms-list-values li p .text-muted {
+  color: #7c858f !important;
+}
+
+.my-gamota-colapse {
+  cursor: pointer;
+  font-size: 18px !important;
+}
+
+.terms-list-values li span {
+  font-size: 18px !important;
+}
+
+.terms-list-values border-dictionaries a {
+  font-size: 15px !important;
+}
+
+.terms-list-value {
+  position: relative;
+  border: 1px solid #dadcdf;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 576px) {
+  .terms-list-values li h2 {
+    font-size: 18px !important;
+  }
+  .terms-list-values li p {
+    font-size: 18px !important;
+  }
+  .terms-list-values li span {
+    font-size: 15px !important;
+  }
+}
+body .terms-actions-button {
+  cursor: pointer;
+  border-radius: 35px;
+  position: relative;
+  top: -10px;
+  display: block;
+}
+
+body .terms-actions-button2 {
+  cursor: pointer;
+  border-radius: 35px;
+  position: relative;
+  display: block;
+}
+
+.terms-actions-button.active {
+  background: #f3f3f3;
+}
+.terms-actions-button.active circle {
+  fill: #000 !important;
+}
+
+.terms-actions-button2.active {
+  background: #f3f3f3;
+}
+.terms-actions-button.active2 circle {
+  fill: #000 !important;
+}
+
+.terms-actions {
+  position: absolute;
+  right: -16px;
+  top: 57px;
+  list-style: none;
+  padding: 15px 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  opacity: 0;
+}
+
+.terms-actions.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.terms-actions a {
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  padding: 8px 27px 7px 27px;
+}
+
+.terms-actions a:hover {
+  background: #f3f3f3;
+}
+
+.terms-actions a svg {
+  width: 18px !important;
+  position: relative;
+  top: -2px;
+  margin: 0 10px 0 0;
+}
+
+.terms-actions hr {
+  margin: 10px 24px 10px 24px;
+}
+
+.terms-add-note {
+  position: absolute;
+  left: 20px;
+  top: 90px;
+  width: calc(100% - 40px);
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 180;
+}
+
+.terms-add-note::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: -13px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12.5px 13px 12.5px;
+  border-color: transparent transparent #ffffff transparent;
+}
+
+.terms-add-note.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.terms-add-note textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  border-color: #dadcdf;
+  font-size: 18px !important;
+}
+
+.terms-add-note textarea::placeholder {
+  color: #dadcdf;
+}
+
+.terms-add-note button {
+  background: transparent;
+}
+
+.terms-add-delete {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 180;
+}
+
+.terms-add-delete.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.terms-add-delete a {
+  font-size: 15px !important;
+}
+.actions-fade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 120;
+  display: none;
+}
+
+.actions-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 576px) {
+  .terms-add-note {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0;
+  }
+
+  .terms-add-note form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+  }
+
+  .terms-add-note form textarea {
+  }
+
+  .terms-add-note form * {
+    justify-content: space-around;
+  }
+
+  .terms-add-note form button,
+  .terms-add-note form a {
+    margin: 0;
+    width: 42%;
+    text-align: center;
+  }
+
+  .terms-add-note form button {
+    margin-left: 0.7rem;
+  }
+
+  .terms-add-note form a {
+    margin-right: 0.7rem;
+  }
+
+  .terms-add-note textarea {
+    height: calc(100vh - 75px);
+    padding: 24px;
+    width: 100%;
+  }
+
+  .terms-add-delete {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+  }
+
+  .my-gramota-left-col {
+    width: 340px;
+    flex-basis: 340px;
+  }
+
+  .terms-list-value {
+    border-width: 1px 0 0 0;
+    margin-bottom: 0;
+  }
+
+  .terms-list-value:last-of-type {
+    border-width: 1px 0;
+  }
+
+  .terms-list-value-hidden {
+    display: none;
+  }
+
+  .terms-actions-button {
+    top: 0 !important;
+  }
+
+  .my-gramota-terms-actions {
+    z-index: 180;
+  }
+
+  .actions-fade {
+    display: block;
+  }
+}
+
+.terms-actions-collapse {
+  top: 10px;
+}
+
+.my-gramota-view a {
+  cursor: pointer;
+}
+.my-gramota-view a.active {
+  background: #f6f6f7;
+}
+
+.my-gramota-hint {
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+}
+.my-gramota-hint.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.add-to-my-list-popup {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 528px;
+  z-index: 201;
+}
+
+.add-to-my-list-popup input {
+  width: 100%;
+  border-color: #dadcdf;
+  font-size: 18px !important;
+  border: 1px solid #ddd;
+}
+
+.add-to-my-list-popup input::placeholder {
+  color: #b9bec1;
+}
+
+.add-to-my-list-popup.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 576px) {
+  .add-to-my-list-popup {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100vw;
+    display: flex;
+    padding: 0;
+  }
+
+  .add-to-my-list-popup form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+  }
+
+  .add-to-my-list-popup form textarea {
+  }
+
+  .add-to-my-list-popup form * {
+    justify-content: space-around;
+  }
+
+  .add-to-my-list-popup form button,
+  .add-to-my-list-popup form a {
+    margin: 0;
+    width: 45%;
+    text-align: center;
+  }
+
+  .add-to-my-list-popup form button {
+    margin-left: 0.7rem;
+  }
+
+  .terms-add-note form a {
+    margin-right: 0.7rem;
+  }
+
+  .add-to-my-list-popup textarea {
+    height: calc(100vh - 75px);
+    padding: 24px;
+    width: 100%;
+  }
+
+  .my-gramota-p1-fade {
+    display: block;
+  }
+}
+
+.new_dictionary_list {
+  position: fixed;
+  z-index: 170;
+  width: 528px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+.new_dictionary_list h2 {
+  font-family: "Conv_SuisseIntl-Bold", Sans-Serif;
+  font-size: 24px !important;
+}
+
+.new_dictionary_list input {
+  font-size: 18px;
+}
+
+.new_dictionary_list input::placeholder {
+  color: #b9bec1;
+}
+
+.new_dictionary_list-buttons > div {
+  width: 50% !important;
+  flex-basis: 50% !important;
+  flex-grow: 1;
+}
+
+.new_dictionary_list-buttons button {
+  font-size: 15px !important;
+}
+
+@media (max-width: 576px) {
+  .new_dictionary_list {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    transform: translate(0, 0);
+    z-index: 180;
+  }
+}
+
+body .dictionary-button {
+  cursor: pointer;
+  border-radius: 35px;
+  position: relative;
+  display: block;
+}
+
+body .dictionary-button.active {
+  background: #f3f3f3;
+}
+body .dictionary-button.active circle {
+  fill: #000 !important;
+}
+
+.dictionary-actions {
+  position: absolute;
+  left: -16px;
+  top: 57px;
+  list-style: none;
+  padding: 15px 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 120;
+}
+
+.dictionary-actions.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.dictionary-actions a {
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  padding: 8px 27px 7px 27px;
+}
+
+.dictionary-actions a:hover {
+  background: #f3f3f3;
+}
+
+.dictionary-actions a svg {
+  width: 18px !important;
+  position: relative;
+  top: -2px;
+  margin: 0 10px 0 0;
+}
+
+.dictionary-actions hr {
+  margin: 10px 24px 10px 24px;
+}
+
+.my-gramota-p3-fade {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 110;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+
+.my-gramota-p3-fade.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 576px) {
+  .dictionary-actions.active {
+    position: fixed;
+    bottom: -1rem;
+    top: auto;
+    right: auto;
+    left: 0;
+    width: 100vw;
+    align-self: flex-start;
+    display: block;
+    z-index: 220;
+  }
+  .my-gramota-p3-fade {
+    display: block;
+  }
+}
+
+.gramoa-add-to-new-list {
+  text-align: center;
+  font-size: 24px !important;
+  color: #b9bec1 !important;
+  padding-top: 120px;
+}
+
+.gramoa-add-to-new-list a {
+  font-size: 18px !important;
+  color: #39735d !important;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .gramoa-add-to-new-list {
+    text-align: center;
+    font-size: 15px !important;
+    color: #b9bec1 !important;
+    padding-top: 37px;
+    border-top: 1px solid #dadcdf;
+  }
+  .gramoa-add-to-new-list a {
+    font-size: 15px !important;
+  }
+}
+
+.add-to {
+  position: fixed;
+  z-index: 170;
+  width: 528px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+}
+.add-to h2 {
+  font-family: "Conv_SuisseIntl-Bold", Sans-Serif;
+  font-size: 24px !important;
+}
+
+.add-to input {
+  font-size: 18px;
+}
+
+.add-to input::placeholder {
+  color: #b9bec1;
+}
+
+.add-to-buttons > div {
+  width: 50% !important;
+  flex-basis: 50% !important;
+  flex-grow: 1;
+}
+
+.new_dictionary_list-buttons button {
+  font-size: 15px !important;
+}
+
+.add-to ul li {
+  padding: 0 0 0 23px;
+  position: relative;
+  margin: 15px 0 0px 0;
+}
+
+.add-to ul a {
+  cursor: pointer;
+}
+
+.add-to ul a.active {
+  font-family: "Conv_SuisseIntl-Bold", Sans-Serif;
+}
+
+.add-to ul a.active::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 10px;
+  background: url("../images/img081.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+@media (max-width: 576px) {
+  .add-to {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    transform: translate(0, 0);
+    z-index: 180;
+  }
+}
+
+.add-to ul {
+  list-style: none;
+  padding: 0 0 7px 0;
+}
+
+.add-to ul li {
+  padding: 0 0 0 23px;
+  position: relative;
+  margin: 15px 0 0px 0;
+}
+
+.add-to ul a {
+  cursor: pointer;
+}
+
+.add-to ul a.active {
+  font-family: "Conv_SuisseIntl-Regular", Sans-Serif;
+}
+
+.add-to ul .muted {
+  opacity: 0.6;
+}
+
+.add-to .my-gramota-my-dictionaries {
+  list-style: none;
+  border-top: 1px solid #e6e6e6;
+  padding: 0 0 14px 0;
+  margin-top: 6px;
+}
+
+.add-to ul a.active::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 10px;
+  background: url("../images/img081.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 8px;
+}
+
+.add-to form {
+  border-top: 1px solid #e6e6e6;
+}
+
+.add-to form > div {
+  flex-grow: 1;
+}
+.add-to form > div > div {
+  flex-grow: 1;
+}
+
+.my-gramota-favourites-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.my-gramota-favourites-menu li {
+  font-size: 18px !important;
+}
+
+.my-gramota-favourites-add {
+  font-size: 18px !important;
+}
+.my-gramota-greeting-list2 {
+  font-size: 18px !important;
+}
+
+.my-favourites {
+  margin-top: -30px;
+}
+
+.my-favourites-list {
+  list-style: none;
+  padding: 0;
+}
+
+.my-favourites-list li {
+  position: relative;
+}
+
+.my-favourites-list li h2 {
+  font-size: 24px !important;
+}
+
+.my-favourites-list li p {
+  font-size: 20px !important;
+}
+
+.my-favourites-list-name {
+  font-size: 18px !important;
+}
+
+body .my-favourites-button {
+  cursor: pointer;
+  border-radius: 35px;
+  position: relative;
+  top: -10px;
+  display: block;
+  position: absolute;
+  right: 30px;
+  top: 40px;
+}
+
+body .my-favourites-button.active {
+  background: #f3f3f3;
+}
+
+@media (max-width: 768px) {
+  .my-favourites-list li h2 {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body .my-favourites-button {
+    right: 10px;
+    top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .my-favourites-list {
+    border-bottom: 1px solid #ddd;
+  }
+
+  .my-favourites-list li h2 {
+    font-size: 18px !important;
+  }
+  .my-favourites-list li p {
+    font-size: 18px !important;
+  }
+  .my-favourites-list li {
+    border-right: 0 !important;
+    border-left: 0 !important;
+    border-bottom: 0 !important;
+  }
+}
+
+.my-favourites-actions {
+  position: absolute;
+  right: -16px;
+  top: 77px;
+  list-style: none;
+  padding: 15px 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 130;
+}
+
+.my-favourites-actions.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.my-favourites-actions a {
+  cursor: pointer;
+  display: block;
+  font-size: 15px;
+  padding: 8px 27px 7px 27px;
+}
+
+.my-favourites-actions a:hover {
+  background: #f3f3f3;
+}
+
+.my-favourites-actions a svg {
+  width: 18px !important;
+  position: relative;
+  top: -2px;
+  margin: 0 10px 0 0;
+}
+
+.my-favourites-actions hr {
+  margin: 10px 24px 10px 24px;
+}
+
+@media (max-width: 576px) {
+  .my-favourites-actions.active {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    left: 0;
+    width: 100vw;
+    align-self: flex-start;
+    display: block;
+    z-index: 220;
+  }
+}
+
+.my-gramota-favourites-link {
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  padding: 0 19px 0 0;
+  z-index: 80;
+}
+
+.my-gramota-favourites-link::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 6px;
+  background: url("../images/img082.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.my-gramota-favourites-link.active::before {
+  transform: rotate(180deg);
+}
+
+.my-favourites-menu-list {
+  padding: 34px 24px 24px 24px;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  z-index: 50;
+  width: 350px;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+.my-favourites-menu-list.active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 200;
+}
+
+.my-favourites-menu-list ul {
+  list-style: none;
+  padding: 0 0 0 0;
+}
+
+.my-favourites-menu-list ul li {
+  padding: 0 0 0 =;
+  position: relative;
+}
+
+.my-favourites-menu-list ul a {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .my-favourites-menu-list {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    z-index: 100;
+    padding: 34px 24px 0 24px;
+    border: 0 !important;
+    transition: 0.3s;
+  }
+}
+
+.my-favourites-greeting {
+  margin-top: -30px;
+}
+
+.my-favourites-greeting img {
+  width: 34px;
+}
+
+.my-favourites-greeting ul {
+  list-style: none;
+  padding: 0;
+}
+
+.my-favourites-greeting ul li {
+  position: relative;
+  padding: 0 0 0 21px;
+  font-size: 15px;
+  margin: 0 0 5px 0;
+}
+
+.my-favourites-greeting ul li::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 12px;
+  background: url("../images/img081.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
+
+.my-gramota-see-also a {
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .my-gramota-nav-tabs {
+    margin-top: -15px;
+  }
+}
+
+.my-gramota-note {
+  background: #ffffff;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  border-left: 4px solid #ffe350;
+  font-size: 18px !important;
+  padding-right: 70px !important;
+}
+
+.my-gramota-note-delete {
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  cursor: pointer;
+}
+
+.my-gramota-note-edit {
+  position: absolute;
+  right: 51px;
+  top: 17px;
+  cursor: pointer;
 }

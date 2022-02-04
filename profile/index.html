@@ -633,7 +633,7 @@
     </script>
     <div class="container-fluid my-5">
         <div class="gramota-x-paddings container-xxl">
-            <div class="row">
+            <form class="gramota-profile row">
                 <div class="col-xs-12 col-sm-4">
                     <div class="gramota-profile-userpic rounded-circle border border-dark border-2 position-relative"
                         href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
@@ -686,14 +686,12 @@
 
                         </script>
                     </div>
-                    <h1 class="gramota-SuisseIntl-SemiBold my-4">Мария Екимова</h1>
-                    <div class="d-none d-sm-block">
+                    <h1 class="gramota-SuisseIntl-Bold my-4">Мария Екимова</h1>
+                    <div class="gramota-left-menu d-none d-sm-block">
                         <hr class="dropdown-divider">
-                        <a href="#"
-                            class="gramota-SuisseIntl-SemiBold gramota-fs-22 text-decoration-none py-2 d-block">Настройки</a>
+                        <a href="#" class="gramota-SuisseIntl-SemiBold text-decoration-none py-2 d-block">Настройки</a>
                         <hr class="dropdown-divider">
-                        <a href="#"
-                            class="gramota-SuisseIntl-Regular gramota-fs-22 text-decoration-none py-2 d-block">Подписки</a>
+                        <a href="#" class="gramota-SuisseIntl-Regular text-decoration-none py-2 d-block">Подписки</a>
                     </div>
                     <ul class="gramota-nav-tabs nav nav-tabs d-flex m-0 p-0 d-block d-sm-none">
                         <li class="nav-item me-4">
@@ -707,36 +705,36 @@
                     </ul>
                 </div>
                 <div class="col-xs-12 col-sm-8">
-                    <section class="p-3 p-sm-3 p-md-5 mb-4" style="background: #f5f5ee;">
-                        <h2 class="gramota-fs-22 mb-4">
-                            Профиль
-                        </h2>
-                        <form action="">
-                            <div class="mb-5">
+                    <form class="gramota-profile-form" action="">
+                        <section class="p-3 p-md-4 p-md-5" style="background: #f5f5ee;">
+                            <h2 class="gramoa-form-h2 mb-3 mb-md-4">
+                                Профиль
+                            </h2>
+
+                            <div class="mb-4 mb-lg-4">
                                 <label for="exampleFormControlInput1"
-                                    class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Имя</label>
+                                    class="gramota-SuisseIntl-Regular form-label text-muted">Имя</label>
                                 <input type="text"
-                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                                    class="gramota-SuisseIntl-Regular form-control rounded-0 border-0 py-2"
                                     id="exampleFormControlInput1" value="Мария Екимова">
                             </div>
-                            <div class="mb-5">
+                            <div class="mb-4">
                                 <label for="exampleFormControlInput1"
-                                    class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Электронная
+                                    class="gramota-SuisseIntl-Regular form-label text-muted">Электронная
                                     почта</label>
                                 <input type="email"
-                                    class="gramota-SuisseIntl-Regular gramota-fs-18 form-control rounded-0 border-0 py-2"
+                                    class="gramota-SuisseIntl-Regular form-control rounded-0 border-0 py-2"
                                     id="exampleFormControlInput1" value="masha.yekimova@gmail.com">
                             </div>
-                            <label
-                                class="gramota-SuisseIntl-Regular gramota-fs-16 form-label text-muted">Пароль</label><br>
+                            <label class="gramota-SuisseIntl-Regular form-label text-muted">Пароль</label><br>
                             <button type="button"
-                                class="gramota-SuisseIntl-Regular gramota-fs-18 btn border border-1 border-dark rounded-0 px-2"
+                                class="gramota-SuisseIntl-Regular btn border border-1 border-dark rounded-0 px-2"
                                 data-bs-toggle="modal" data-bs-target="#changePasswordModal">Изменить</button>
                             <button type="button"
-                                class="gramota-SuisseIntl-Regular gramota-fs-18 btn border border-1 border-dark rounded-0 px-2"
+                                class="gramota-SuisseIntl-Regular btn border border-1 border-dark rounded-0 px-2"
                                 data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Восстановить</button>
                             <button type="button"
-                                class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
+                                class="gramota-SuisseIntl-SemiBold  btn border-0 rounded-0 w-100 mt-4 py-2"
                                 style="background: #e5e5dc; color: #aeae9f !important;">Восстановить</button>
 
 
@@ -774,8 +772,8 @@
                                                 <button type="button"
                                                     class="gramota-SuisseIntl-SemiBold gramota-fs-18 btn border-0 rounded-0 w-100 mt-4 py-2"
                                                     style="background: #39735D; color: #fff !important;">Восстановить</button>
-                                            </form>
-                                            <br>
+
+                                                <br>
                                         </div>
                                     </div>
                                 </div>
@@ -824,11 +822,11 @@
                             </div>
 
 
-                        </form>
+                    </form>
 
                     </section>
-                    <section class="p-3 p-sm-3 p-md-5  mb-4" style="background: #f5f5ee;">
-                        <h2 class="gramota-fs-22 mb-4">
+                    <section class="p-3 p-sm-3 p-md-5  my-4" style="background: #f5f5ee;">
+                        <h2 class="gramoa-form-h2 mb-4">
                             Данные
                         </h2>
                         <form action="">
@@ -882,7 +880,7 @@
                         </form>
                     </section>
                     <section class="p-3 p-sm-3 p-md-5 " style="background: #f5f5ee;">
-                        <h2 class="gramota-fs-22 mb-4">
+                        <h2 class="gramoa-form-h2 mb-4">
                             Социальные связи
                         </h2>
                         <div class="gramota-social d-flex">
@@ -930,8 +928,9 @@
                     </p>
                     <a href="#" class="gramota-SuisseIntl-Regular text-decoration-none text-muted">Удалить аккаунт</a>
                 </div>
-            </div>
+            </form>
         </div>
+    </div>
     </div>
     <div class="container-fluid" style="background: #f5f6f7">
         <div class="container-xxl">
