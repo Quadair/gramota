@@ -364,6 +364,8 @@ header .container-fluid {
   padding-bottom: 45px !important;
   /* padding-left: 12px !important;
   padding-right: 12px !important;*/
+  position: relative;
+  z-index: 30;
 }
 
 @media (max-width: 992px) {
@@ -1923,7 +1925,7 @@ footer .gramota-social li a {
     top: auto;
     bottom: 0;
     width: 100vw;
-    position: fixed;
+    position: absolute;
   }
 }
 
@@ -3482,6 +3484,7 @@ gramota-auth-popup2__checbox .gramota-auth-popup2__checkbox {
     overflow-y: scroll;
     justify-content: flex-start;
     align-items: flex-start;
+    z-index: 300;
   }
 
   .gramota-auth-popup2__h3 {
